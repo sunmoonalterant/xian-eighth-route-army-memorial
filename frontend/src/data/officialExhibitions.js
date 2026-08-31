@@ -1,0 +1,117 @@
+export const officialExhibitions = [
+  {
+    "id": "55bd3078-0c74-4d41-855f-fbd244377ce6",
+    "type": "exhibition",
+    "title": "《千秋七贤庄——八路军驻陕办事处史实展》",
+    "sourceName": "八路军西安办事处纪念馆",
+    "sourceDomain": "www.xabb.org.cn",
+    "sourceLevel": "A",
+    "sourceUrl": "http://www.xabb.org.cn/display/4.html",
+    "sourceApiId": "8",
+    "retrievedAt": "2026-08-31T05:17:16.251Z",
+    "verified": false,
+    "reviewStatus": "pending",
+    "imageUrls": [
+      "http://www.xabb.org.cn/baban/baban/upload/2020/10/16/b68afe9f93f38e69273e643a7ca33890.JPG",
+      "http://www.xabb.org.cn/baban/baban/upload/2020/10/16/08ef6ebeaa84bf546572d5101e4aa123.JPG"
+    ],
+    "images": [
+      {
+        "url": "http://www.xabb.org.cn/baban/baban/upload/2020/10/16/b68afe9f93f38e69273e643a7ca33890.JPG",
+        "alt": "",
+        "caption": "",
+        "sourcePage": "http://www.xabb.org.cn/display/4.html",
+        "downloaded": false
+      },
+      {
+        "url": "http://www.xabb.org.cn/baban/baban/upload/2020/10/16/08ef6ebeaa84bf546572d5101e4aa123.JPG",
+        "alt": "",
+        "caption": "",
+        "sourcePage": "http://www.xabb.org.cn/display/4.html",
+        "downloaded": false
+      }
+    ],
+    "category": "",
+    "summary": "《千秋七贤庄 ——八路军驻陕办事处史实展》全面系统地介绍了从1936年夏到1946年秋，中共中央在七贤庄设立的秘密交通站、红军联络处及八路军驻陕办事处（简称西安“八办”）的10年光辉历程，用丰富的史料照片和实物再现了西安“八办”肩负重托，不辱使命，出色完成了党中央赋予的建立秘密联络交通，开展隐蔽战线斗争，营救失散红军将士，开展民族救亡运动，和平解决西安事变，",
+    "contentHtml": "<p class=\"MsoNormal\" style=\"text-align: center; text-indent: 28pt;\"><img src=\"/baban/baban/upload/2020/10/16/b68afe9f93f38e69273e643a7ca33890.JPG\" data-filename=\"2020/10/16/b68afe9f93f38e69273e643a7ca33890.JPG\" style=\"width: 50%;\"><span style=\"mso-spacerun:'yes';font-family:仿宋_GB2312;font-size:14.0000pt;\r\nmso-font-kerning:1.0000pt;\"><font face=\"仿宋_GB2312\"><br></font></span></p><p class=\"MsoNormal\" style=\"text-indent:28.0000pt;mso-char-indent-count:2.0000;\"><span style=\"mso-spacerun:'yes';font-family:仿宋_GB2312;font-size:14.0000pt;\r\nmso-font-kerning:1.0000pt;\"><font face=\"仿宋_GB2312\">《千秋七贤庄</font>——八路军驻陕办事处史实展》全面系统地介绍了从1936年夏到1946年秋，中共中央在七贤庄设立的秘密交通站、红军联络处及八路军驻陕办事处（简称西安“八办”）的10年光辉历程，用丰富的史料照片和实物再现了西安“八办”肩负重托，不辱使命，出色完成了党中央赋予的建立秘密联络交通，开展隐蔽战线斗争，营救失散红军将士，开展民族救亡运动，和平解决西安事变，推进民族统一战线，输送培养爱国青年，保护中转抗日将领，采购运输边区物资，筹措转运抗战经费，揭露制止反共摩擦，坚守红色革命堡垒等多项任务，为中华民族的独立与解放做出了的重要贡献。</span></p><p class=\"MsoNormal\" style=\"text-align: center; text-indent: 28pt;\"><img src=\"/baban/baban/upload/2020/10/16/08ef6ebeaa84bf546572d5101e4aa123.JPG\" data-filename=\"2020/10/16/08ef6ebeaa84bf546572d5101e4aa123.JPG\" style=\"width: 50%;\"><span style=\"mso-spacerun:'yes';font-family:仿宋_GB2312;font-size:14.0000pt;\r\nmso-font-kerning:1.0000pt;\"><br></span><span style=\"mso-spacerun:'yes';font-family:仿宋_GB2312;font-size:14.0000pt;\r\nmso-font-kerning:1.0000pt;\"><o:p></o:p></span></p><p class=\"MsoNormal\" style=\"text-indent:28.0000pt;mso-char-indent-count:2.0000;\"><span style=\"mso-spacerun:'yes';font-family:仿宋_GB2312;font-size:14.0000pt;\r\nmso-font-kerning:1.0000pt;\"><font face=\"仿宋_GB2312\">展览共分为六个部分：第一部分</font>“前言”，第二部分“秘密交通站，”第三部分“红军联络处”，第四部分“八路军驻陕办事处”，第五部分“八路军西安办事处纪念馆”，第六部分“结语”。</span><span style=\"mso-spacerun:'yes';font-family:仿宋_GB2312;font-size:14.0000pt;\r\nmso-font-kerning:1.0000pt;\"><o:p></o:p></span></p><p class=\"MsoNormal\" style=\"text-indent:28.0000pt;mso-char-indent-count:2.0000;\"><span style=\"mso-spacerun:'yes';font-family:仿宋_GB2312;font-size:14.0000pt;\r\nmso-font-kerning:1.0000pt;\"><font face=\"仿宋_GB2312\">展览展出史料照片</font>202张，文物展品39件，其中多件革命文物都是首次对外展出；特别是由第一个到延安采访的欧洲记者瓦尔特·博斯哈德在1938年拍摄的黑白无声录影片《延安之旅》也将在展览中首次展现。</span><span style=\"mso-spacerun:'yes';font-family:仿宋_GB2312;font-size:14.0000pt;\r\nmso-font-kerning:1.0000pt;\"><o:p></o:p></span></p>",
+    "contentText": "《千秋七贤庄 ——八路军驻陕办事处史实展》全面系统地介绍了从1936年夏到1946年秋，中共中央在七贤庄设立的秘密交通站、红军联络处及八路军驻陕办事处（简称西安“八办”）的10年光辉历程，用丰富的史料照片和实物再现了西安“八办”肩负重托，不辱使命，出色完成了党中央赋予的建立秘密联络交通，开展隐蔽战线斗争，营救失散红军将士，开展民族救亡运动，和平解决西安事变，推进民族统一战线，输送培养爱国青年，保护中转抗日将领，采购运输边区物资，筹措转运抗战经费，揭露制止反共摩擦，坚守红色革命堡垒等多项任务，为中华民族的独立与解放做出了的重要贡献。 展览共分为六个部分：第一部分 “前言”，第二部分“秘密交通站，”第三部分“红军联络处”，第四部分“八路军驻陕办事处”，第五部分“八路军西安办事处纪念馆”，第六部分“结语”。 展览展出史料照片 202张，文物展品39件，其中多件革命文物都是首次对外展出；特别是由第一个到延安采访的欧洲记者瓦尔特·博斯哈德在1938年拍摄的黑白无声录影片《延安之旅》也将在展览中首次展现。",
+    "startDate": "",
+    "endDate": "",
+    "frontendReady": true,
+    "coverImage": "http://www.xabb.org.cn/baban/baban/upload/2020/10/16/b68afe9f93f38e69273e643a7ca33890.JPG"
+  },
+  {
+    "id": "7f2437fe-3710-4f66-b539-abb856407012",
+    "type": "exhibition",
+    "title": "《千秋七贤庄——八路军驻陕办事处史实展》",
+    "sourceName": "八路军西安办事处纪念馆",
+    "sourceDomain": "www.xabb.org.cn",
+    "sourceLevel": "A",
+    "sourceUrl": "http://www.xabb.org.cn/display/4.html",
+    "sourceApiId": "13",
+    "retrievedAt": "2026-08-31T05:17:16.252Z",
+    "verified": false,
+    "reviewStatus": "pending",
+    "imageUrls": [
+      "http://www.xabb.org.cn/baban/baban/upload/2021/08/26/e9d3272190728ed579c1b984ec5c1940.jpg",
+      "http://www.xabb.org.cn/baban/baban/upload/2021/08/26/d20ca3c26727783bbab7ef0c4ea06ea5.jpg"
+    ],
+    "images": [
+      {
+        "url": "http://www.xabb.org.cn/baban/baban/upload/2021/08/26/e9d3272190728ed579c1b984ec5c1940.jpg",
+        "alt": "",
+        "caption": "",
+        "sourcePage": "http://www.xabb.org.cn/display/4.html",
+        "downloaded": false
+      },
+      {
+        "url": "http://www.xabb.org.cn/baban/baban/upload/2021/08/26/d20ca3c26727783bbab7ef0c4ea06ea5.jpg",
+        "alt": "",
+        "caption": "",
+        "sourcePage": "http://www.xabb.org.cn/display/4.html",
+        "downloaded": false
+      }
+    ],
+    "category": "",
+    "summary": "《千秋七贤庄——八路军驻陕办事处史实展》全面系统地介绍了从1936年夏到1946年秋，中共中央在七贤庄设立的秘密交通站、红军联络处及八路军驻陕办事处（简称西安“八办”）的10年光辉历程，用丰富的史料照片和实物再现了西安“八办”肩负重托，不辱使命，出色完成了党中央赋予的建立秘密联络交通，开展隐蔽战线斗争，营救失散红军将士，开展民族救亡运动，和平解决西安事变，推",
+    "contentHtml": "<p class=\"MsoNormal\" style=\"text-align: center; text-indent: 28pt;\"></p><p class=\"MsoNormal\" style=\"text-align: center; text-indent: 28pt;\"><img src=\"/baban/baban/upload/2021/08/26/e9d3272190728ed579c1b984ec5c1940.jpg\" style=\"\" data-filename=\"2021/08/26/e9d3272190728ed579c1b984ec5c1940.jpg\"></p><p class=\"MsoNormal\" style=\"text-indent: 28pt;\">《千秋七贤庄——八路军驻陕办事处史实展》全面系统地介绍了从1936年夏到1946年秋，中共中央在七贤庄设立的秘密交通站、红军联络处及八路军驻陕办事处（简称西安“八办”）的10年光辉历程，用丰富的史料照片和实物再现了西安“八办”肩负重托，不辱使命，出色完成了党中央赋予的建立秘密联络交通，开展隐蔽战线斗争，营救失散红军将士，开展民族救亡运动，和平解决西安事变，推进民族统一战线，输送培养爱国青年，保护中转抗日将领，采购运输边区物资，筹措转运抗战经费，揭露制止反共摩擦，坚守红色革命堡垒等多项任务，为中华民族的独立与解放做出了的重要贡献。</p><p class=\"MsoNormal\" style=\"text-align: center; text-indent: 28pt;\"><img src=\"/baban/baban/upload/2021/08/26/d20ca3c26727783bbab7ef0c4ea06ea5.jpg\" style=\"\" data-filename=\"2021/08/26/d20ca3c26727783bbab7ef0c4ea06ea5.jpg\"><br></p><p class=\"MsoNormal\" style=\"text-indent: 28pt;\">展览共分为六个部分：第一部分“前言”，第二部分“秘密交通站，”第三部分“红军联络处”，第四部分“八路军驻陕办事处”，第五部分“八路军西安办事处纪念馆”，第六部分“结语”。</p><p class=\"MsoNormal\" style=\"text-indent: 28pt;\">展览展出史料照片202张，文物展品39件，其中多件革命文物都是首次对外展出；特别是由第一个到延安采访的欧洲记者瓦尔特·博斯哈德在1938年拍摄的黑白无声录影片《延安之旅》也将在展览中首次展现。</p><p class=\"MsoNormal\" style=\"text-indent: 28pt;\">&nbsp;</p>",
+    "contentText": "《千秋七贤庄——八路军驻陕办事处史实展》全面系统地介绍了从1936年夏到1946年秋，中共中央在七贤庄设立的秘密交通站、红军联络处及八路军驻陕办事处（简称西安“八办”）的10年光辉历程，用丰富的史料照片和实物再现了西安“八办”肩负重托，不辱使命，出色完成了党中央赋予的建立秘密联络交通，开展隐蔽战线斗争，营救失散红军将士，开展民族救亡运动，和平解决西安事变，推进民族统一战线，输送培养爱国青年，保护中转抗日将领，采购运输边区物资，筹措转运抗战经费，揭露制止反共摩擦，坚守红色革命堡垒等多项任务，为中华民族的独立与解放做出了的重要贡献。 展览共分为六个部分：第一部分“前言”，第二部分“秘密交通站，”第三部分“红军联络处”，第四部分“八路军驻陕办事处”，第五部分“八路军西安办事处纪念馆”，第六部分“结语”。 展览展出史料照片202张，文物展品39件，其中多件革命文物都是首次对外展出；特别是由第一个到延安采访的欧洲记者瓦尔特·博斯哈德在1938年拍摄的黑白无声录影片《延安之旅》也将在展览中首次展现。",
+    "startDate": "",
+    "endDate": "",
+    "frontendReady": true,
+    "coverImage": "http://www.xabb.org.cn/baban/baban/upload/2021/08/26/e9d3272190728ed579c1b984ec5c1940.jpg"
+  },
+  {
+    "id": "575f9b96-95ef-41b5-b952-55525ddf40ea",
+    "type": "exhibition",
+    "title": "一号院",
+    "sourceName": "八路军西安办事处纪念馆",
+    "sourceDomain": "www.xabb.org.cn",
+    "sourceLevel": "A",
+    "sourceUrl": "http://www.xabb.org.cn/display/4.html",
+    "sourceApiId": "14",
+    "retrievedAt": "2026-08-31T05:17:16.252Z",
+    "verified": false,
+    "reviewStatus": "pending",
+    "imageUrls": [
+      "http://www.xabb.org.cn/baban/baban/upload/2021/08/26/1176d0cc74c506909c5e94a930f51328.jpg"
+    ],
+    "images": [
+      {
+        "url": "http://www.xabb.org.cn/baban/baban/upload/2021/08/26/1176d0cc74c506909c5e94a930f51328.jpg",
+        "alt": "",
+        "caption": "",
+        "sourcePage": "http://www.xabb.org.cn/display/4.html",
+        "downloaded": false
+      }
+    ],
+    "category": "",
+    "summary": "七贤庄一号院是国民革命军第八路驻陕办事处主要办公地点。八路军驻陕办事处利用其特殊的政治地位和地理位置，在维护和推动全民族抗日运动的发展，宣传党的抗日主张、开展统一战线工作，为八路军领取、采买、转运物资，组织爱国青年奔赴延安等方面做了大量的工作。这期间，中国共产党、八路军的主要领导人周恩来、朱德、刘少奇、彭德怀、叶剑英、邓小平、林伯渠、董必武等曾多次留驻办事处",
+    "contentHtml": "<p class=\"MsoNormal\" style=\"text-align: center; text-indent: 28pt; line-height: 24pt;\"><img src=\"/baban/baban/upload/2021/08/26/1176d0cc74c506909c5e94a930f51328.jpg\" style=\"\" data-filename=\"2021/08/26/1176d0cc74c506909c5e94a930f51328.jpg\"><br></p><p class=\"MsoNormal\" style=\"text-align: left; text-indent: 28pt; line-height: 24pt;\">七贤庄一号院是国民革命军第八路驻陕办事处主要办公地点。八路军驻陕办事处利用其特殊的政治地位和地理位置，在维护和推动全民族抗日运动的发展，宣传党的抗日主张、开展统一战线工作，为八路军领取、采买、转运物资，组织爱国青年奔赴延安等方面做了大量的工作。这期间，中国共产党、八路军的主要领导人周恩来、朱德、刘少奇、彭德怀、叶剑英、邓小平、林伯渠、董必武等曾多次留驻办事处并指导工作。<br></p>",
+    "contentText": "七贤庄一号院是国民革命军第八路驻陕办事处主要办公地点。八路军驻陕办事处利用其特殊的政治地位和地理位置，在维护和推动全民族抗日运动的发展，宣传党的抗日主张、开展统一战线工作，为八路军领取、采买、转运物资，组织爱国青年奔赴延安等方面做了大量的工作。这期间，中国共产党、八路军的主要领导人周恩来、朱德、刘少奇、彭德怀、叶剑英、邓小平、林伯渠、董必武等曾多次留驻办事处并指导工作。",
+    "startDate": "",
+    "endDate": "",
+    "frontendReady": true,
+    "coverImage": "http://www.xabb.org.cn/baban/baban/upload/2021/08/26/1176d0cc74c506909c5e94a930f51328.jpg"
+  }
+]

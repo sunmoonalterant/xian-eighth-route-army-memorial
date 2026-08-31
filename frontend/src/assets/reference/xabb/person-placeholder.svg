@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 660" role="img" aria-labelledby="title description">
+  <title id="title">资料整理中的人物档案占位图</title>
+  <desc id="description">不包含真实人物肖像的灰色剪影占位图</desc>
+  <rect width="600" height="660" fill="#d9d4cb"/>
+  <rect x="28" y="28" width="544" height="604" fill="none" stroke="#8b1e1e" stroke-width="2" opacity=".5"/>
+  <circle cx="300" cy="230" r="92" fill="#77736e"/>
+  <path d="M132 526c18-126 95-198 168-198s150 72 168 198" fill="#77736e"/>
+  <path d="M196 486h208" stroke="#eee8dc" stroke-width="2" opacity=".7"/>
+  <text x="300" y="570" fill="#4d4944" font-family="serif" font-size="26" text-anchor="middle" letter-spacing="4">资料整理中</text>
+  <text x="300" y="603" fill="#756f68" font-family="sans-serif" font-size="13" text-anchor="middle" letter-spacing="3">COURSE DESIGN DEMO</text>
+</svg>

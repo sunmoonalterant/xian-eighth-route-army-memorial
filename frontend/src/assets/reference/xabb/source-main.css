@@ -1,0 +1,709 @@
+/* CSS Document */
+/*reset*/
+h1, h2, h3, h4, h5, h6, div, dl, dt, dd, ul, ol, li, p, blockquote, pre, hr, figure, table, caption, th, td, form, fieldset, legend, input, button, textarea, menu, label {
+    margin: 0;
+    padding: 0;
+    font-family: "Microsoft YaHei", Arial, serif;
+}
+
+header, footer, section, article, aside, nav, hgroup, address, figure, figcaption, menu, details {
+    display: block
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+html, body, fieldset, iframe, abbr {
+    border: 0
+}
+
+i, em, address {
+    font-style: normal
+}
+
+li {
+    list-style: none
+}
+
+label {
+    cursor: default
+}
+
+a, button, input[type='submit'] {
+    cursor: pointer
+}
+
+a, a:link, a:active, a:hover, a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+    font-family: "Microsoft YaHei", Arial, serif
+}
+
+img {
+    border: 0;
+    display: block;
+}
+
+input[type="button"] {
+    cursor: pointer;
+}
+
+
+/*public*/
+html, body {
+    font-size: 15px;
+    width: 100%;
+    min-width: 1450px;
+    margin: 0 auto;
+    padding: 0
+}
+
+#wrapper {
+    width: 100%;
+    font-family: "Microsoft YaHei", Arial, serif;
+    min-width: 1450px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+#header, #footer, .main {
+    width: 100%;
+}
+
+.content {
+    width: 96.66rem;
+    margin: 0 auto;
+    position: relative;
+}
+
+@media screen and (max-width: 1500px) {
+    html {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    html {
+        font-size: 12px;
+    }
+
+    #nav li {
+        margin: 0 1rem;
+    }
+
+    .hotnews-box {
+        width: 31em;
+    }
+}
+
+/*head*/
+#header {
+    background: #8e060a;
+    padding: 0rem 0;
+    position: relative;
+}
+
+#header h1 {
+    width: 369px;
+    height: 69px;
+}
+
+#nav {
+    position: absolute;
+    top: 1.55rem;
+    right: 0rem;
+}
+
+#nav li {
+    display: inline-block;
+    margin: 0 1.2em;
+}
+
+#nav > li > a {
+    color: #fff;
+    font-size: 17px;
+}
+
+#nav > li > a:hover {
+    color: #f9d692;
+}
+
+.title-index {
+    font-size: 1.956rem;
+    height: 4.2rem;
+    line-height: 4.2rem;
+    color: #3d607c;
+    font-weight: bold;
+    background: url(../images/title-bg.png) center center no-repeat;
+    text-align: center;
+    margin-bottom: 4.66rem;
+}
+
+.title-index span {
+    color: #8e060a;
+}
+
+.more-index {
+    width: 3.46rem;
+    height: 3.46rem;
+    border: 2px solid #466782;
+    border-radius: 3.46rem;
+    display: block;
+    margin: 2.33rem auto 0;
+    background: url(../images/more.png) center center no-repeat;
+}
+
+/*新闻*/
+
+.news-index {
+    padding: 4.66rem 0 2.33rem;
+}
+
+.news-con-index {
+    overflow: hidden;
+}
+
+.hotnews {
+    width: 38.73rem;
+    float: left;
+}
+
+.hotnews-box {
+    width: 38.73em;
+    height: 24rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.hotnews-box > img {
+    width: auto;
+    height: 24rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: height 1s;
+    -moz-transition: height 1s;
+    -webkit-transition: height 1s;
+    -o-transition: height 1s;
+}
+
+.hotnews > h3 {
+    width: 100%;
+    height: 3.46rem;
+    font-size: 1.69rem;
+    color: #2c2c2c;
+    font-weight: bold;
+    line-height: 3.46rem;
+    margin: 0.85rem 0 0.55rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.hotnews > h3 > span {
+    font-size: 1.789rem;
+    color: #3d607c;
+    margin-right: 3rem;
+}
+
+.hotnews > p {
+    height: 4.04rem;
+    font-size: 1.268rem;
+    color: #29372b;
+    line-height: 2.02rem;
+    overflow: hidden;
+}
+
+.hotnews:hover img {
+    height: 110%
+}
+
+.hotnews:hover {
+    cursor: pointer;
+}
+
+.hotnews:hover h3 {
+    color: #8e060a;
+}
+
+.news-list-index {
+    width: 55.26rem;
+    float: right;
+}
+
+.news-list-index > li {
+    border-bottom: 1px solid #e4e4e4;
+    padding: 1.25rem 0;
+    overflow: hidden;
+}
+
+.news-list-index > li:first-child {
+    border-top: 1px solid #e4e4e4;
+}
+
+.time-index {
+
+    font-size: 1.392rem;
+    color: #3d607c;
+    font-weight: bold;
+    float: left;
+    padding: 0 1.6rem;
+    display: block;
+}
+
+.news-list-index a {
+    width: 45.5rem;
+    height: 5.7rem;
+    display: block;
+    float: left;
+    border-left: 1px solid #dedede;
+    padding-left: 1.2rem;
+}
+
+.news-list-index > li h4 {
+    width: 100%;
+    font-size: 1.65rem;
+    height: 1.65rem;
+    line-height: 1.65rem;
+    color: #191919;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+/*
+.news-con-index>div h3{
+	width:100%;
+	font-size:1.65rem;
+	height:1.65rem;
+	line-height:1.65rem;
+	color:#191919;
+	overflow:hidden;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+}
+*/
+
+
+.news-list-index > li:hover h4 {
+    color: #8e060a;
+}
+
+.news-list-index > li p {
+    height: 3.56rem;
+    font-size: 1.25rem;
+    color: #484848;
+    line-height: 1.78rem;
+    margin-top: 0.8rem;
+    overflow: hidden;
+}
+
+/*展览*/
+.show-index {
+    background: #f9f6ef url(../images/show-bg.png) bottom center no-repeat;
+    padding: 4.66rem 0 2.33rem;
+}
+
+.show-list-index {
+    overflow: hidden;
+}
+
+.show-list-index li {
+    float: left;
+    border: 1.2rem solid #fff;
+    margin-right: 2.66rem;
+    position: relative;
+    overflow: hidden;
+    width: 28rem;
+    height: 31.2rem;
+}
+
+.show-list-index li:last-child {
+    margin-right: 0;
+}
+
+.show-list-index li:hover {
+    cursor: pointer;
+}
+
+.show-list-index li .cover {
+    width: 17.47rem;
+    height: 18.34rem;
+    padding: 4.66rem 2.93rem;
+    background: rgba(0, 0, 0, .63);
+    box-shadow: 0 0 10px -3px #000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    z-index: 3;
+    opacity: 0;
+    transition: opacity 0.5s;
+    -moz-transition: opacity 0.5s;
+    -webkit-transition: opacity 0.5s;
+    -o-transition: opacity 0.5s;
+}
+
+.show-list-index li:hover .cover {
+    opacity: 1;
+}
+
+.show-list-index li .cover > h3 {
+    font-size: 1.759rem;
+    font-weight: bold;
+    margin-bottom: 3.2rem;
+}
+
+.show-list-index li .cover > h4 {
+    height: 5.864rem;
+    font-size: 1.368rem;
+    line-height: 2.932rem;
+    overflow: hidden;
+    margin-top: 1.46rem;
+    padding: 0 0.5rem;
+}
+
+.show-list-index li .cover > span {
+    width: 3.46rem;
+    height: 3.46rem;
+    border: 1px solid #fff;
+    border-radius: 3.46rem;
+    display: block;
+    background: #fff url(../images/more.png) center center no-repeat;
+    position: relative;
+    top: 2.33rem;
+    left: 13rem;
+}
+
+
+.show-list-index li img {
+    height: 31.8rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: height 1s;
+    -moz-transition: height 1s;
+    -webkit-transition: height 1s;
+    -o-transition: height 1s;
+}
+
+.show-list-index li:hover img {
+    height: 110%;
+}
+
+.cover {
+    opacity: 1;
+}
+
+/*社会教育*/
+.edu-index {
+    padding: 4.66rem 0 2.33rem;
+}
+
+.edu-box-index {
+    overflow: hidden;
+}
+
+.edu-title-box {
+    width: 12.93rem;
+    height: 33.6rem;
+    position: relative;
+    overflow: hidden;
+    display: block;
+    float: left;
+    cursor: pointer;
+}
+
+.edu-title-box > img {
+    height: 33.6rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.edu-son-box {
+    float: left;
+    margin-right: 1.4rem;
+}
+
+.edu-box-index > .edu-son-box:last-child {
+    margin-right: 0;
+}
+
+.edu-img-box {
+    width: 12.93rem;
+    height: 8.4rem;
+    position: relative;
+    overflow: hidden;
+    float: left;
+    margin-right: 1.06rem;
+}
+
+.edu-img-box > img {
+    height: 8.4rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: height 1s;
+    -moz-transition: height 1s;
+    -webkit-transition: height 1s;
+    -o-transition: height 1s;
+}
+
+.edu-ul {
+    display: none;
+    width: 0;
+    overflow: hidden;
+    float: left;
+    display: block;
+}
+
+.edu-box-index > .edu-son-box:first-child > .edu-ul {
+    width: 69rem;
+}
+
+.edu-ul > li {
+    width: 68rem;
+    padding: 1.37rem 0;
+    border-bottom: 1px solid #d9d9d9;
+    overflow: hidden;
+    margin-left: 1.4rem;
+}
+
+.edu-ul > li h3 {
+    width: 54rem;
+    height: 2.3rem;
+    font-size: 1.748rem;
+    color: #434343;
+    line-height: 2.3rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.edu-ul > li:hover h3 {
+    color: #8e060a;
+}
+
+.edu-ul > li:hover img {
+    height: 110%
+}
+
+.edu-ul > li p {
+    font-size: 1.312rem;
+    color: #434343;
+    height: 1.915rem;
+    line-height: 1.915rem;
+    margin-top: 1.6rem;
+}
+
+/*馆藏文物*/
+
+.relic-index {
+    padding: 4.66rem 0 2.33rem;
+    background: #f9f6ef;
+}
+
+.als-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.als-wrapper {
+    position: relative;
+}
+
+.als-item {
+    position: relative;
+    display: block;
+    text-align: center;
+    cursor: pointer;
+    float: left;
+    margin: 0 1.4rem;
+}
+
+.als-item > div {
+    width: 20rem;
+    height: 15.66rem;
+    overflow: hidden;
+    display: inline-block;
+    position: relative;
+}
+
+.als-item img {
+    height: 15.66rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: height 1s;
+    -moz-transition: height 1s;
+    -webkit-transition: height 1s;
+    -o-transition: height 1s;
+}
+
+.als-item:hover img {
+    height: 110%;
+}
+
+.als-item:hover h3 {
+    color: #8e060a;
+}
+
+
+.als-prev, .als-next {
+    cursor: pointer;
+    clear: both;
+}
+
+.als-box {
+    width: 93%;
+    position: relative;
+    overflow: hidden;
+    margin-left: 2.9rem;
+}
+
+.als-item h3 {
+    width: 18.2rem;
+    height: 3.5rem;
+    font-size: 1.178rem;
+    line-height: 3.5em;
+    color: #2c2c2c;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.book-prev, .book-next {
+    position: absolute;
+    top: 50%;
+    margin-top: -2.2rem;
+}
+
+.book-prev {
+    left: 0;
+}
+
+.book-next {
+    right: 0;
+}
+
+/*底部*/
+#footer {
+    background: url(../images/bg_footer.jpg) top center no-repeat;
+    padding: 6.26rem 0 6rem;
+    background-size: cover
+}
+
+.subnav > a {
+    font-size: 0.978rem;
+    color: #fff;
+    display: inline-block;
+    padding: 0 1.53rem;
+    border-right: 1px solid #fff;
+}
+
+.subnav > a:hover, .copyright > a:hover {
+    color: #f9d692;
+}
+
+.subnav > a:first-child {
+    padding: 0 1.53rem 0 0;
+}
+
+.subnav > a:last-child {
+    padding: 0 0 0 1.53rem;
+    border-right: none;
+}
+
+.copyright{
+	width:43rem;
+	font-size:0.86rem;
+	color:#cbcbcb;
+	line-height:2rem;
+	margin-top:2.66rem;
+	position:relative;
+	background: url(../images/blue.png) top right no-repeat;
+}
+#_ideConac{
+	position:absolute;
+	top:-0.5rem;
+	right:0;
+	display: none;
+}
+.copyright>a{ color:#cbcbcb;}
+
+.copyright>.wa{ color:#cbcbcb; margin-left:0.5rem; background:url(../images/wa.png) left center no-repeat; background-size:1rem; padding-left:1.2rem;}
+.subnav-3{
+	position:absolute;
+	top:50%;
+	right:0;
+	transform:translateY(-50%);
+	display:block;
+}
+
+.subnav-3>a{
+	width:7rem;
+	height:7rem;
+	color:#fff;
+	font-size:1.06rem;
+	display:inline-block;
+	background:rgba(255,255,255,.24);
+	border-radius:0.8rem;
+	margin-left:1.8rem;
+	text-align:center;
+	line-height:2.8rem;
+	float: left;
+}
+
+.subnav-3>a>img{
+	margin:1.6rem auto 0;
+	display:block;
+}
+.qr-code,.vr-code{
+	font-size:0.86rem;
+	color:#cbcbcb;
+	text-align:center;
+	line-height:0.7rem;
+}
+.qr-code{
+	position:absolute;
+	top:2.86rem;
+	left:45rem;
+}
+
+.vr-code{
+	position:absolute;
+	top:2.86rem;
+	left:53rem;
+}
+.qr-code>img,.vr-code>img{
+	width:6rem;
+}
+#box{
+	width: 300px;
+	height: 200px;
+	background:url(../images/news.png) no-repeat;
+	/*3.为了移动设置位置*/
+	position: absolute;
+	z-index:999999;
+	top: 0;
+	left: 0;
+}
+#close{
+	  width: 30px;
+	  height: 30px;
+	  float: right;
+}

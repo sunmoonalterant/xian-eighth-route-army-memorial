@@ -1,0 +1,308 @@
+export const officialRelics = [
+  {
+    "id": "c5d40a7f-6052-4caa-9255-f34c359c3699",
+    "type": "relic",
+    "title": "周恩来穿过的粗布睡衣",
+    "sourceName": "八路军西安办事处纪念馆",
+    "sourceDomain": "www.xabb.org.cn",
+    "sourceLevel": "A",
+    "sourceUrl": "http://www.xabb.org.cn/relics/6.html",
+    "sourceApiId": "50",
+    "retrievedAt": "2026-08-31T05:17:16.247Z",
+    "verified": false,
+    "reviewStatus": "pending",
+    "imageUrls": [
+      "http://www.xabb.org.cn/baban/baban/upload/2020/12/28/af8988497ea0acb970fb7a34edb3fa43.png"
+    ],
+    "images": [
+      {
+        "url": "http://www.xabb.org.cn/baban/baban/upload/2020/12/28/af8988497ea0acb970fb7a34edb3fa43.png",
+        "alt": "",
+        "caption": "",
+        "sourcePage": "http://www.xabb.org.cn/relics/6.html",
+        "downloaded": false
+      }
+    ],
+    "name": "周恩来穿过的粗布睡衣",
+    "category": "",
+    "era": "",
+    "description": "",
+    "contentHtml": "<p style=\"text-align: center; \"><img src=\"/baban/baban/upload/2020/12/28/af8988497ea0acb970fb7a34edb3fa43.png\" data-filename=\"2020/12/28/af8988497ea0acb970fb7a34edb3fa43.png\" style=\"width: 50%;\"><br></p><p><br></p><p>1963年至1976年周恩来穿过的粗布睡衣。</p><p>1977年，周恩来的侄子周尔萃捐赠。</p>",
+    "contentText": "1963年至1976年周恩来穿过的粗布睡衣。 1977年，周恩来的侄子周尔萃捐赠。",
+    "frontendReady": true,
+    "summary": "1963年至1976年周恩来穿过的粗布睡衣。 1977年，周恩来的侄子周尔萃捐赠。",
+    "coverImage": "http://www.xabb.org.cn/baban/baban/upload/2020/12/28/af8988497ea0acb970fb7a34edb3fa43.png"
+  },
+  {
+    "id": "29593d17-ac45-4365-84dc-c93c6ee84dde",
+    "type": "relic",
+    "title": "朱德穿过的风雨衣",
+    "sourceName": "八路军西安办事处纪念馆",
+    "sourceDomain": "www.xabb.org.cn",
+    "sourceLevel": "A",
+    "sourceUrl": "http://www.xabb.org.cn/relics/6.html",
+    "sourceApiId": "51",
+    "retrievedAt": "2026-08-31T05:17:16.249Z",
+    "verified": false,
+    "reviewStatus": "pending",
+    "imageUrls": [
+      "http://www.xabb.org.cn/baban/baban/upload/2020/12/28/89b04fd85ce355054b93e97ca225d12a.png"
+    ],
+    "images": [
+      {
+        "url": "http://www.xabb.org.cn/baban/baban/upload/2020/12/28/89b04fd85ce355054b93e97ca225d12a.png",
+        "alt": "",
+        "caption": "",
+        "sourcePage": "http://www.xabb.org.cn/relics/6.html",
+        "downloaded": false
+      }
+    ],
+    "name": "朱德穿过的风雨衣",
+    "category": "",
+    "era": "",
+    "description": "",
+    "contentHtml": "<p style=\"text-align: center; \"><img src=\"/baban/baban/upload/2020/12/28/89b04fd85ce355054b93e97ca225d12a.png\" data-filename=\"2020/12/28/89b04fd85ce355054b93e97ca225d12a.png\" style=\"width: 50%;\"><br></p><p><br></p><p>1991年，朱德的夫人康克清捐赠。<br></p>",
+    "contentText": "1991年，朱德的夫人康克清捐赠。",
+    "frontendReady": true,
+    "summary": "1991年，朱德的夫人康克清捐赠。",
+    "coverImage": "http://www.xabb.org.cn/baban/baban/upload/2020/12/28/89b04fd85ce355054b93e97ca225d12a.png"
+  },
+  {
+    "id": "9f0f9d43-9372-4620-b147-84a32ff2506e",
+    "type": "relic",
+    "title": "叶剑英题诗手迹",
+    "sourceName": "八路军西安办事处纪念馆",
+    "sourceDomain": "www.xabb.org.cn",
+    "sourceLevel": "A",
+    "sourceUrl": "http://www.xabb.org.cn/relics/6.html",
+    "sourceApiId": "52",
+    "retrievedAt": "2026-08-31T05:17:16.249Z",
+    "verified": false,
+    "reviewStatus": "pending",
+    "imageUrls": [
+      "http://www.xabb.org.cn/baban/baban/upload/2020/12/28/c5675fe7c1c436b6782f260614db242e.png"
+    ],
+    "images": [
+      {
+        "url": "http://www.xabb.org.cn/baban/baban/upload/2020/12/28/c5675fe7c1c436b6782f260614db242e.png",
+        "alt": "",
+        "caption": "",
+        "sourcePage": "http://www.xabb.org.cn/relics/6.html",
+        "downloaded": false
+      }
+    ],
+    "name": "叶剑英题诗手迹",
+    "category": "",
+    "era": "",
+    "description": "",
+    "contentHtml": "<p style=\"text-align: center; \"><img src=\"/baban/baban/upload/2020/12/28/c5675fe7c1c436b6782f260614db242e.png\" data-filename=\"2020/12/28/c5675fe7c1c436b6782f260614db242e.png\" style=\"\"><br></p><p>&nbsp; &nbsp; &nbsp; &nbsp;叶剑英（1897—1986），广东梅县人。元帅军衔。西安事变后，协助周恩来赴西安工作。1937年2月至8月，主持西安红军联络处（八路军驻陕办事处的前身）工作。1941年7月至1943年4月，负责管理八路军驻陕办事处等五个办事处的工作。中华人民共和国成立后，曾任中共中央军委副主席兼秘书长，国防部部长等职。1979年4月12日，叶剑英来“八办”故地重游，并赋诗一首：“西安捉蒋翻危局，内战吟成抗日诗。楼屋依然人半逝，小窗风雪立多时。”&nbsp;<br></p>",
+    "contentText": "叶剑英（1897—1986），广东梅县人。元帅军衔。西安事变后，协助周恩来赴西安工作。1937年2月至8月，主持西安红军联络处（八路军驻陕办事处的前身）工作。1941年7月至1943年4月，负责管理八路军驻陕办事处等五个办事处的工作。中华人民共和国成立后，曾任中共中央军委副主席兼秘书长，国防部部长等职。1979年4月12日，叶剑英来“八办”故地重游，并赋诗一首：“西安捉蒋翻危局，内战吟成抗日诗。楼屋依然人半逝，小窗风雪立多时。”",
+    "frontendReady": true,
+    "summary": "叶剑英（1897—1986），广东梅县人。元帅军衔。西安事变后，协助周恩来赴西安工作。1937年2月至8月，主持西安红军联络处（八路军驻陕办事处的前身）工作。1941年7月至1943年4月，负责管理八路军驻陕办事处等五个办事处的工作。中华人民共和国成立后，曾任中共中央军委副主席兼秘书长，国防部部长等职。1979年4月12日，叶剑英来“八办”故地重游，并赋诗一",
+    "coverImage": "http://www.xabb.org.cn/baban/baban/upload/2020/12/28/c5675fe7c1c436b6782f260614db242e.png"
+  },
+  {
+    "id": "fb605abf-0a2e-4267-bb35-343452383022",
+    "type": "relic",
+    "title": "叶剑英给“西办”纪念馆的题字",
+    "sourceName": "八路军西安办事处纪念馆",
+    "sourceDomain": "www.xabb.org.cn",
+    "sourceLevel": "A",
+    "sourceUrl": "http://www.xabb.org.cn/relics/6.html",
+    "sourceApiId": "53",
+    "retrievedAt": "2026-08-31T05:17:16.249Z",
+    "verified": false,
+    "reviewStatus": "pending",
+    "imageUrls": [
+      "http://www.xabb.org.cn/baban/baban/upload/2020/12/28/9b513d0f2f12f80f695b118736bed39c.png"
+    ],
+    "images": [
+      {
+        "url": "http://www.xabb.org.cn/baban/baban/upload/2020/12/28/9b513d0f2f12f80f695b118736bed39c.png",
+        "alt": "",
+        "caption": "",
+        "sourcePage": "http://www.xabb.org.cn/relics/6.html",
+        "downloaded": false
+      }
+    ],
+    "name": "叶剑英给“西办”纪念馆的题字",
+    "category": "",
+    "era": "",
+    "description": "",
+    "contentHtml": "<p style=\"text-align: center; \"><img src=\"/baban/baban/upload/2020/12/28/9b513d0f2f12f80f695b118736bed39c.png\" data-filename=\"2020/12/28/9b513d0f2f12f80f695b118736bed39c.png\" style=\"width: 50%;\"></p><p style=\"text-align: center; \"><br></p><p>&nbsp; &nbsp; &nbsp; &nbsp;1979年4月12日，叶剑英来纪念馆故地重游，9月应邀为西安“八办”纪念馆题写馆名。内容：“八路军西安办事处纪念馆 叶剑英一九七九年九月十日”。纪念馆将其放大制成牌匾悬挂在一号院前院。<br></p>",
+    "contentText": "1979年4月12日，叶剑英来纪念馆故地重游，9月应邀为西安“八办”纪念馆题写馆名。内容：“八路军西安办事处纪念馆 叶剑英一九七九年九月十日”。纪念馆将其放大制成牌匾悬挂在一号院前院。",
+    "frontendReady": true,
+    "summary": "1979年4月12日，叶剑英来纪念馆故地重游，9月应邀为西安“八办”纪念馆题写馆名。内容：“八路军西安办事处纪念馆 叶剑英一九七九年九月十日”。纪念馆将其放大制成牌匾悬挂在一号院前院。",
+    "coverImage": "http://www.xabb.org.cn/baban/baban/upload/2020/12/28/9b513d0f2f12f80f695b118736bed39c.png"
+  },
+  {
+    "id": "4008e49f-dce1-443f-ab75-07cfab6f4156",
+    "type": "relic",
+    "title": "林伯渠用过的拐杖",
+    "sourceName": "八路军西安办事处纪念馆",
+    "sourceDomain": "www.xabb.org.cn",
+    "sourceLevel": "A",
+    "sourceUrl": "http://www.xabb.org.cn/relics/6.html",
+    "sourceApiId": "54",
+    "retrievedAt": "2026-08-31T05:17:16.250Z",
+    "verified": false,
+    "reviewStatus": "pending",
+    "imageUrls": [
+      "http://www.xabb.org.cn/baban/baban/upload/2020/12/28/09997c656206765e9f94a5657846d853.png"
+    ],
+    "images": [
+      {
+        "url": "http://www.xabb.org.cn/baban/baban/upload/2020/12/28/09997c656206765e9f94a5657846d853.png",
+        "alt": "",
+        "caption": "",
+        "sourcePage": "http://www.xabb.org.cn/relics/6.html",
+        "downloaded": false
+      }
+    ],
+    "name": "林伯渠用过的拐杖",
+    "category": "",
+    "era": "",
+    "description": "",
+    "contentHtml": "<p style=\"text-align: center; \"><img src=\"/baban/baban/upload/2020/12/28/09997c656206765e9f94a5657846d853.png\" data-filename=\"2020/12/28/09997c656206765e9f94a5657846d853.png\" style=\"width: 50%;\"></p><p style=\"text-align: center; \"><br></p><p>&nbsp; &nbsp; &nbsp; &nbsp;林伯渠在八路军驻陕办事处工作时用过的拐杖。1946年9月10日，驻陕办事处撤离西安之前把拐杖等物品交给王超北保管。</p><p>&nbsp; &nbsp; &nbsp; 1962年，王超北捐赠。</p>",
+    "contentText": "林伯渠在八路军驻陕办事处工作时用过的拐杖。1946年9月10日，驻陕办事处撤离西安之前把拐杖等物品交给王超北保管。 1962年，王超北捐赠。",
+    "frontendReady": true,
+    "summary": "林伯渠在八路军驻陕办事处工作时用过的拐杖。1946年9月10日，驻陕办事处撤离西安之前把拐杖等物品交给王超北保管。 1962年，王超北捐赠。",
+    "coverImage": "http://www.xabb.org.cn/baban/baban/upload/2020/12/28/09997c656206765e9f94a5657846d853.png"
+  },
+  {
+    "id": "e7a7659c-6066-4a5e-8877-f6cb69beea59",
+    "type": "relic",
+    "title": "林伯渠的眼镜盒",
+    "sourceName": "八路军西安办事处纪念馆",
+    "sourceDomain": "www.xabb.org.cn",
+    "sourceLevel": "A",
+    "sourceUrl": "http://www.xabb.org.cn/relics/6.html",
+    "sourceApiId": "55",
+    "retrievedAt": "2026-08-31T05:17:16.250Z",
+    "verified": false,
+    "reviewStatus": "pending",
+    "imageUrls": [
+      "http://www.xabb.org.cn/baban/baban/upload/2020/12/28/97d273b6b8d24431fe588185123997d7.png"
+    ],
+    "images": [
+      {
+        "url": "http://www.xabb.org.cn/baban/baban/upload/2020/12/28/97d273b6b8d24431fe588185123997d7.png",
+        "alt": "",
+        "caption": "",
+        "sourcePage": "http://www.xabb.org.cn/relics/6.html",
+        "downloaded": false
+      }
+    ],
+    "name": "林伯渠的眼镜盒",
+    "category": "",
+    "era": "",
+    "description": "",
+    "contentHtml": "<p style=\"text-align: center; \"><img src=\"/baban/baban/upload/2020/12/28/97d273b6b8d24431fe588185123997d7.png\" data-filename=\"2020/12/28/97d273b6b8d24431fe588185123997d7.png\" style=\"width: 50%;\"><br></p><p><br></p><p>&nbsp; &nbsp; &nbsp; 林伯渠在驻陕办事处工作期间用过的眼镜盒。林老的警卫员杨首成收藏。</p><p>&nbsp; &nbsp; &nbsp; 1979年，杨首成捐赠。</p>",
+    "contentText": "林伯渠在驻陕办事处工作期间用过的眼镜盒。林老的警卫员杨首成收藏。 1979年，杨首成捐赠。",
+    "frontendReady": true,
+    "summary": "林伯渠在驻陕办事处工作期间用过的眼镜盒。林老的警卫员杨首成收藏。 1979年，杨首成捐赠。",
+    "coverImage": "http://www.xabb.org.cn/baban/baban/upload/2020/12/28/97d273b6b8d24431fe588185123997d7.png"
+  },
+  {
+    "id": "35294e19-d0c2-4219-a52f-ac432b4aa640",
+    "type": "relic",
+    "title": "林伯渠的眼镜",
+    "sourceName": "八路军西安办事处纪念馆",
+    "sourceDomain": "www.xabb.org.cn",
+    "sourceLevel": "A",
+    "sourceUrl": "http://www.xabb.org.cn/relics/6.html",
+    "sourceApiId": "56",
+    "retrievedAt": "2026-08-31T05:17:16.250Z",
+    "verified": false,
+    "reviewStatus": "pending",
+    "imageUrls": [
+      "http://www.xabb.org.cn/baban/baban/upload/2020/12/28/b14e7c1f69aae82c651c2559fbd957f5.png"
+    ],
+    "images": [
+      {
+        "url": "http://www.xabb.org.cn/baban/baban/upload/2020/12/28/b14e7c1f69aae82c651c2559fbd957f5.png",
+        "alt": "",
+        "caption": "",
+        "sourcePage": "http://www.xabb.org.cn/relics/6.html",
+        "downloaded": false
+      }
+    ],
+    "name": "林伯渠的眼镜",
+    "category": "",
+    "era": "",
+    "description": "",
+    "contentHtml": "<p style=\"text-align: center; \"><img src=\"/baban/baban/upload/2020/12/28/b14e7c1f69aae82c651c2559fbd957f5.png\" data-filename=\"2020/12/28/b14e7c1f69aae82c651c2559fbd957f5.png\" style=\"width: 50%;\"></p><p style=\"text-align: center; \"><br></p><p>&nbsp; &nbsp; &nbsp; &nbsp;1960年林伯渠逝世后，家人从中共中央办公厅领回来的遗物之一。</p><p>&nbsp; &nbsp; &nbsp; &nbsp;2015年，林伯渠的孙女林友群捐赠。</p>",
+    "contentText": "1960年林伯渠逝世后，家人从中共中央办公厅领回来的遗物之一。 2015年，林伯渠的孙女林友群捐赠。",
+    "frontendReady": true,
+    "summary": "1960年林伯渠逝世后，家人从中共中央办公厅领回来的遗物之一。 2015年，林伯渠的孙女林友群捐赠。",
+    "coverImage": "http://www.xabb.org.cn/baban/baban/upload/2020/12/28/b14e7c1f69aae82c651c2559fbd957f5.png"
+  },
+  {
+    "id": "7baa33aa-a249-46a9-be99-41e5c104d762",
+    "type": "relic",
+    "title": "宣侠父全家与张知道合影",
+    "sourceName": "八路军西安办事处纪念馆",
+    "sourceDomain": "www.xabb.org.cn",
+    "sourceLevel": "A",
+    "sourceUrl": "http://www.xabb.org.cn/relics/6.html",
+    "sourceApiId": "57",
+    "retrievedAt": "2026-08-31T05:17:16.250Z",
+    "verified": false,
+    "reviewStatus": "pending",
+    "imageUrls": [
+      "http://www.xabb.org.cn/baban/baban/upload/2020/12/28/a15ad6c4acf419e23e977f515b769883.png"
+    ],
+    "images": [
+      {
+        "url": "http://www.xabb.org.cn/baban/baban/upload/2020/12/28/a15ad6c4acf419e23e977f515b769883.png",
+        "alt": "",
+        "caption": "",
+        "sourcePage": "http://www.xabb.org.cn/relics/6.html",
+        "downloaded": false
+      }
+    ],
+    "name": "宣侠父全家与张知道合影",
+    "category": "",
+    "era": "",
+    "description": "",
+    "contentHtml": "<p style=\"text-align: center; \"><img src=\"/baban/baban/upload/2020/12/28/a15ad6c4acf419e23e977f515b769883.png\" data-filename=\"2020/12/28/a15ad6c4acf419e23e977f515b769883.png\" style=\"width: 393.701px; height: 591.147px;\"><br></p><p><br></p><p>&nbsp; &nbsp; &nbsp; &nbsp;1937年宣侠父全家与张知道合影。照片左侧题有：“越东宣侠父先生夫妇子女与知道夫妇及子其意于一九三七年影于长安。一九三七知道誌”。宣侠父(1899—1938)，浙江诸暨人。1922年入党，1924年考入黄埔军校。1937年2月，奉命到西安开展统战工作，曾担任八路军高级参议。1938年7月31日被国民党特务暗杀于西安。</p><p>&nbsp; &nbsp; &nbsp; &nbsp;1998年7月31日，宣平（宣侠父之女）、张其礼（张知道之子）捐赠。</p>",
+    "contentText": "1937年宣侠父全家与张知道合影。照片左侧题有：“越东宣侠父先生夫妇子女与知道夫妇及子其意于一九三七年影于长安。一九三七知道誌”。宣侠父(1899—1938)，浙江诸暨人。1922年入党，1924年考入黄埔军校。1937年2月，奉命到西安开展统战工作，曾担任八路军高级参议。1938年7月31日被国民党特务暗杀于西安。 1998年7月31日，宣平（宣侠父之女）、张其礼（张知道之子）捐赠。",
+    "frontendReady": true,
+    "summary": "1937年宣侠父全家与张知道合影。照片左侧题有：“越东宣侠父先生夫妇子女与知道夫妇及子其意于一九三七年影于长安。一九三七知道誌”。宣侠父(1899—1938)，浙江诸暨人。1922年入党，1924年考入黄埔军校。1937年2月，奉命到西安开展统战工作，曾担任八路军高级参议。1938年7月31日被国民党特务暗杀于西安。 1998年7月31日，宣平（宣侠父之女）",
+    "coverImage": "http://www.xabb.org.cn/baban/baban/upload/2020/12/28/a15ad6c4acf419e23e977f515b769883.png"
+  },
+  {
+    "id": "a44483af-139d-433b-b474-aa29e1948615",
+    "type": "relic",
+    "title": "宣侠父穿过的长袍",
+    "sourceName": "八路军西安办事处纪念馆",
+    "sourceDomain": "www.xabb.org.cn",
+    "sourceLevel": "A",
+    "sourceUrl": "http://www.xabb.org.cn/relics/6.html",
+    "sourceApiId": "58",
+    "retrievedAt": "2026-08-31T05:17:16.251Z",
+    "verified": false,
+    "reviewStatus": "pending",
+    "imageUrls": [
+      "http://www.xabb.org.cn/baban/baban/upload/2020/12/28/e9c0214b314307550b4e1206c2ff34ba.png"
+    ],
+    "images": [
+      {
+        "url": "http://www.xabb.org.cn/baban/baban/upload/2020/12/28/e9c0214b314307550b4e1206c2ff34ba.png",
+        "alt": "",
+        "caption": "",
+        "sourcePage": "http://www.xabb.org.cn/relics/6.html",
+        "downloaded": false
+      }
+    ],
+    "name": "宣侠父穿过的长袍",
+    "category": "",
+    "era": "",
+    "description": "",
+    "contentHtml": "<p style=\"text-align: center; \"><img src=\"/baban/baban/upload/2020/12/28/e9c0214b314307550b4e1206c2ff34ba.png\" data-filename=\"2020/12/28/e9c0214b314307550b4e1206c2ff34ba.png\" style=\"width: 50%;\"><br></p><p><br></p><p>&nbsp; &nbsp; &nbsp; &nbsp;1983年，宣侠父的女儿宣平捐赠。<br></p>",
+    "contentText": "1983年，宣侠父的女儿宣平捐赠。",
+    "frontendReady": true,
+    "summary": "1983年，宣侠父的女儿宣平捐赠。",
+    "coverImage": "http://www.xabb.org.cn/baban/baban/upload/2020/12/28/e9c0214b314307550b4e1206c2ff34ba.png"
+  }
+]
