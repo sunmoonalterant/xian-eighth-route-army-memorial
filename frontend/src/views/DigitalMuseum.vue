@@ -10,7 +10,7 @@ const selected = ref(digitalGuide.courtyards[0])
   <PageHero title="数字纪念馆" description="七贤庄平面数字导览功能预览。" :image="digitalGuide.image" />
   <section class="section">
     <div class="shell">
-      <div class="notice">本阶段为七贤庄平面数字导览演示，不包含 360°VR；院落信息与相关内容均待史料核实。</div>
+      <div class="notice">本阶段为七贤庄平面数字导览演示，不包含 360°VR；院落信息与相关内容均待史料核实。官网已采集到“{{ digitalGuide.officialProtection.title }}”资料，作为旧址保护说明，仍待审核。</div>
       <div class="guide-layout">
         <div class="guide-map" aria-label="七贤庄平面数字导览示意图">
           <div class="map-heading"><span>七贤庄平面数字导览</span><small>COURTYARD PLAN · DEMO</small></div>
