@@ -7,17 +7,18 @@ function notFoundHandler(request, response) {
 }
 
 function errorHandler(error, request, response, next) {
-  console.error(error)
-
   if (response.headersSent) {
     return next(error)
   }
 
   const status = Number.isInteger(error.status) ? error.status : 500
+  if (status >= 500) {
+    console.error({ code: error.code || 'INTERNAL_ERROR', message: error.message })
+  }
   response.status(status).json({
     code: status,
     message: status === 500 ? 'internal server error' : error.message,
-    data: null,
+    data: status === 500 ? null : (error.data ?? null),
   })
 }
 

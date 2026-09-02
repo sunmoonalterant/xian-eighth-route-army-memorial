@@ -155,8 +155,9 @@
 | `reservation_no` | VARCHAR(32) | 否 | 唯一预约编号，如 `XA202609100001` | 预约服务生成 |
 | `name` | VARCHAR(50) | 否 | 预约人姓名 | 游客提交 |
 | `phone` | VARCHAR(20) | 否 | 联系电话，用于查询和重复检测 | 游客提交 |
+| `active_phone` | VARCHAR(20) 生成列 | 是 | 待确认/成功时为手机号；其他状态为 `NULL`，用于只限制有效预约 | 系统按状态计算 |
 | `id_card` | CHAR(18) | 否 | 身份证号；生产阶段应加密和脱敏 | 游客提交 |
-| `visit_date` | DATE | 否 | 预约参观日期 | 游客选择 |
+| `visit_date` | DATE | 否 | 预约参观日期；由服务端根据时段读取，不能信任客户端日期 | 预约时段 |
 | `schedule_id` | BIGINT UNSIGNED | 否 | 关联 `visit_schedule.id` | 游客选择/服务校验 |
 | `people_count` | INT UNSIGNED | 否 | 预约人数，必须大于 0 | 游客选择 |
 | `status` | TINYINT | 否 | 0 待确认、1 成功、2 取消、3 核销、4 过期 | 预约服务/后台维护 |

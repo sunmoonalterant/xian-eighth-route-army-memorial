@@ -3,6 +3,7 @@ const express = require('express')
 const dbPool = require('./config/db')
 const { errorHandler, notFoundHandler } = require('./middleware/errorHandler')
 const createContentRouter = require('./routes/content')
+const createReservationRouter = require('./routes/reservation')
 const createSystemRouter = require('./routes/system')
 
 function createApp({ pool = dbPool } = {}) {
@@ -13,6 +14,7 @@ function createApp({ pool = dbPool } = {}) {
   app.use(express.urlencoded({ extended: true }))
   app.use('/api', createSystemRouter(pool))
   app.use('/api', createContentRouter(pool))
+  app.use('/api', createReservationRouter(pool))
   app.use(notFoundHandler)
   app.use(errorHandler)
 

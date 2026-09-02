@@ -72,7 +72,7 @@
 | `courtyard` | `idx_courtyard_status(status)` | 支持导览热点只加载可展示院落。 |
 | `visit_schedule` | `uk_schedule_date_period(visit_date, period)` | 防止同一日期、时段重复建档。 |
 | `reservation` | `uk_reservation_no(reservation_no)` | 预约查询的唯一业务编号。 |
-| `reservation` | `uk_reservation_phone_visit_date(phone, visit_date)` | 硬性阻止同手机号同日期重复预约。 |
+| `reservation` | `uk_reservation_active_phone_visit_date(active_phone, visit_date)` | 硬性阻止同手机号同日期的有效预约重复；取消后允许重新预约。 |
 | `reservation` | `idx_reservation_schedule_status(schedule_id, status)` | 支持按排期统计有效预约。 |
 | `reservation` | `idx_reservation_visit_date(visit_date)` | 支持按到访日期管理预约。 |
 | `visit_log` | `idx_visit_log_created_at(created_at)` | 支持按日、周、月计算 PV。 |
@@ -86,7 +86,9 @@
 2. 检查排期存在、`status = 1`，且同手机号同日期没有预约记录。
 3. 计算 `capacity - reserved_count`；若小于 `people_count`，回滚并返回“人数不足”。
 4. 写入预约记录，再执行 `reserved_count = reserved_count + people_count`，最后提交事务。
-5. 取消成功预约时，同样锁定排期；更新预约状态后执行 `reserved_count = GREATEST(0, reserved_count - people_count)` 并提交。
+5. 取消成功预约时，同样锁定排期；更新预约状态后仅在 `reserved_count >= people_count` 时执行扣减，防止人数变为负数，再提交。
+
+预约编号使用按日期的 MySQL 命名锁生成：同一日期在锁内读取当前最大四位流水号后递增，`reservation_no` 唯一索引作为最后的数据库保护，避免并发请求生成重复编号。
 
 数据库的 `CHECK (reserved_count <= capacity)` 是最后一道数据完整性约束；事务和行锁负责避免并发超卖。
 
