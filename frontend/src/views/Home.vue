@@ -1,4 +1,7 @@
 <script setup>
+import { onMounted, ref } from 'vue'
+import { getMuseum } from '../api/museum'
+import { getRelics } from '../api/relics'
 import RelicCard from '../components/RelicCard.vue'
 import PersonCard from '../components/PersonCard.vue'
 import NewsCard from '../components/NewsCard.vue'
@@ -9,14 +12,31 @@ import { news } from '../data/news'
 import { digitalGuide } from '../data/digitalMuseum'
 import { images } from '../data/imageAssets'
 import { homeNarrative } from '../data/homeNarrative'
+import { toMuseumView, toRelicView } from '../utils/apiAdapters'
 
-const relicHighlights = [...relics, { id: 'r-05', name: '革命生活用品（演示）', era: '年代待核实', category: '生活用品', summary: '课程设计的展陈样例，正式资料待核实。', image: images.relicRaincoat }]
+const displayMuseum = ref(museum)
+const relicHighlights = ref(relics.slice(0, 4))
 const visitServices = [
   { title: '交通路线', to: '/visit', image: images.serviceRoute },
   { title: '开放时间', to: '/visit', image: images.serviceTime },
   { title: '讲解服务', to: '/visit', image: images.serviceGuide },
   { title: '服务须知', to: '/visit', image: images.serviceNotice },
 ]
+
+onMounted(async () => {
+  try {
+    displayMuseum.value = toMuseumView(await getMuseum(), museum)
+  } catch (error) {
+    console.warn('首页馆情 API 不可用，已使用本地资料。', error)
+  }
+
+  try {
+    const result = await getRelics({ page: 1, pageSize: 4 })
+    relicHighlights.value = result.list.map((item) => toRelicView(item, images.relicObject))
+  } catch (error) {
+    console.warn('首页文物 API 不可用，已使用本地资料。', error)
+  }
+})
 </script>
 
 <template>
@@ -29,7 +49,7 @@ const visitServices = [
       <RouterLink class="button button--light" to="/museum">走进纪念馆 <span class="button__arrow" aria-hidden="true">→</span></RouterLink>
     </div>
   </section>
-  <section class="section"><div class="shell intro-grid"><img :src="museum.image" alt="八路军西安办事处纪念馆旧址环境" /><div><div class="framed-title"><p class="eyebrow">ABOUT THE MEMORIAL</p><h2>走进纪念馆</h2></div><p>{{ museum.intro }}</p><RouterLink class="text-link" to="/museum">了解更多 <span aria-hidden="true">→</span></RouterLink></div></div></section>
+  <section class="section"><div class="shell intro-grid"><img :src="displayMuseum.image" alt="八路军西安办事处纪念馆旧址环境" /><div><div class="framed-title"><p class="eyebrow">ABOUT THE MEMORIAL</p><h2>走进纪念馆</h2></div><p>{{ displayMuseum.intro }}</p><RouterLink class="text-link" to="/museum">了解更多 <span aria-hidden="true">→</span></RouterLink></div></div></section>
   <section class="section section--paper"><div class="shell"><div class="center-heading"><p class="eyebrow">HISTORICAL TIMELINE</p><h2>峥嵘岁月</h2></div><ol class="home-timeline" aria-label="八路军西安办事处历史时间轴"><li v-for="(item, index) in homeNarrative.timeline" :key="item.year" class="home-timeline__item" :class="index % 2 === 0 ? 'home-timeline__item--upper' : 'home-timeline__item--lower'"><div class="home-timeline__card"><span class="home-timeline__step" aria-hidden="true">{{ String(index + 1).padStart(2, '0') }}</span><strong>{{ item.year }}</strong><span>{{ item.label }}</span></div><span class="home-timeline__node" aria-hidden="true" /></li></ol><RouterLink class="section-link" to="/history">查看完整时间轴 <span aria-hidden="true">→</span></RouterLink></div></section>
   <section class="section"><div class="shell"><div class="center-heading"><p class="eyebrow">COLLECTION HIGHLIGHTS</p><h2>馆藏精品</h2></div><div class="relic-grid"><RelicCard v-for="relic in relicHighlights" :key="relic.id" :relic="relic" /></div><RouterLink class="section-link" to="/relics">浏览全部文物 <span aria-hidden="true">→</span></RouterLink></div></section>
   <section class="section section--paper"><div class="shell"><div class="center-heading"><p class="eyebrow">HISTORICAL FIGURES</p><h2>历史人物</h2></div><div class="person-grid home-people"><PersonCard v-for="person in people" :key="person.id" :person="person" /></div><RouterLink class="section-link" to="/people">人物档案 <span aria-hidden="true">→</span></RouterLink></div></section>

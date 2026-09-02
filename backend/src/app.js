@@ -2,6 +2,7 @@ const cors = require('cors')
 const express = require('express')
 const dbPool = require('./config/db')
 const { errorHandler, notFoundHandler } = require('./middleware/errorHandler')
+const createContentRouter = require('./routes/content')
 const createSystemRouter = require('./routes/system')
 
 function createApp({ pool = dbPool } = {}) {
@@ -11,6 +12,7 @@ function createApp({ pool = dbPool } = {}) {
   app.use(express.json())
   app.use(express.urlencoded({ extended: true }))
   app.use('/api', createSystemRouter(pool))
+  app.use('/api', createContentRouter(pool))
   app.use(notFoundHandler)
   app.use(errorHandler)
 

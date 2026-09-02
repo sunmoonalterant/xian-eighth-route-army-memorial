@@ -13,9 +13,10 @@ function errorHandler(error, request, response, next) {
     return next(error)
   }
 
-  response.status(500).json({
-    code: 500,
-    message: 'internal server error',
+  const status = Number.isInteger(error.status) ? error.status : 500
+  response.status(status).json({
+    code: status,
+    message: status === 500 ? 'internal server error' : error.message,
     data: null,
   })
 }
