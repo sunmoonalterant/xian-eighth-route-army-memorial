@@ -1,14 +1,14 @@
 import axios from 'axios'
 
 const client = axios.create({
-  baseURL: import.meta.env.VITE_API_BASE_URL || 'http://localhost:3000/api',
+  baseURL: import.meta.env?.VITE_API_BASE_URL || 'http://localhost:3000/api',
   timeout: 5000,
 })
 
 client.interceptors.response.use(
   (response) => {
     const payload = response.data
-    if (payload?.code !== 200) {
+    if (![200, 201].includes(payload?.code)) {
       return Promise.reject(new Error(payload?.message || 'request failed'))
     }
     return payload.data
