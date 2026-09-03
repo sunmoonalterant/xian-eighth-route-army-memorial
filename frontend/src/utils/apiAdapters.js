@@ -25,5 +25,6 @@ export function toExhibitionCard(record, fallbackImage) {
     type: record.category || '未分类',
     time: [record.startDate, record.endDate].filter(Boolean).join(' 至 '),
     image: record.coverImage || fallbackImage,
+    to: `/exhibition/${record.id}`,
   }
 }

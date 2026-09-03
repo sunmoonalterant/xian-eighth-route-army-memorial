@@ -3,7 +3,7 @@ const path = require('node:path')
 require('dotenv').config()
 
 const pool = require('../src/config/db')
-const { exhibitionIdentity } = require('../src/utils/officialIdentity')
+const { dedupeExhibitions, exhibitionIdentity, preferLocalCoverImage } = require('../src/utils/officialIdentity')
 
 const reviewedDirectory = path.resolve(__dirname, '../../crawler/node/output/reviewed')
 
@@ -46,10 +46,11 @@ async function upsertRelic(record) {
 async function upsertExhibition(record) {
   const sourceUrl = toNullable(record.sourceUrl)
   const content = toNullable(record.contentText)
-  const values = [toNullable(record.title), toNullable(record.category), toNullable(record.summary), content, toNullable(record.coverImage), toNullable(record.startDate), toNullable(record.endDate), sourceUrl, 1]
-  const [existing] = await pool.execute('SELECT id FROM `exhibition` WHERE source_url <=> ? AND content <=> ? LIMIT 1', [sourceUrl, content])
-  if (existing.length) {
-    await pool.execute('UPDATE `exhibition` SET title = ?, category = ?, summary = ?, content = ?, cover_image = ?, start_date = ?, end_date = ?, source_url = ?, status = ? WHERE id = ?', [...values, existing[0].id])
+  const [candidates] = await pool.execute('SELECT id, title, content, cover_image, source_url FROM `exhibition` WHERE source_url <=> ? ORDER BY status DESC, id ASC', [sourceUrl])
+  const existing = candidates.find((candidate) => exhibitionIdentity(candidate) === exhibitionIdentity(record))
+  const values = [toNullable(record.title), toNullable(record.category), toNullable(record.summary), content, preferLocalCoverImage(toNullable(record.coverImage), existing?.cover_image), toNullable(record.startDate), toNullable(record.endDate), sourceUrl, 1]
+  if (existing) {
+    await pool.execute('UPDATE `exhibition` SET title = ?, category = ?, summary = ?, content = ?, cover_image = ?, start_date = ?, end_date = ?, source_url = ?, status = ? WHERE id = ?', [...values, existing.id])
     return 'updated'
   }
   await pool.execute('INSERT INTO `exhibition` (title, category, summary, content, cover_image, start_date, end_date, source_url, status) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)', values)
@@ -72,7 +73,7 @@ async function main() {
   ])
   const museumStats = await importRecords(museum, upsertMuseum)
   const relicStats = await importRecords(relics, upsertRelic)
-  const exhibitionStats = await importRecords(exhibitions, upsertExhibition)
+  const exhibitionStats = await importRecords(dedupeExhibitions(exhibitions), upsertExhibition)
 
   console.log(`museum inserted: ${museumStats.inserted}, updated: ${museumStats.updated}`)
   console.log(`relic inserted: ${relicStats.inserted}, updated: ${relicStats.updated}`)

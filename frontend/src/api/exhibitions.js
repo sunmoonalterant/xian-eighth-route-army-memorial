@@ -1,9 +1,13 @@
-import client from './client'
+import client from './client.js'
 
-export function getExhibitions(params) {
-  return client.get('/exhibitions', { params })
+export function createExhibitionApi(http) {
+  return {
+    getList: (params) => http.get('/exhibitions', { params }),
+    getById: (id) => http.get(`/exhibitions/${id}`),
+  }
 }
 
-export function getExhibitionById(id) {
-  return client.get(`/exhibitions/${id}`)
-}
+const exhibitionApi = createExhibitionApi(client)
+
+export const getExhibitions = exhibitionApi.getList
+export const getExhibitionById = exhibitionApi.getById

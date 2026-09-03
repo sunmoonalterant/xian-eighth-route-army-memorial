@@ -5,7 +5,7 @@ import { adminSession, clearAdminSession, getAdminToken, setAdminProfile } from 
 const routes = [
   ['/', 'Home', 'Home'], ['/museum', 'Museum', 'Museum'], ['/history', 'History', 'History'],
   ['/relics', 'Relics', 'Relics'], ['/relic/:id', 'RelicDetail', 'RelicDetail'], ['/people', 'People', 'People'],
-  ['/person/:id', 'PersonDetail', 'PersonDetail'], ['/exhibitions', 'Exhibitions', 'Exhibitions'], ['/news', 'News', 'News'],
+  ['/person/:id', 'PersonDetail', 'PersonDetail'], ['/exhibitions', 'Exhibitions', 'Exhibitions'], ['/exhibition/:id', 'ExhibitionDetail', 'ExhibitionDetail'], ['/news', 'News', 'News'],
   ['/news/:id', 'NewsDetail', 'NewsDetail'], ['/digital-museum', 'DigitalMuseum', 'DigitalMuseum'], ['/visit', 'Visit', 'Visit'],
   ['/reservation', 'Reservation', 'Reservation'], ['/reservation/result', 'ReservationResult', 'ReservationResult'],
   ['/reservation/query', 'ReservationQuery', 'ReservationQuery'], ['/search', 'Search', 'Search'],
