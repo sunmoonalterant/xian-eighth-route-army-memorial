@@ -9,12 +9,16 @@
     "start": "node src/server.js",
     "seed:official": "node scripts/seedOfficialData.js",
     "seed:visit-schedules": "node scripts/seedVisitSchedules.js",
+    "migrate:admin-display-name": "node scripts/migrateAdminDisplayName.js",
+    "seed:admin": "node scripts/seedAdmin.js",
     "test": "node --test tests/*.test.js"
   },
   "dependencies": {
     "cors": "^2.8.5",
+    "bcryptjs": "^3.0.3",
     "dotenv": "^17.2.2",
     "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.3",
     "mysql2": "^3.14.3"
   },
   "devDependencies": {

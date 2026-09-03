@@ -222,6 +222,7 @@ CREATE TABLE IF NOT EXISTS `visit_log` (
 CREATE TABLE IF NOT EXISTS `admin` (
   `id` BIGINT UNSIGNED NOT NULL AUTO_INCREMENT COMMENT '主键',
   `username` VARCHAR(100) NOT NULL COMMENT '管理员登录名',
+  `display_name` VARCHAR(100) NULL COMMENT '管理员显示名称',
   `password_hash` VARCHAR(255) NOT NULL COMMENT '密码哈希，禁止明文',
   `role` ENUM('admin', 'editor') NOT NULL DEFAULT 'editor' COMMENT '管理员角色',
   `status` TINYINT NOT NULL DEFAULT 1 COMMENT '1启用，0停用',

@@ -199,6 +199,7 @@
 | --- | --- | --- | --- | --- |
 | `id` | BIGINT UNSIGNED | 否 | 主键 | 系统生成 |
 | `username` | VARCHAR(100) | 否 | 唯一登录名 | 后台维护 |
+| `display_name` | VARCHAR(100) | 是 | 管理员显示名称 | 后台维护 |
 | `password_hash` | VARCHAR(255) | 否 | bcrypt/Argon2 密码哈希，禁止明文 | 管理员创建流程 |
 | `role` | ENUM('admin','editor') | 否 | 管理员或内容编辑 | 后台维护 |
 | `status` | TINYINT | 否 | 1 启用，0 停用 | 后台维护 |
