@@ -22,6 +22,9 @@ routes.unshift(
     children: [
       { path: '', redirect: '/admin/reservations' },
       { path: 'reservations', name: 'AdminReservations', component: () => import('../views/AdminReservations.vue'), meta: { requiresAdmin: true } },
+      { path: 'relics', name: 'AdminRelics', component: () => import('../views/AdminRelics.vue'), meta: { requiresAdmin: true } },
+      { path: 'news', name: 'AdminNews', component: () => import('../views/AdminNews.vue'), meta: { requiresAdmin: true } },
+      { path: 'exhibitions', name: 'AdminExhibitions', component: () => import('../views/AdminExhibitions.vue'), meta: { requiresAdmin: true } },
     ],
   },
 )

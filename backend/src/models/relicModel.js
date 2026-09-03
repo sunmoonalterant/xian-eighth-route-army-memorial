@@ -12,7 +12,7 @@ function buildFilters({ keyword, categoryId }) {
   }
 
   return {
-    clause: conditions.length ? `WHERE ${conditions.join(' AND ')}` : '',
+    clause: `WHERE r.status = 1${conditions.length ? ` AND ${conditions.join(' AND ')}` : ''}`,
     values,
   }
 }
@@ -43,7 +43,7 @@ async function findRelicById(pool, id) {
            r.cover_image, r.views, r.source_url, r.created_at, r.updated_at
     FROM \`relic\` r
     LEFT JOIN \`relic_category\` rc ON rc.id = r.category_id
-    WHERE r.id = ?
+    WHERE r.id = ? AND r.status = 1
     LIMIT 1
   `, [id])
   return rows[0] || null

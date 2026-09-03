@@ -1,11 +1,12 @@
 <script setup>
 import { computed } from 'vue'
-import { useRouter } from 'vue-router'
+import { useRoute, useRouter } from 'vue-router'
 import { ElButton, ElMenu, ElMenuItem } from 'element-plus'
 import 'element-plus/dist/index.css'
 import { adminSession, clearAdminSession } from '../stores/adminSession.js'
 
 const router = useRouter()
+const route = useRoute()
 const displayName = computed(() => adminSession.admin?.displayName || adminSession.admin?.username || '管理员')
 
 function logout() {
@@ -21,8 +22,11 @@ function logout() {
         <span>八路军西安办事处纪念馆</span>
         <small>运营管理后台</small>
       </RouterLink>
-      <ElMenu class="admin-menu" router default-active="/admin/reservations">
+      <ElMenu class="admin-menu" router :default-active="route.path">
         <ElMenuItem index="/admin/reservations">预约管理</ElMenuItem>
+        <ElMenuItem index="/admin/relics">文物管理</ElMenuItem>
+        <ElMenuItem index="/admin/news">新闻管理</ElMenuItem>
+        <ElMenuItem index="/admin/exhibitions">展览管理</ElMenuItem>
       </ElMenu>
     </aside>
     <section class="admin-main">

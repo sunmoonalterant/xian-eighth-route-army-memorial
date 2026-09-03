@@ -12,12 +12,12 @@ export const officialExhibitions = [
     "verified": false,
     "reviewStatus": "pending",
     "imageUrls": [
-      "http://www.xabb.org.cn/baban/baban/upload/2020/10/16/b68afe9f93f38e69273e643a7ca33890.JPG",
+      "/images/exhibitions/exhibition-2-01.JPG",
       "http://www.xabb.org.cn/baban/baban/upload/2020/10/16/08ef6ebeaa84bf546572d5101e4aa123.JPG"
     ],
     "images": [
       {
-        "url": "http://www.xabb.org.cn/baban/baban/upload/2020/10/16/b68afe9f93f38e69273e643a7ca33890.JPG",
+        "url": "/images/exhibitions/exhibition-2-01.JPG",
         "alt": "",
         "caption": "",
         "sourcePage": "http://www.xabb.org.cn/display/4.html",
@@ -38,7 +38,7 @@ export const officialExhibitions = [
     "startDate": "",
     "endDate": "",
     "frontendReady": true,
-    "coverImage": "http://www.xabb.org.cn/baban/baban/upload/2020/10/16/b68afe9f93f38e69273e643a7ca33890.JPG"
+    "coverImage": "/images/exhibitions/exhibition-2-01.JPG"
   },
   {
     "id": "7f2437fe-3710-4f66-b539-abb856407012",
@@ -53,12 +53,12 @@ export const officialExhibitions = [
     "verified": false,
     "reviewStatus": "pending",
     "imageUrls": [
-      "http://www.xabb.org.cn/baban/baban/upload/2021/08/26/e9d3272190728ed579c1b984ec5c1940.jpg",
+      "/images/exhibitions/exhibition-3-01.jpg",
       "http://www.xabb.org.cn/baban/baban/upload/2021/08/26/d20ca3c26727783bbab7ef0c4ea06ea5.jpg"
     ],
     "images": [
       {
-        "url": "http://www.xabb.org.cn/baban/baban/upload/2021/08/26/e9d3272190728ed579c1b984ec5c1940.jpg",
+        "url": "/images/exhibitions/exhibition-3-01.jpg",
         "alt": "",
         "caption": "",
         "sourcePage": "http://www.xabb.org.cn/display/4.html",
@@ -79,7 +79,7 @@ export const officialExhibitions = [
     "startDate": "",
     "endDate": "",
     "frontendReady": true,
-    "coverImage": "http://www.xabb.org.cn/baban/baban/upload/2021/08/26/e9d3272190728ed579c1b984ec5c1940.jpg"
+    "coverImage": "/images/exhibitions/exhibition-3-01.jpg"
   },
   {
     "id": "575f9b96-95ef-41b5-b952-55525ddf40ea",
@@ -94,11 +94,11 @@ export const officialExhibitions = [
     "verified": false,
     "reviewStatus": "pending",
     "imageUrls": [
-      "http://www.xabb.org.cn/baban/baban/upload/2021/08/26/1176d0cc74c506909c5e94a930f51328.jpg"
+      "/images/exhibitions/exhibition-1-01.jpg"
     ],
     "images": [
       {
-        "url": "http://www.xabb.org.cn/baban/baban/upload/2021/08/26/1176d0cc74c506909c5e94a930f51328.jpg",
+        "url": "/images/exhibitions/exhibition-1-01.jpg",
         "alt": "",
         "caption": "",
         "sourcePage": "http://www.xabb.org.cn/display/4.html",
@@ -112,6 +112,6 @@ export const officialExhibitions = [
     "startDate": "",
     "endDate": "",
     "frontendReady": true,
-    "coverImage": "http://www.xabb.org.cn/baban/baban/upload/2021/08/26/1176d0cc74c506909c5e94a930f51328.jpg"
+    "coverImage": "/images/exhibitions/exhibition-1-01.jpg"
   }
 ]

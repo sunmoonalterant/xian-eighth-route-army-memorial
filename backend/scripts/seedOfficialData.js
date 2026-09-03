@@ -18,7 +18,7 @@ async function loadReviewed(name) {
 
 async function upsertMuseum(record) {
   const title = toNullable(record.title) || toNullable(record.name)
-  const values = [title, toNullable(record.summary), toNullable(record.contentText), toNullable(record.coverImage), toNullable(record.sourceUrl), 0]
+  const values = [title, toNullable(record.summary), toNullable(record.contentText), toNullable(record.coverImage), toNullable(record.sourceUrl), 1]
   const [existing] = await pool.execute('SELECT id FROM `museum` WHERE source_url = ? LIMIT 1', [toNullable(record.sourceUrl)])
   if (existing.length) {
     await pool.execute('UPDATE `museum` SET title = ?, summary = ?, content = ?, cover_image = ?, source_url = ?, status = ? WHERE id = ?', [...values, existing[0].id])
@@ -31,7 +31,7 @@ async function upsertMuseum(record) {
 async function upsertRelic(record) {
   const sourceApiId = toNullable(record.sourceApiId)
   const sourceUrl = toNullable(record.sourceUrl)
-  const values = [toNullable(record.name) || toNullable(record.title), null, toNullable(record.era), toNullable(record.summary), toNullable(record.contentText), toNullable(record.coverImage), sourceUrl, sourceApiId, 0]
+  const values = [toNullable(record.name) || toNullable(record.title), null, toNullable(record.era), toNullable(record.summary), toNullable(record.contentText), toNullable(record.coverImage), sourceUrl, sourceApiId, 1]
   const [existing] = sourceApiId
     ? await pool.execute('SELECT id FROM `relic` WHERE source_api_id = ? LIMIT 1', [sourceApiId])
     : await pool.execute('SELECT id FROM `relic` WHERE source_url = ? LIMIT 1', [sourceUrl])
@@ -46,7 +46,7 @@ async function upsertRelic(record) {
 async function upsertExhibition(record) {
   const sourceUrl = toNullable(record.sourceUrl)
   const content = toNullable(record.contentText)
-  const values = [toNullable(record.title), toNullable(record.category), toNullable(record.summary), content, toNullable(record.coverImage), toNullable(record.startDate), toNullable(record.endDate), sourceUrl, 0]
+  const values = [toNullable(record.title), toNullable(record.category), toNullable(record.summary), content, toNullable(record.coverImage), toNullable(record.startDate), toNullable(record.endDate), sourceUrl, 1]
   const [existing] = await pool.execute('SELECT id FROM `exhibition` WHERE source_url <=> ? AND content <=> ? LIMIT 1', [sourceUrl, content])
   if (existing.length) {
     await pool.execute('UPDATE `exhibition` SET title = ?, category = ?, summary = ?, content = ?, cover_image = ?, start_date = ?, end_date = ?, source_url = ?, status = ? WHERE id = ?', [...values, existing[0].id])

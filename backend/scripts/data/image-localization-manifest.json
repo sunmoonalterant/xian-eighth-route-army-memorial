@@ -1,0 +1,128 @@
+{
+  "generatedAt": "2026-09-03T02:48:53.648Z",
+  "planned": 17,
+  "succeeded": 17,
+  "failed": 0,
+  "skipped": 0,
+  "records": [
+    {
+      "table": "relic",
+      "id": 1,
+      "sourceUrl": "http://www.xabb.org.cn/baban/baban/upload/2020/12/28/af8988497ea0acb970fb7a34edb3fa43.png",
+      "localPath": "/images/relics/relic-1-01.png",
+      "status": "localized"
+    },
+    {
+      "table": "relic",
+      "id": 2,
+      "sourceUrl": "http://www.xabb.org.cn/baban/baban/upload/2020/12/28/89b04fd85ce355054b93e97ca225d12a.png",
+      "localPath": "/images/relics/relic-2-01.png",
+      "status": "localized"
+    },
+    {
+      "table": "relic",
+      "id": 3,
+      "sourceUrl": "http://www.xabb.org.cn/baban/baban/upload/2020/12/28/c5675fe7c1c436b6782f260614db242e.png",
+      "localPath": "/images/relics/relic-3-01.png",
+      "status": "localized"
+    },
+    {
+      "table": "relic",
+      "id": 4,
+      "sourceUrl": "http://www.xabb.org.cn/baban/baban/upload/2020/12/28/9b513d0f2f12f80f695b118736bed39c.png",
+      "localPath": "/images/relics/relic-4-01.png",
+      "status": "localized"
+    },
+    {
+      "table": "relic",
+      "id": 5,
+      "sourceUrl": "http://www.xabb.org.cn/baban/baban/upload/2020/12/28/09997c656206765e9f94a5657846d853.png",
+      "localPath": "/images/relics/relic-5-01.png",
+      "status": "localized"
+    },
+    {
+      "table": "relic",
+      "id": 6,
+      "sourceUrl": "http://www.xabb.org.cn/baban/baban/upload/2020/12/28/97d273b6b8d24431fe588185123997d7.png",
+      "localPath": "/images/relics/relic-6-01.png",
+      "status": "localized"
+    },
+    {
+      "table": "relic",
+      "id": 7,
+      "sourceUrl": "http://www.xabb.org.cn/baban/baban/upload/2020/12/28/b14e7c1f69aae82c651c2559fbd957f5.png",
+      "localPath": "/images/relics/relic-7-01.png",
+      "status": "localized"
+    },
+    {
+      "table": "relic",
+      "id": 8,
+      "sourceUrl": "http://www.xabb.org.cn/baban/baban/upload/2020/12/28/a15ad6c4acf419e23e977f515b769883.png",
+      "localPath": "/images/relics/relic-8-01.png",
+      "status": "localized"
+    },
+    {
+      "table": "relic",
+      "id": 9,
+      "sourceUrl": "http://www.xabb.org.cn/baban/baban/upload/2020/12/28/e9c0214b314307550b4e1206c2ff34ba.png",
+      "localPath": "/images/relics/relic-9-01.png",
+      "status": "localized"
+    },
+    {
+      "table": "article",
+      "id": 1,
+      "sourceUrl": "http://www.xabb.org.cn/baban/baban/upload/2026/08/24/f796dacfb1fe321a1bf4ccbbf7e1f395.png",
+      "localPath": "/images/news/news-1-01.png",
+      "status": "localized"
+    },
+    {
+      "table": "article",
+      "id": 2,
+      "sourceUrl": "http://www.xabb.org.cn/baban/baban/upload/2026/08/24/211b84cde9b0b6b195bc9ce69aa66d12.jpg",
+      "localPath": "/images/news/news-2-01.jpg",
+      "status": "localized"
+    },
+    {
+      "table": "article",
+      "id": 3,
+      "sourceUrl": "http://www.xabb.org.cn/baban/baban/upload/2026/08/24/c55986bffb3fedc00d5b646538716362.png",
+      "localPath": "/images/news/news-3-01.png",
+      "status": "localized"
+    },
+    {
+      "table": "article",
+      "id": 4,
+      "sourceUrl": "http://www.xabb.org.cn/baban/baban/upload/2026/08/24/ae41e7b6666671aee75b9cac638dee2e.png",
+      "localPath": "/images/news/news-4-01.png",
+      "status": "localized"
+    },
+    {
+      "table": "article",
+      "id": 5,
+      "sourceUrl": "http://www.xabb.org.cn/baban/baban/upload/2026/08/24/7bfea60ab2ec0fa35647c0d369073001.png",
+      "localPath": "/images/news/news-5-01.png",
+      "status": "localized"
+    },
+    {
+      "table": "exhibition",
+      "id": 1,
+      "sourceUrl": "http://www.xabb.org.cn/baban/baban/upload/2021/08/26/1176d0cc74c506909c5e94a930f51328.jpg",
+      "localPath": "/images/exhibitions/exhibition-1-01.jpg",
+      "status": "localized"
+    },
+    {
+      "table": "exhibition",
+      "id": 2,
+      "sourceUrl": "http://www.xabb.org.cn/baban/baban/upload/2020/10/16/b68afe9f93f38e69273e643a7ca33890.JPG",
+      "localPath": "/images/exhibitions/exhibition-2-01.JPG",
+      "status": "localized"
+    },
+    {
+      "table": "exhibition",
+      "id": 3,
+      "sourceUrl": "http://www.xabb.org.cn/baban/baban/upload/2021/08/26/e9d3272190728ed579c1b984ec5c1940.jpg",
+      "localPath": "/images/exhibitions/exhibition-3-01.jpg",
+      "status": "localized"
+    }
+  ]
+}
