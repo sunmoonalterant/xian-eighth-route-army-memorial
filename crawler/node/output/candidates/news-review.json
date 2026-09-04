@@ -1,0 +1,17 @@
+[
+  {
+    "candidateId": "news-review-official-batch",
+    "type": "review",
+    "recordCount": 5,
+    "articleIds": ["1208", "1209", "1210", "1211", "1212"],
+    "needsSupplement": false,
+    "missingFields": ["逐条发布日期核验", "逐条分类核验", "逐条封面与文章对应复核"],
+    "sourceUrl": "http://www.xabb.org.cn/cultureInfo/3.html",
+    "sourceName": "八路军西安办事处纪念馆官网文化资讯栏目",
+    "sourceLevel": "A",
+    "retrievedAt": "2026-09-04T09:51:52+08:00",
+    "verified": false,
+    "reviewStatus": "pending",
+    "evidence": "officialNews.js 保存5条带稳定文章参数 id=1208—1212 的官网公开资讯；均有本地化封面和来源 URL。数量已足以支持当前页面，不以补充旧闻为目标。"
+  }
+]

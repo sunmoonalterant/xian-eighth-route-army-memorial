@@ -1,6 +1,7 @@
 const exhibitionService = require('../services/exhibitionService')
 const museumService = require('../services/museumService')
 const relicService = require('../services/relicService')
+const personService = require('../services/personService')
 const { createHttpError } = require('../utils/httpError')
 const { parsePagination, parsePositiveInteger } = require('../utils/pagination')
 
@@ -57,6 +58,8 @@ function createContentController(pool) {
         next(error)
       }
     },
+    getPeople: async (request,response,next)=>{try{const p=parsePagination(request.query);const keyword=typeof request.query.keyword==='string'?request.query.keyword.trim():'';const result=await personService.getPeople(pool,{keyword},p);response.json({code:200,message:'success',data:{...result,page:p.page,pageSize:p.pageSize}})}catch(error){next(error)}},
+    getPerson: async (request,response,next)=>{try{const id=parsePositiveInteger(request.params.id,'id');const person=await personService.getPerson(pool,id);if(!person)throw createHttpError(404,'person not found');response.json({code:200,message:'success',data:person})}catch(error){next(error)}},
   }
 }
 

@@ -1,0 +1,370 @@
+[
+  {
+    "candidateId": "MUSEUM-001",
+    "module": "museum",
+    "originalRow": {
+      "序号": 1,
+      "项目": "建馆时间",
+      "内容": "1959年成立并开放；叶剑英题写馆名",
+      "来源(URL)": "http://www.xabb.org.cn/exhibitionHall/2.html",
+      "来源类型": "官网展馆介绍 + 陕西省地方志",
+      "核验状态": "已核验"
+    },
+    "originalText": {
+      "name": "建馆时间",
+      "sourceType": "官网展馆介绍 + 陕西省地方志",
+      "sourceUrl": "http://www.xabb.org.cn/exhibitionHall/2.html",
+      "sourceEvidenceStatus": "已核验"
+    },
+    "sourceEvidenceStatus": "strong",
+    "sourceLevel": "A",
+    "sourceAvailability": "notChecked",
+    "conflictStatus": "none",
+    "conflictingValues": [],
+    "conflictingSources": [],
+    "missingFields": [],
+    "imageStatus": "missing",
+    "recommendedDecision": "APPROVE",
+    "recommendationReason": "来源和核心字段满足审核建议条件；仍需由人工作出最终决定。",
+    "reviewDecision": null,
+    "verified": false,
+    "reviewStatus": "pending",
+    "duplicateCandidates": [],
+    "batch": "Batch 1"
+  },
+  {
+    "candidateId": "MUSEUM-002",
+    "module": "museum",
+    "originalRow": {
+      "序号": 2,
+      "项目": "馆址",
+      "内容": "陕西省西安市新城区北新街七贤庄",
+      "来源(URL)": "http://www.xabb.org.cn/exhibitionHall/2.html",
+      "来源类型": "官网展馆介绍",
+      "核验状态": "已核验"
+    },
+    "originalText": {
+      "name": "馆址",
+      "sourceType": "官网展馆介绍",
+      "sourceUrl": "http://www.xabb.org.cn/exhibitionHall/2.html",
+      "sourceEvidenceStatus": "已核验"
+    },
+    "sourceEvidenceStatus": "strong",
+    "sourceLevel": "A",
+    "sourceAvailability": "notChecked",
+    "conflictStatus": "none",
+    "conflictingValues": [],
+    "conflictingSources": [],
+    "missingFields": [],
+    "imageStatus": "missing",
+    "recommendedDecision": "APPROVE",
+    "recommendationReason": "来源和核心字段满足审核建议条件；仍需由人工作出最终决定。",
+    "reviewDecision": null,
+    "verified": false,
+    "reviewStatus": "pending",
+    "duplicateCandidates": [],
+    "batch": "Batch 1"
+  },
+  {
+    "candidateId": "MUSEUM-003",
+    "module": "museum",
+    "originalRow": {
+      "序号": 3,
+      "项目": "建馆背景",
+      "内容": "依托八路军驻陕办事处（1936-1946，秘密交通站/红军联络处/八路军驻陕办事处）旧址建立",
+      "来源(URL)": "http://www.xabb.org.cn/exhibitionHall/2.html",
+      "来源类型": "官网展馆介绍",
+      "核验状态": "已核验"
+    },
+    "originalText": {
+      "name": "建馆背景",
+      "sourceType": "官网展馆介绍",
+      "sourceUrl": "http://www.xabb.org.cn/exhibitionHall/2.html",
+      "sourceEvidenceStatus": "已核验"
+    },
+    "sourceEvidenceStatus": "strong",
+    "sourceLevel": "A",
+    "sourceAvailability": "notChecked",
+    "conflictStatus": "none",
+    "conflictingValues": [],
+    "conflictingSources": [],
+    "missingFields": [],
+    "imageStatus": "missing",
+    "recommendedDecision": "APPROVE",
+    "recommendationReason": "来源和核心字段满足审核建议条件；仍需由人工作出最终决定。",
+    "reviewDecision": null,
+    "verified": false,
+    "reviewStatus": "pending",
+    "duplicateCandidates": [],
+    "batch": "Batch 1"
+  },
+  {
+    "candidateId": "MUSEUM-004",
+    "module": "museum",
+    "originalRow": {
+      "序号": 4,
+      "项目": "馆藏规模",
+      "内容": "文物695件/套，回忆录800余篇，历史照片3000多张",
+      "来源(URL)": "http://www.xabb.org.cn/exhibitionHall/2.html",
+      "来源类型": "官网展馆介绍（2024年口径）",
+      "核验状态": "已核验（注：2018年报道称文物460多件，建议以官网最新为准）"
+    },
+    "originalText": {
+      "name": "馆藏规模",
+      "sourceType": "官网展馆介绍（2024年口径）",
+      "sourceUrl": "http://www.xabb.org.cn/exhibitionHall/2.html",
+      "sourceEvidenceStatus": "已核验（注：2018年报道称文物460多件，建议以官网最新为准）"
+    },
+    "sourceEvidenceStatus": "strong",
+    "sourceLevel": "A",
+    "sourceAvailability": "notChecked",
+    "conflictStatus": "none",
+    "conflictingValues": [],
+    "conflictingSources": [],
+    "missingFields": [],
+    "imageStatus": "missing",
+    "recommendedDecision": "APPROVE",
+    "recommendationReason": "来源和核心字段满足审核建议条件；仍需由人工作出最终决定。",
+    "reviewDecision": null,
+    "verified": false,
+    "reviewStatus": "pending",
+    "duplicateCandidates": [],
+    "batch": "Batch 1"
+  },
+  {
+    "candidateId": "MUSEUM-005",
+    "module": "museum",
+    "originalRow": {
+      "序号": 5,
+      "项目": "开放院落",
+      "内容": "一号院旧址、三号院统战科旧址、四号院采办委员会暨经理科旧址、七号院联合招生委员会旧址",
+      "来源(URL)": "http://www.xabb.org.cn/exhibitionHall/2.html",
+      "来源类型": "官网展馆介绍",
+      "核验状态": "已核验"
+    },
+    "originalText": {
+      "name": "开放院落",
+      "sourceType": "官网展馆介绍",
+      "sourceUrl": "http://www.xabb.org.cn/exhibitionHall/2.html",
+      "sourceEvidenceStatus": "已核验"
+    },
+    "sourceEvidenceStatus": "strong",
+    "sourceLevel": "A",
+    "sourceAvailability": "notChecked",
+    "conflictStatus": "none",
+    "conflictingValues": [],
+    "conflictingSources": [],
+    "missingFields": [],
+    "imageStatus": "missing",
+    "recommendedDecision": "APPROVE",
+    "recommendationReason": "来源和核心字段满足审核建议条件；仍需由人工作出最终决定。",
+    "reviewDecision": null,
+    "verified": false,
+    "reviewStatus": "pending",
+    "duplicateCandidates": [],
+    "batch": "Batch 2"
+  },
+  {
+    "candidateId": "MUSEUM-006",
+    "module": "museum",
+    "originalRow": {
+      "序号": 6,
+      "项目": "陈列体系",
+      "内容": "'一体两翼'：基本陈列'千秋七贤庄' + 专题展'我要去延安''大道共行'；另有年度特别展、陕西革命文物+互联网体验中心",
+      "来源(URL)": "http://www.xabb.org.cn/exhibitionHall/2.html",
+      "来源类型": "官网展馆介绍",
+      "核验状态": "已核验"
+    },
+    "originalText": {
+      "name": "陈列体系",
+      "sourceType": "官网展馆介绍",
+      "sourceUrl": "http://www.xabb.org.cn/exhibitionHall/2.html",
+      "sourceEvidenceStatus": "已核验"
+    },
+    "sourceEvidenceStatus": "strong",
+    "sourceLevel": "A",
+    "sourceAvailability": "notChecked",
+    "conflictStatus": "none",
+    "conflictingValues": [],
+    "conflictingSources": [],
+    "missingFields": [],
+    "imageStatus": "missing",
+    "recommendedDecision": "APPROVE",
+    "recommendationReason": "来源和核心字段满足审核建议条件；仍需由人工作出最终决定。",
+    "reviewDecision": null,
+    "verified": false,
+    "reviewStatus": "pending",
+    "duplicateCandidates": [],
+    "batch": "Batch 2"
+  },
+  {
+    "candidateId": "MUSEUM-007",
+    "module": "museum",
+    "originalRow": {
+      "序号": 7,
+      "项目": "荣誉（1）",
+      "内容": "1988年全国重点文物保护单位；1997年全国爱国主义教育示范基地；2006年全国红色旅游经典景区",
+      "来源(URL)": "http://www.xabb.org.cn/exhibitionHall/2.html",
+      "来源类型": "官网展馆介绍",
+      "核验状态": "已核验"
+    },
+    "originalText": {
+      "name": "荣誉（1）",
+      "sourceType": "官网展馆介绍",
+      "sourceUrl": "http://www.xabb.org.cn/exhibitionHall/2.html",
+      "sourceEvidenceStatus": "已核验"
+    },
+    "sourceEvidenceStatus": "strong",
+    "sourceLevel": "A",
+    "sourceAvailability": "notChecked",
+    "conflictStatus": "none",
+    "conflictingValues": [],
+    "conflictingSources": [],
+    "missingFields": [],
+    "imageStatus": "missing",
+    "recommendedDecision": "APPROVE",
+    "recommendationReason": "来源和核心字段满足审核建议条件；仍需由人工作出最终决定。",
+    "reviewDecision": null,
+    "verified": false,
+    "reviewStatus": "pending",
+    "duplicateCandidates": [],
+    "batch": "Batch 2"
+  },
+  {
+    "candidateId": "MUSEUM-008",
+    "module": "museum",
+    "originalRow": {
+      "序号": 8,
+      "项目": "荣誉（2）",
+      "内容": "2015年第二批国家级抗战纪念设施、遗址名录；2020年全国未成年人思想道德建设工作先进单位",
+      "来源(URL)": "http://www.xabb.org.cn/exhibitionHall/2.html",
+      "来源类型": "官网展馆介绍",
+      "核验状态": "已核验"
+    },
+    "originalText": {
+      "name": "荣誉（2）",
+      "sourceType": "官网展馆介绍",
+      "sourceUrl": "http://www.xabb.org.cn/exhibitionHall/2.html",
+      "sourceEvidenceStatus": "已核验"
+    },
+    "sourceEvidenceStatus": "strong",
+    "sourceLevel": "A",
+    "sourceAvailability": "notChecked",
+    "conflictStatus": "none",
+    "conflictingValues": [],
+    "conflictingSources": [],
+    "missingFields": [],
+    "imageStatus": "missing",
+    "recommendedDecision": "APPROVE",
+    "recommendationReason": "来源和核心字段满足审核建议条件；仍需由人工作出最终决定。",
+    "reviewDecision": null,
+    "verified": false,
+    "reviewStatus": "pending",
+    "duplicateCandidates": [],
+    "batch": "Batch 2"
+  },
+  {
+    "candidateId": "MUSEUM-009",
+    "module": "museum",
+    "originalRow": {
+      "序号": 9,
+      "项目": "荣誉（3）",
+      "内容": "2022年全国首批'大思政课'党史新中国史教育专题实践教学基地；2023年西安国家安全宣传教育基地；2025年全国AAAA级旅游景区",
+      "来源(URL)": "http://www.xabb.org.cn/exhibitionHall/2.html",
+      "来源类型": "官网展馆介绍",
+      "核验状态": "已核验"
+    },
+    "originalText": {
+      "name": "荣誉（3）",
+      "sourceType": "官网展馆介绍",
+      "sourceUrl": "http://www.xabb.org.cn/exhibitionHall/2.html",
+      "sourceEvidenceStatus": "已核验"
+    },
+    "sourceEvidenceStatus": "strong",
+    "sourceLevel": "A",
+    "sourceAvailability": "notChecked",
+    "conflictStatus": "none",
+    "conflictingValues": [],
+    "conflictingSources": [],
+    "missingFields": [],
+    "imageStatus": "missing",
+    "recommendedDecision": "APPROVE",
+    "recommendationReason": "来源和核心字段满足审核建议条件；仍需由人工作出最终决定。",
+    "reviewDecision": null,
+    "verified": false,
+    "reviewStatus": "pending",
+    "duplicateCandidates": [],
+    "batch": "Batch 2"
+  },
+  {
+    "candidateId": "MUSEUM-010",
+    "module": "museum",
+    "originalRow": {
+      "序号": 10,
+      "项目": "历史地位",
+      "内容": "全国所有八路军办事处中成立时间最早、影响最大、坚持斗争时间最长的办事处；'红色桥梁''红色驿站'；被称为西安城内'小延安'",
+      "来源(URL)": "http://sxgmww.com/show-3-39-1.html",
+      "来源类型": "陕西互联网+革命文物教育平台 + 地方志",
+      "核验状态": "已核验"
+    },
+    "originalText": {
+      "name": "历史地位",
+      "sourceType": "陕西互联网+革命文物教育平台 + 地方志",
+      "sourceUrl": "http://sxgmww.com/show-3-39-1.html",
+      "sourceEvidenceStatus": "已核验"
+    },
+    "sourceEvidenceStatus": "strong",
+    "sourceLevel": "A",
+    "sourceAvailability": "notChecked",
+    "conflictStatus": "none",
+    "conflictingValues": [],
+    "conflictingSources": [],
+    "missingFields": [],
+    "imageStatus": "missing",
+    "recommendedDecision": "APPROVE",
+    "recommendationReason": "来源和核心字段满足审核建议条件；仍需由人工作出最终决定。",
+    "reviewDecision": null,
+    "verified": false,
+    "reviewStatus": "pending",
+    "duplicateCandidates": [],
+    "batch": "Batch 2"
+  },
+  {
+    "candidateId": "MUSEUM-011",
+    "module": "museum",
+    "originalRow": {
+      "序号": 11,
+      "项目": "名誉/补充说明",
+      "内容": "2006年全国红色旅游经典景区（官网口径）；陕西文物平台载2005年——以官网为准",
+      "来源(URL)": "http://sxgmww.com/show-3-39-1.html",
+      "来源类型": "来源差异标注",
+      "核验状态": "年份口径差异已标注"
+    },
+    "originalText": {
+      "name": "名誉/补充说明",
+      "sourceType": "来源差异标注",
+      "sourceUrl": "http://sxgmww.com/show-3-39-1.html",
+      "sourceEvidenceStatus": "年份口径差异已标注"
+    },
+    "sourceEvidenceStatus": "weak",
+    "sourceLevel": "C",
+    "sourceAvailability": "notChecked",
+    "conflictStatus": "conflict",
+    "conflictingValues": [
+      null,
+      null
+    ],
+    "conflictingSources": [
+      "http://sxgmww.com/show-3-39-1.html"
+    ],
+    "missingFields": [],
+    "imageStatus": "missing",
+    "recommendedDecision": "CONFLICT",
+    "recommendationReason": "Excel 原始核验状态已标注口径差异，需人工裁决后才能采用。",
+    "reviewDecision": null,
+    "verified": false,
+    "reviewStatus": "pending",
+    "duplicateCandidates": [],
+    "batch": "Batch 3"
+  }
+]

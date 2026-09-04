@@ -1,0 +1,18 @@
+{
+  "total": 122,
+  "missingSourceUrl": 0,
+  "potentialDuplicates": 0,
+  "duplicateCandidates": [],
+  "conflicts": 5,
+  "weakSourceOnly": 17,
+  "missingImages": 95,
+  "uncertainImages": 27,
+  "confirmedImages": 0,
+  "peopleImageConfirmed": 0,
+  "peopleImageUncertain": 7,
+  "peopleImageMissing": 24,
+  "peopleImageRejected": 0,
+  "searchEngineOnlyImages": 0,
+  "identityUnclearImages": 7,
+  "duplicateImageBindings": []
+}

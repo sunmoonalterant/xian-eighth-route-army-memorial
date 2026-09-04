@@ -6,8 +6,14 @@ import { digitalGuide } from '../src/data/digitalMuseum.js'
 import { officialNews } from '../src/data/officialNews.js'
 import { officialCourtyards } from '../src/data/officialCourtyards.js'
 
-test('history timeline excludes unverified demonstration events', () => {
-  assert.deepEqual(historyEvents, [])
+test('history timeline contains only clearly marked course-design demonstrations', () => {
+  assert.equal(historyEvents.length, 5)
+  assert.ok(historyEvents.every((event) => (
+    event.isPlaceholder === true
+    && event.year === '资料整理中'
+    && event.date === '时间待核实'
+    && event.title.includes('（演示）')
+  )))
 })
 
 test('people records exclude unverified demonstration profiles', () => {

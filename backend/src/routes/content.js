@@ -10,6 +10,8 @@ function createContentRouter(pool) {
   router.get('/relics/:id', controller.getRelic)
   router.get('/exhibitions', controller.getExhibitions)
   router.get('/exhibitions/:id', controller.getExhibition)
+  router.get('/people', controller.getPeople)
+  router.get('/people/:id', controller.getPerson)
 
   return router
 }

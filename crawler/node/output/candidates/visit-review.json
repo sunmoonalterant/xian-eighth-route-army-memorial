@@ -1,0 +1,17 @@
+[
+  {
+    "candidateId": "visit-review-official-service",
+    "type": "review",
+    "recordCount": 1,
+    "needsSupplement": true,
+    "missingFields": ["当前地址信息", "当前开放时间", "当前闭馆规则", "当前预约说明", "当前交通说明"],
+    "livePageCheck": "来源页面可访问，但本轮直接获取的静态 HTML 未复现保存的开放、闭馆和预约文字。",
+    "sourceUrl": "http://www.xabb.org.cn/visitService/9.html",
+    "sourceName": "八路军西安办事处纪念馆官网参观服务栏目",
+    "sourceLevel": "A",
+    "retrievedAt": "2026-09-04T09:51:52+08:00",
+    "verified": false,
+    "reviewStatus": "pending",
+    "evidence": "reviewed/visit.json 保存1条官网采集服务资料，但其中的开放和预约要求属于易变信息；当前页面直接 HTML 不足以重新确认，不能据此更新游客端。"
+  }
+]

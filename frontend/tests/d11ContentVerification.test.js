@@ -9,8 +9,9 @@ test('unverified person records are excluded from visitor-facing data', () => {
   assert.deepEqual(people, [])
 })
 
-test('unverified history events are excluded from the timeline data', () => {
-  assert.deepEqual(historyEvents, [])
+test('history demonstrations retain a verification boundary in the timeline data', () => {
+  assert.ok(historyEvents.length > 0)
+  assert.ok(historyEvents.every((event) => event.isPlaceholder === true && event.date === '时间待核实'))
 })
 
 test('unverified courtyard hotspots are excluded from the digital guide', () => {

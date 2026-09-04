@@ -1,0 +1,446 @@
+[
+  {
+    "candidateId": "NEWS-001",
+    "module": "news",
+    "originalRow": {
+      "序号": 1,
+      "标题": "公告（南院六号院及八号院黑色木门养护维修，工期至8月2日）",
+      "发布时间": "2026-07-29",
+      "分类": "通知公告",
+      "来源(URL)": "http://www.xabb.org.cn/cultureInfo/3.html",
+      "来源类型": "官网文博资讯",
+      "核验状态": "已核验"
+    },
+    "originalText": {
+      "name": "公告（南院六号院及八号院黑色木门养护维修，工期至8月2日）",
+      "sourceType": "官网文博资讯",
+      "sourceUrl": "http://www.xabb.org.cn/cultureInfo/3.html",
+      "sourceEvidenceStatus": "已核验"
+    },
+    "sourceEvidenceStatus": "strong",
+    "sourceLevel": "A",
+    "sourceAvailability": "notChecked",
+    "conflictStatus": "none",
+    "conflictingValues": [],
+    "conflictingSources": [],
+    "missingFields": [
+      "detailSourceUrl",
+      "confirmedCoverImage"
+    ],
+    "imageStatus": "missing",
+    "recommendedDecision": "APPROVE",
+    "recommendationReason": "来源和核心字段满足审核建议条件；仍需由人工作出最终决定。",
+    "reviewDecision": null,
+    "verified": false,
+    "reviewStatus": "pending",
+    "duplicateCandidates": [],
+    "batch": "Batch 2"
+  },
+  {
+    "candidateId": "NEWS-002",
+    "module": "news",
+    "originalRow": {
+      "序号": 2,
+      "标题": "【七一特辑】八路军西安办事处纪念馆开放公告",
+      "发布时间": "2026-07-06",
+      "分类": "通知公告",
+      "来源(URL)": "http://www.xabb.org.cn/cultureInfo/3.html",
+      "来源类型": "官网文博资讯",
+      "核验状态": "已核验"
+    },
+    "originalText": {
+      "name": "【七一特辑】八路军西安办事处纪念馆开放公告",
+      "sourceType": "官网文博资讯",
+      "sourceUrl": "http://www.xabb.org.cn/cultureInfo/3.html",
+      "sourceEvidenceStatus": "已核验"
+    },
+    "sourceEvidenceStatus": "strong",
+    "sourceLevel": "A",
+    "sourceAvailability": "notChecked",
+    "conflictStatus": "none",
+    "conflictingValues": [],
+    "conflictingSources": [],
+    "missingFields": [
+      "detailSourceUrl",
+      "confirmedCoverImage"
+    ],
+    "imageStatus": "missing",
+    "recommendedDecision": "APPROVE",
+    "recommendationReason": "来源和核心字段满足审核建议条件；仍需由人工作出最终决定。",
+    "reviewDecision": null,
+    "verified": false,
+    "reviewStatus": "pending",
+    "duplicateCandidates": [],
+    "batch": "Batch 2"
+  },
+  {
+    "candidateId": "NEWS-003",
+    "module": "news",
+    "originalRow": {
+      "序号": 3,
+      "标题": "八路军西安办事处纪念馆五一延时开放公告",
+      "发布时间": "2026-04-23",
+      "分类": "通知公告",
+      "来源(URL)": "http://www.xabb.org.cn/cultureInfo/3.html",
+      "来源类型": "官网文博资讯",
+      "核验状态": "已核验"
+    },
+    "originalText": {
+      "name": "八路军西安办事处纪念馆五一延时开放公告",
+      "sourceType": "官网文博资讯",
+      "sourceUrl": "http://www.xabb.org.cn/cultureInfo/3.html",
+      "sourceEvidenceStatus": "已核验"
+    },
+    "sourceEvidenceStatus": "strong",
+    "sourceLevel": "A",
+    "sourceAvailability": "notChecked",
+    "conflictStatus": "none",
+    "conflictingValues": [],
+    "conflictingSources": [],
+    "missingFields": [
+      "detailSourceUrl",
+      "confirmedCoverImage"
+    ],
+    "imageStatus": "missing",
+    "recommendedDecision": "APPROVE",
+    "recommendationReason": "来源和核心字段满足审核建议条件；仍需由人工作出最终决定。",
+    "reviewDecision": null,
+    "verified": false,
+    "reviewStatus": "pending",
+    "duplicateCandidates": [],
+    "batch": "Batch 2"
+  },
+  {
+    "candidateId": "NEWS-004",
+    "module": "news",
+    "originalRow": {
+      "序号": 4,
+      "标题": "八路军西安办事处纪念馆2026年清明节开放公告",
+      "发布时间": "2026-04-07",
+      "分类": "通知公告",
+      "来源(URL)": "http://www.xabb.org.cn/cultureInfo/3.html",
+      "来源类型": "官网文博资讯",
+      "核验状态": "已核验"
+    },
+    "originalText": {
+      "name": "八路军西安办事处纪念馆2026年清明节开放公告",
+      "sourceType": "官网文博资讯",
+      "sourceUrl": "http://www.xabb.org.cn/cultureInfo/3.html",
+      "sourceEvidenceStatus": "已核验"
+    },
+    "sourceEvidenceStatus": "strong",
+    "sourceLevel": "A",
+    "sourceAvailability": "notChecked",
+    "conflictStatus": "none",
+    "conflictingValues": [],
+    "conflictingSources": [],
+    "missingFields": [
+      "detailSourceUrl",
+      "confirmedCoverImage"
+    ],
+    "imageStatus": "missing",
+    "recommendedDecision": "APPROVE",
+    "recommendationReason": "来源和核心字段满足审核建议条件；仍需由人工作出最终决定。",
+    "reviewDecision": null,
+    "verified": false,
+    "reviewStatus": "pending",
+    "duplicateCandidates": [],
+    "batch": "Batch 2"
+  },
+  {
+    "candidateId": "NEWS-005",
+    "module": "news",
+    "originalRow": {
+      "序号": 5,
+      "标题": "八路军西安办事处纪念馆2026年春节延时开放公告",
+      "发布时间": "2026-03-02",
+      "分类": "通知公告",
+      "来源(URL)": "http://www.xabb.org.cn/cultureInfo/3.html",
+      "来源类型": "官网文博资讯",
+      "核验状态": "已核验"
+    },
+    "originalText": {
+      "name": "八路军西安办事处纪念馆2026年春节延时开放公告",
+      "sourceType": "官网文博资讯",
+      "sourceUrl": "http://www.xabb.org.cn/cultureInfo/3.html",
+      "sourceEvidenceStatus": "已核验"
+    },
+    "sourceEvidenceStatus": "strong",
+    "sourceLevel": "A",
+    "sourceAvailability": "notChecked",
+    "conflictStatus": "none",
+    "conflictingValues": [],
+    "conflictingSources": [],
+    "missingFields": [
+      "detailSourceUrl",
+      "confirmedCoverImage"
+    ],
+    "imageStatus": "missing",
+    "recommendedDecision": "APPROVE",
+    "recommendationReason": "来源和核心字段满足审核建议条件；仍需由人工作出最终决定。",
+    "reviewDecision": null,
+    "verified": false,
+    "reviewStatus": "pending",
+    "duplicateCandidates": [],
+    "batch": "Batch 2"
+  },
+  {
+    "candidateId": "NEWS-006",
+    "module": "news",
+    "originalRow": {
+      "序号": 6,
+      "标题": "纪念中国人民抗日战争暨世界反法西斯战争胜利80周年全省高校巡展巡讲活动项目中标（成交）结果公告",
+      "发布时间": "2025-11-10",
+      "分类": "通知公告",
+      "来源(URL)": "http://www.xabb.org.cn/cultureInfo/3.html",
+      "来源类型": "官网文博资讯",
+      "核验状态": "已核验"
+    },
+    "originalText": {
+      "name": "纪念中国人民抗日战争暨世界反法西斯战争胜利80周年全省高校巡展巡讲活动项目中标（成交）结果公告",
+      "sourceType": "官网文博资讯",
+      "sourceUrl": "http://www.xabb.org.cn/cultureInfo/3.html",
+      "sourceEvidenceStatus": "已核验"
+    },
+    "sourceEvidenceStatus": "strong",
+    "sourceLevel": "A",
+    "sourceAvailability": "notChecked",
+    "conflictStatus": "none",
+    "conflictingValues": [],
+    "conflictingSources": [],
+    "missingFields": [
+      "detailSourceUrl",
+      "confirmedCoverImage"
+    ],
+    "imageStatus": "missing",
+    "recommendedDecision": "APPROVE",
+    "recommendationReason": "来源和核心字段满足审核建议条件；仍需由人工作出最终决定。",
+    "reviewDecision": null,
+    "verified": false,
+    "reviewStatus": "pending",
+    "duplicateCandidates": [],
+    "batch": "Batch 2"
+  },
+  {
+    "candidateId": "NEWS-007",
+    "module": "news",
+    "originalRow": {
+      "序号": 7,
+      "标题": "公告（2025.11.1-2026.4.30恢复每周一闭馆）",
+      "发布时间": "2025-10-31",
+      "分类": "通知公告",
+      "来源(URL)": "http://www.xabb.org.cn/cultureInfo/3.html",
+      "来源类型": "官网文博资讯",
+      "核验状态": "已核验"
+    },
+    "originalText": {
+      "name": "公告（2025.11.1-2026.4.30恢复每周一闭馆）",
+      "sourceType": "官网文博资讯",
+      "sourceUrl": "http://www.xabb.org.cn/cultureInfo/3.html",
+      "sourceEvidenceStatus": "已核验"
+    },
+    "sourceEvidenceStatus": "strong",
+    "sourceLevel": "A",
+    "sourceAvailability": "notChecked",
+    "conflictStatus": "none",
+    "conflictingValues": [],
+    "conflictingSources": [],
+    "missingFields": [
+      "detailSourceUrl",
+      "confirmedCoverImage"
+    ],
+    "imageStatus": "missing",
+    "recommendedDecision": "APPROVE",
+    "recommendationReason": "来源和核心字段满足审核建议条件；仍需由人工作出最终决定。",
+    "reviewDecision": null,
+    "verified": false,
+    "reviewStatus": "pending",
+    "duplicateCandidates": [],
+    "batch": "Batch 2"
+  },
+  {
+    "candidateId": "NEWS-008",
+    "module": "news",
+    "originalRow": {
+      "序号": 8,
+      "标题": "守廉·问绩专栏丨红色人物的初心故事（七）",
+      "发布时间": "2024-08",
+      "分类": "馆内新闻",
+      "来源(URL)": "http://www.xabb.org.cn/homePage/1.html",
+      "来源类型": "官网首页馆内新闻",
+      "核验状态": "已核验"
+    },
+    "originalText": {
+      "name": "守廉·问绩专栏丨红色人物的初心故事（七）",
+      "sourceType": "官网首页馆内新闻",
+      "sourceUrl": "http://www.xabb.org.cn/homePage/1.html",
+      "sourceEvidenceStatus": "已核验"
+    },
+    "sourceEvidenceStatus": "strong",
+    "sourceLevel": "A",
+    "sourceAvailability": "notChecked",
+    "conflictStatus": "none",
+    "conflictingValues": [],
+    "conflictingSources": [],
+    "missingFields": [
+      "detailSourceUrl",
+      "confirmedCoverImage"
+    ],
+    "imageStatus": "missing",
+    "recommendedDecision": "APPROVE",
+    "recommendationReason": "来源和核心字段满足审核建议条件；仍需由人工作出最终决定。",
+    "reviewDecision": null,
+    "verified": false,
+    "reviewStatus": "pending",
+    "duplicateCandidates": [],
+    "batch": "Batch 2"
+  },
+  {
+    "candidateId": "NEWS-009",
+    "module": "news",
+    "originalRow": {
+      "序号": 9,
+      "标题": "红色文化对话丝路文明——志愿者及'纪念馆之友'赴大唐西市博物馆参观交流",
+      "发布时间": "2026-08-15",
+      "分类": "馆内新闻",
+      "来源(URL)": "http://www.xabb.org.cn/homePage/1.html",
+      "来源类型": "官网首页馆内新闻",
+      "核验状态": "已核验"
+    },
+    "originalText": {
+      "name": "红色文化对话丝路文明——志愿者及'纪念馆之友'赴大唐西市博物馆参观交流",
+      "sourceType": "官网首页馆内新闻",
+      "sourceUrl": "http://www.xabb.org.cn/homePage/1.html",
+      "sourceEvidenceStatus": "已核验"
+    },
+    "sourceEvidenceStatus": "strong",
+    "sourceLevel": "A",
+    "sourceAvailability": "notChecked",
+    "conflictStatus": "none",
+    "conflictingValues": [],
+    "conflictingSources": [],
+    "missingFields": [
+      "detailSourceUrl",
+      "confirmedCoverImage"
+    ],
+    "imageStatus": "missing",
+    "recommendedDecision": "APPROVE",
+    "recommendationReason": "来源和核心字段满足审核建议条件；仍需由人工作出最终决定。",
+    "reviewDecision": null,
+    "verified": false,
+    "reviewStatus": "pending",
+    "duplicateCandidates": [],
+    "batch": "Batch 2"
+  },
+  {
+    "candidateId": "NEWS-010",
+    "module": "news",
+    "originalRow": {
+      "序号": 10,
+      "标题": "这个夏天，以青春志愿守护红色薪火——暑期大学生志愿实践活动圆满结束",
+      "发布时间": "2026-08（7.27-8.14活动）",
+      "分类": "馆内新闻",
+      "来源(URL)": "http://www.xabb.org.cn/homePage/1.html",
+      "来源类型": "官网首页馆内新闻",
+      "核验状态": "已核验"
+    },
+    "originalText": {
+      "name": "这个夏天，以青春志愿守护红色薪火——暑期大学生志愿实践活动圆满结束",
+      "sourceType": "官网首页馆内新闻",
+      "sourceUrl": "http://www.xabb.org.cn/homePage/1.html",
+      "sourceEvidenceStatus": "已核验"
+    },
+    "sourceEvidenceStatus": "strong",
+    "sourceLevel": "A",
+    "sourceAvailability": "notChecked",
+    "conflictStatus": "none",
+    "conflictingValues": [],
+    "conflictingSources": [],
+    "missingFields": [
+      "detailSourceUrl",
+      "confirmedCoverImage"
+    ],
+    "imageStatus": "missing",
+    "recommendedDecision": "APPROVE",
+    "recommendationReason": "来源和核心字段满足审核建议条件；仍需由人工作出最终决定。",
+    "reviewDecision": null,
+    "verified": false,
+    "reviewStatus": "pending",
+    "duplicateCandidates": [],
+    "batch": "Batch 2"
+  },
+  {
+    "candidateId": "NEWS-011",
+    "module": "news",
+    "originalRow": {
+      "序号": 11,
+      "标题": "活动收官｜牙小俑七贤寻踪漫游课堂：寻迹秘密交通站，学史护牙两相宜",
+      "发布时间": "2026-08-14",
+      "分类": "馆内新闻/活动",
+      "来源(URL)": "http://www.xabb.org.cn/homePage/1.html",
+      "来源类型": "官网首页馆内新闻",
+      "核验状态": "已核验"
+    },
+    "originalText": {
+      "name": "活动收官｜牙小俑七贤寻踪漫游课堂：寻迹秘密交通站，学史护牙两相宜",
+      "sourceType": "官网首页馆内新闻",
+      "sourceUrl": "http://www.xabb.org.cn/homePage/1.html",
+      "sourceEvidenceStatus": "已核验"
+    },
+    "sourceEvidenceStatus": "strong",
+    "sourceLevel": "A",
+    "sourceAvailability": "notChecked",
+    "conflictStatus": "none",
+    "conflictingValues": [],
+    "conflictingSources": [],
+    "missingFields": [
+      "detailSourceUrl",
+      "confirmedCoverImage"
+    ],
+    "imageStatus": "missing",
+    "recommendedDecision": "APPROVE",
+    "recommendationReason": "来源和核心字段满足审核建议条件；仍需由人工作出最终决定。",
+    "reviewDecision": null,
+    "verified": false,
+    "reviewStatus": "pending",
+    "duplicateCandidates": [],
+    "batch": "Batch 2"
+  },
+  {
+    "candidateId": "NEWS-012",
+    "module": "news",
+    "originalRow": {
+      "序号": 12,
+      "标题": "暑期研学招募｜探秘隐蔽战线！化身密电信使，解锁七贤庄红色密码",
+      "发布时间": "2026-08",
+      "分类": "馆内新闻/活动",
+      "来源(URL)": "http://www.xabb.org.cn/homePage/1.html",
+      "来源类型": "官网首页馆内新闻",
+      "核验状态": "已核验"
+    },
+    "originalText": {
+      "name": "暑期研学招募｜探秘隐蔽战线！化身密电信使，解锁七贤庄红色密码",
+      "sourceType": "官网首页馆内新闻",
+      "sourceUrl": "http://www.xabb.org.cn/homePage/1.html",
+      "sourceEvidenceStatus": "已核验"
+    },
+    "sourceEvidenceStatus": "strong",
+    "sourceLevel": "A",
+    "sourceAvailability": "notChecked",
+    "conflictStatus": "none",
+    "conflictingValues": [],
+    "conflictingSources": [],
+    "missingFields": [
+      "detailSourceUrl",
+      "confirmedCoverImage"
+    ],
+    "imageStatus": "missing",
+    "recommendedDecision": "APPROVE",
+    "recommendationReason": "来源和核心字段满足审核建议条件；仍需由人工作出最终决定。",
+    "reviewDecision": null,
+    "verified": false,
+    "reviewStatus": "pending",
+    "duplicateCandidates": [],
+    "batch": "Batch 2"
+  }
+]

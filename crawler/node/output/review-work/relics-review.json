@@ -1,0 +1,682 @@
+[
+  {
+    "candidateId": "RELIC-001",
+    "module": "relic",
+    "originalRow": {
+      "序号": 1,
+      "文物名称": "周恩来穿过的粗布睡衣",
+      "关联人物": "周恩来",
+      "类别（补全）": "衣物",
+      "年代（补全）": "抗战时期（待更精确）",
+      "图片关联": "官网文物页有图",
+      "来源(URL)": "http://www.xabb.org.cn/relics/6.html",
+      "来源类型": "官网馆藏文物页",
+      "核验状态": "已核验；年代建议补全"
+    },
+    "originalText": {
+      "name": "周恩来穿过的粗布睡衣",
+      "sourceType": "官网馆藏文物页",
+      "sourceUrl": "http://www.xabb.org.cn/relics/6.html",
+      "sourceEvidenceStatus": "已核验；年代建议补全"
+    },
+    "sourceEvidenceStatus": "strong",
+    "sourceLevel": "A",
+    "sourceAvailability": "notChecked",
+    "conflictStatus": "none",
+    "conflictingValues": [],
+    "conflictingSources": [],
+    "missingFields": [
+      "confirmedImage"
+    ],
+    "imageStatus": "uncertain",
+    "recommendedDecision": "APPROVE",
+    "recommendationReason": "来源和核心字段满足审核建议条件；仍需由人工作出最终决定。",
+    "reviewDecision": null,
+    "verified": false,
+    "reviewStatus": "pending",
+    "grade": null,
+    "gradeSource": null,
+    "duplicateCandidates": [],
+    "batch": "Batch 1"
+  },
+  {
+    "candidateId": "RELIC-002",
+    "module": "relic",
+    "originalRow": {
+      "序号": 2,
+      "文物名称": "朱德穿过的风雨衣",
+      "关联人物": "朱德",
+      "类别（补全）": "衣物",
+      "年代（补全）": "抗战时期（待更精确）",
+      "图片关联": "官网文物页有图",
+      "来源(URL)": "http://www.xabb.org.cn/relics/6.html",
+      "来源类型": "官网馆藏文物页",
+      "核验状态": "已核验；年代建议补全"
+    },
+    "originalText": {
+      "name": "朱德穿过的风雨衣",
+      "sourceType": "官网馆藏文物页",
+      "sourceUrl": "http://www.xabb.org.cn/relics/6.html",
+      "sourceEvidenceStatus": "已核验；年代建议补全"
+    },
+    "sourceEvidenceStatus": "strong",
+    "sourceLevel": "A",
+    "sourceAvailability": "notChecked",
+    "conflictStatus": "none",
+    "conflictingValues": [],
+    "conflictingSources": [],
+    "missingFields": [
+      "confirmedImage"
+    ],
+    "imageStatus": "uncertain",
+    "recommendedDecision": "APPROVE",
+    "recommendationReason": "来源和核心字段满足审核建议条件；仍需由人工作出最终决定。",
+    "reviewDecision": null,
+    "verified": false,
+    "reviewStatus": "pending",
+    "grade": null,
+    "gradeSource": null,
+    "duplicateCandidates": [],
+    "batch": "Batch 1"
+  },
+  {
+    "candidateId": "RELIC-003",
+    "module": "relic",
+    "originalRow": {
+      "序号": 3,
+      "文物名称": "叶剑英题诗手迹",
+      "关联人物": "叶剑英",
+      "类别（补全）": "手迹/书法",
+      "年代（补全）": "1979年4月12日",
+      "图片关联": "官网文物页有图",
+      "来源(URL)": "http://www.xabb.org.cn/relics/6.html",
+      "来源类型": "官网馆藏文物页 + 秦风网",
+      "核验状态": "已核验（时间明确）"
+    },
+    "originalText": {
+      "name": "叶剑英题诗手迹",
+      "sourceType": "官网馆藏文物页 + 秦风网",
+      "sourceUrl": "http://www.xabb.org.cn/relics/6.html",
+      "sourceEvidenceStatus": "已核验（时间明确）"
+    },
+    "sourceEvidenceStatus": "strong",
+    "sourceLevel": "A",
+    "sourceAvailability": "notChecked",
+    "conflictStatus": "none",
+    "conflictingValues": [],
+    "conflictingSources": [],
+    "missingFields": [
+      "confirmedImage"
+    ],
+    "imageStatus": "uncertain",
+    "recommendedDecision": "APPROVE",
+    "recommendationReason": "来源和核心字段满足审核建议条件；仍需由人工作出最终决定。",
+    "reviewDecision": null,
+    "verified": false,
+    "reviewStatus": "pending",
+    "grade": null,
+    "gradeSource": null,
+    "duplicateCandidates": [],
+    "batch": "Batch 1"
+  },
+  {
+    "candidateId": "RELIC-004",
+    "module": "relic",
+    "originalRow": {
+      "序号": 4,
+      "文物名称": "叶剑英给'西办'纪念馆的题字",
+      "关联人物": "叶剑英",
+      "类别（补全）": "题字/书法",
+      "年代（补全）": "1979年9月10日",
+      "图片关联": "官网文物页有图",
+      "来源(URL)": "http://www.xabb.org.cn/relics/6.html",
+      "来源类型": "官网馆藏文物页",
+      "核验状态": "已核验（时间明确）"
+    },
+    "originalText": {
+      "name": "叶剑英给'西办'纪念馆的题字",
+      "sourceType": "官网馆藏文物页",
+      "sourceUrl": "http://www.xabb.org.cn/relics/6.html",
+      "sourceEvidenceStatus": "已核验（时间明确）"
+    },
+    "sourceEvidenceStatus": "strong",
+    "sourceLevel": "A",
+    "sourceAvailability": "notChecked",
+    "conflictStatus": "none",
+    "conflictingValues": [],
+    "conflictingSources": [],
+    "missingFields": [
+      "confirmedImage"
+    ],
+    "imageStatus": "uncertain",
+    "recommendedDecision": "APPROVE",
+    "recommendationReason": "来源和核心字段满足审核建议条件；仍需由人工作出最终决定。",
+    "reviewDecision": null,
+    "verified": false,
+    "reviewStatus": "pending",
+    "grade": null,
+    "gradeSource": null,
+    "duplicateCandidates": [],
+    "batch": "Batch 1"
+  },
+  {
+    "candidateId": "RELIC-005",
+    "module": "relic",
+    "originalRow": {
+      "序号": 5,
+      "文物名称": "林伯渠用过的拐杖",
+      "关联人物": "林伯渠",
+      "类别（补全）": "生活用品",
+      "年代（补全）": "延安时期（待更精确）",
+      "图片关联": "官网文物页有图",
+      "来源(URL)": "http://www.xabb.org.cn/relics/6.html",
+      "来源类型": "官网馆藏文物页",
+      "核验状态": "已核验；年代建议补全"
+    },
+    "originalText": {
+      "name": "林伯渠用过的拐杖",
+      "sourceType": "官网馆藏文物页",
+      "sourceUrl": "http://www.xabb.org.cn/relics/6.html",
+      "sourceEvidenceStatus": "已核验；年代建议补全"
+    },
+    "sourceEvidenceStatus": "strong",
+    "sourceLevel": "A",
+    "sourceAvailability": "notChecked",
+    "conflictStatus": "none",
+    "conflictingValues": [],
+    "conflictingSources": [],
+    "missingFields": [
+      "confirmedImage"
+    ],
+    "imageStatus": "uncertain",
+    "recommendedDecision": "APPROVE",
+    "recommendationReason": "来源和核心字段满足审核建议条件；仍需由人工作出最终决定。",
+    "reviewDecision": null,
+    "verified": false,
+    "reviewStatus": "pending",
+    "grade": null,
+    "gradeSource": null,
+    "duplicateCandidates": [],
+    "batch": "Batch 1"
+  },
+  {
+    "candidateId": "RELIC-006",
+    "module": "relic",
+    "originalRow": {
+      "序号": 6,
+      "文物名称": "林伯渠的眼镜盒",
+      "关联人物": "林伯渠",
+      "类别（补全）": "生活用品",
+      "年代（补全）": "延安时期（待更精确）",
+      "图片关联": "官网文物页有图",
+      "来源(URL)": "http://www.xabb.org.cn/relics/6.html",
+      "来源类型": "官网馆藏文物页",
+      "核验状态": "已核验；年代建议补全"
+    },
+    "originalText": {
+      "name": "林伯渠的眼镜盒",
+      "sourceType": "官网馆藏文物页",
+      "sourceUrl": "http://www.xabb.org.cn/relics/6.html",
+      "sourceEvidenceStatus": "已核验；年代建议补全"
+    },
+    "sourceEvidenceStatus": "strong",
+    "sourceLevel": "A",
+    "sourceAvailability": "notChecked",
+    "conflictStatus": "none",
+    "conflictingValues": [],
+    "conflictingSources": [],
+    "missingFields": [
+      "confirmedImage"
+    ],
+    "imageStatus": "uncertain",
+    "recommendedDecision": "APPROVE",
+    "recommendationReason": "来源和核心字段满足审核建议条件；仍需由人工作出最终决定。",
+    "reviewDecision": null,
+    "verified": false,
+    "reviewStatus": "pending",
+    "grade": null,
+    "gradeSource": null,
+    "duplicateCandidates": [],
+    "batch": "Batch 1"
+  },
+  {
+    "candidateId": "RELIC-007",
+    "module": "relic",
+    "originalRow": {
+      "序号": 7,
+      "文物名称": "林伯渠的眼镜",
+      "关联人物": "林伯渠",
+      "类别（补全）": "生活用品",
+      "年代（补全）": "延安时期",
+      "图片关联": "官网文物页有图",
+      "来源(URL)": "https://www.qinfeng.gov.cn/info/2048/242584.htm",
+      "来源类型": "秦风网（国家一级革命文物）",
+      "核验状态": "已核验（一级革命文物）"
+    },
+    "originalText": {
+      "name": "林伯渠的眼镜",
+      "sourceType": "秦风网（国家一级革命文物）",
+      "sourceUrl": "https://www.qinfeng.gov.cn/info/2048/242584.htm",
+      "sourceEvidenceStatus": "已核验（一级革命文物）"
+    },
+    "sourceEvidenceStatus": "weak",
+    "sourceLevel": "C",
+    "sourceAvailability": "notChecked",
+    "conflictStatus": "none",
+    "conflictingValues": [],
+    "conflictingSources": [],
+    "missingFields": [
+      "confirmedImage"
+    ],
+    "imageStatus": "uncertain",
+    "recommendedDecision": "PENDING",
+    "recommendationReason": "当前只有弱来源支撑，需补充 A/B 级来源。",
+    "reviewDecision": null,
+    "verified": false,
+    "reviewStatus": "pending",
+    "grade": "国家一级革命文物",
+    "gradeSource": "https://www.qinfeng.gov.cn/info/2048/242584.htm",
+    "duplicateCandidates": [],
+    "batch": "Batch 1"
+  },
+  {
+    "candidateId": "RELIC-008",
+    "module": "relic",
+    "originalRow": {
+      "序号": 8,
+      "文物名称": "宣侠父全家与张知道合影",
+      "关联人物": "宣侠父",
+      "类别（补全）": "照片/文献",
+      "年代（补全）": "照片注记年份待核验（注记有1963年字样）",
+      "图片关联": "官网文物页有图",
+      "来源(URL)": "http://www.xabb.org.cn/relics/6.html",
+      "来源类型": "官网馆藏文物页",
+      "核验状态": "已核验；年代需人工复核"
+    },
+    "originalText": {
+      "name": "宣侠父全家与张知道合影",
+      "sourceType": "官网馆藏文物页",
+      "sourceUrl": "http://www.xabb.org.cn/relics/6.html",
+      "sourceEvidenceStatus": "已核验；年代需人工复核"
+    },
+    "sourceEvidenceStatus": "strong",
+    "sourceLevel": "A",
+    "sourceAvailability": "notChecked",
+    "conflictStatus": "none",
+    "conflictingValues": [],
+    "conflictingSources": [],
+    "missingFields": [
+      "confirmedImage"
+    ],
+    "imageStatus": "uncertain",
+    "recommendedDecision": "APPROVE",
+    "recommendationReason": "来源和核心字段满足审核建议条件；仍需由人工作出最终决定。",
+    "reviewDecision": null,
+    "verified": false,
+    "reviewStatus": "pending",
+    "grade": null,
+    "gradeSource": null,
+    "duplicateCandidates": [],
+    "batch": "Batch 1"
+  },
+  {
+    "candidateId": "RELIC-009",
+    "module": "relic",
+    "originalRow": {
+      "序号": 9,
+      "文物名称": "宣侠父穿过的长袍",
+      "关联人物": "宣侠父",
+      "类别（补全）": "衣物",
+      "年代（补全）": "抗战时期（待更精确）",
+      "图片关联": "官网文物页有图",
+      "来源(URL)": "http://www.xabb.org.cn/relics/6.html",
+      "来源类型": "官网馆藏文物页",
+      "核验状态": "已核验；年代建议补全"
+    },
+    "originalText": {
+      "name": "宣侠父穿过的长袍",
+      "sourceType": "官网馆藏文物页",
+      "sourceUrl": "http://www.xabb.org.cn/relics/6.html",
+      "sourceEvidenceStatus": "已核验；年代建议补全"
+    },
+    "sourceEvidenceStatus": "strong",
+    "sourceLevel": "A",
+    "sourceAvailability": "notChecked",
+    "conflictStatus": "none",
+    "conflictingValues": [],
+    "conflictingSources": [],
+    "missingFields": [
+      "confirmedImage"
+    ],
+    "imageStatus": "uncertain",
+    "recommendedDecision": "APPROVE",
+    "recommendationReason": "来源和核心字段满足审核建议条件；仍需由人工作出最终决定。",
+    "reviewDecision": null,
+    "verified": false,
+    "reviewStatus": "pending",
+    "grade": null,
+    "gradeSource": null,
+    "duplicateCandidates": [],
+    "batch": "Batch 1"
+  },
+  {
+    "candidateId": "RELIC-010",
+    "module": "relic",
+    "originalRow": {
+      "序号": 10,
+      "文物名称": "伍云甫的手表",
+      "关联人物": "伍云甫",
+      "类别（补全）": "器物（二级文物）",
+      "年代（补全）": "抗战时期（约1930-40年代）",
+      "图片关联": "—",
+      "来源(URL)": "https://sn.cri.cn/n/20180821/27d4dc35-a70f-ccfa-ffa4-42991ef0df23.html",
+      "来源类型": "国际在线（党史频道转载）",
+      "核验状态": "补充线索，非官网9条内"
+    },
+    "originalText": {
+      "name": "伍云甫的手表",
+      "sourceType": "国际在线（党史频道转载）",
+      "sourceUrl": "https://sn.cri.cn/n/20180821/27d4dc35-a70f-ccfa-ffa4-42991ef0df23.html",
+      "sourceEvidenceStatus": "补充线索，非官网9条内"
+    },
+    "sourceEvidenceStatus": "strong",
+    "sourceLevel": "B",
+    "sourceAvailability": "notChecked",
+    "conflictStatus": "none",
+    "conflictingValues": [],
+    "conflictingSources": [],
+    "missingFields": [
+      "confirmedImage"
+    ],
+    "imageStatus": "uncertain",
+    "recommendedDecision": "PENDING",
+    "recommendationReason": "补充线索尚未明确证明为馆藏正式记录，暂不建议批准。",
+    "reviewDecision": null,
+    "verified": false,
+    "reviewStatus": "pending",
+    "grade": null,
+    "gradeSource": null,
+    "duplicateCandidates": [],
+    "batch": "Batch 2"
+  },
+  {
+    "candidateId": "RELIC-011",
+    "module": "relic",
+    "originalRow": {
+      "序号": 11,
+      "文物名称": "伍云甫的相机",
+      "关联人物": "伍云甫",
+      "类别（补全）": "器物（一级文物）",
+      "年代（补全）": "抗战时期",
+      "图片关联": "—",
+      "来源(URL)": "https://sn.cri.cn/n/20180821/27d4dc35-a70f-ccfa-ffa4-42991ef0df23.html",
+      "来源类型": "国际在线",
+      "核验状态": "补充线索，非官网9条内"
+    },
+    "originalText": {
+      "name": "伍云甫的相机",
+      "sourceType": "国际在线",
+      "sourceUrl": "https://sn.cri.cn/n/20180821/27d4dc35-a70f-ccfa-ffa4-42991ef0df23.html",
+      "sourceEvidenceStatus": "补充线索，非官网9条内"
+    },
+    "sourceEvidenceStatus": "weak",
+    "sourceLevel": "C",
+    "sourceAvailability": "notChecked",
+    "conflictStatus": "none",
+    "conflictingValues": [],
+    "conflictingSources": [],
+    "missingFields": [
+      "confirmedImage"
+    ],
+    "imageStatus": "uncertain",
+    "recommendedDecision": "PENDING",
+    "recommendationReason": "当前只有弱来源支撑，需补充 A/B 级来源。",
+    "reviewDecision": null,
+    "verified": false,
+    "reviewStatus": "pending",
+    "grade": null,
+    "gradeSource": null,
+    "duplicateCandidates": [],
+    "batch": "Batch 3"
+  },
+  {
+    "candidateId": "RELIC-012",
+    "module": "relic",
+    "originalRow": {
+      "序号": 12,
+      "文物名称": "斯诺的采访包",
+      "关联人物": "埃德加·斯诺",
+      "类别（补全）": "器物（一级文物）",
+      "年代（补全）": "1936年（斯诺西北之行携带）",
+      "图片关联": "赴京参展报道有图",
+      "来源(URL)": "https://www.xxbcm.com/info/1050/100400.htm",
+      "来源类型": "《新西部》杂志 + 西安日报",
+      "核验状态": "补充线索（一级文物）"
+    },
+    "originalText": {
+      "name": "斯诺的采访包",
+      "sourceType": "《新西部》杂志 + 西安日报",
+      "sourceUrl": "https://www.xxbcm.com/info/1050/100400.htm",
+      "sourceEvidenceStatus": "补充线索（一级文物）"
+    },
+    "sourceEvidenceStatus": "weak",
+    "sourceLevel": "C",
+    "sourceAvailability": "notChecked",
+    "conflictStatus": "none",
+    "conflictingValues": [],
+    "conflictingSources": [],
+    "missingFields": [
+      "confirmedImage"
+    ],
+    "imageStatus": "uncertain",
+    "recommendedDecision": "PENDING",
+    "recommendationReason": "当前只有弱来源支撑，需补充 A/B 级来源。",
+    "reviewDecision": null,
+    "verified": false,
+    "reviewStatus": "pending",
+    "grade": null,
+    "gradeSource": null,
+    "duplicateCandidates": [],
+    "batch": "Batch 3"
+  },
+  {
+    "candidateId": "RELIC-013",
+    "module": "relic",
+    "originalRow": {
+      "序号": 13,
+      "文物名称": "海伦·斯诺的'沃特曼'自来水笔",
+      "关联人物": "海伦·福斯特·斯诺",
+      "类别（补全）": "器物",
+      "年代（补全）": "1937年（赴延安采访）",
+      "图片关联": "—",
+      "来源(URL)": "http://m.toutiao.com/group/7545646143070290484/",
+      "来源类型": "华商网",
+      "核验状态": "补充线索"
+    },
+    "originalText": {
+      "name": "海伦·斯诺的'沃特曼'自来水笔",
+      "sourceType": "华商网",
+      "sourceUrl": "http://m.toutiao.com/group/7545646143070290484/",
+      "sourceEvidenceStatus": "补充线索"
+    },
+    "sourceEvidenceStatus": "weak",
+    "sourceLevel": "C",
+    "sourceAvailability": "notChecked",
+    "conflictStatus": "none",
+    "conflictingValues": [],
+    "conflictingSources": [],
+    "missingFields": [
+      "confirmedImage"
+    ],
+    "imageStatus": "uncertain",
+    "recommendedDecision": "PENDING",
+    "recommendationReason": "当前只有弱来源支撑，需补充 A/B 级来源。",
+    "reviewDecision": null,
+    "verified": false,
+    "reviewStatus": "pending",
+    "grade": null,
+    "gradeSource": null,
+    "duplicateCandidates": [],
+    "batch": "Batch 3"
+  },
+  {
+    "candidateId": "RELIC-014",
+    "module": "relic",
+    "originalRow": {
+      "序号": 14,
+      "文物名称": "李伯钊给海伦·斯诺缝制的红军制服裤",
+      "关联人物": "海伦·福斯特·斯诺/李伯钊",
+      "类别（补全）": "衣物",
+      "年代（补全）": "1937年前后",
+      "图片关联": "—",
+      "来源(URL)": "http://www.xabb.org.cn/cultureInfo/3.html?categoryId=2&id=1133&isList=0",
+      "来源类型": "官网新闻",
+      "核验状态": "补充线索"
+    },
+    "originalText": {
+      "name": "李伯钊给海伦·斯诺缝制的红军制服裤",
+      "sourceType": "官网新闻",
+      "sourceUrl": "http://www.xabb.org.cn/cultureInfo/3.html?categoryId=2&id=1133&isList=0",
+      "sourceEvidenceStatus": "补充线索"
+    },
+    "sourceEvidenceStatus": "strong",
+    "sourceLevel": "A",
+    "sourceAvailability": "notChecked",
+    "conflictStatus": "none",
+    "conflictingValues": [],
+    "conflictingSources": [],
+    "missingFields": [
+      "confirmedImage"
+    ],
+    "imageStatus": "uncertain",
+    "recommendedDecision": "PENDING",
+    "recommendationReason": "补充线索尚未明确证明为馆藏正式记录，暂不建议批准。",
+    "reviewDecision": null,
+    "verified": false,
+    "reviewStatus": "pending",
+    "grade": null,
+    "gradeSource": null,
+    "duplicateCandidates": [],
+    "batch": "Batch 2"
+  },
+  {
+    "candidateId": "RELIC-015",
+    "module": "relic",
+    "originalRow": {
+      "序号": 15,
+      "文物名称": "王浩礼的毛毯",
+      "关联人物": "王浩礼",
+      "类别（补全）": "织物",
+      "年代（补全）": "待补",
+      "图片关联": "—",
+      "来源(URL)": "http://xabb.org.cn/cultureInfo/3.html?categoryId=2&id=1003&isList=0",
+      "来源类型": "官网新闻（2025年轮展）",
+      "核验状态": "补充线索"
+    },
+    "originalText": {
+      "name": "王浩礼的毛毯",
+      "sourceType": "官网新闻（2025年轮展）",
+      "sourceUrl": "http://xabb.org.cn/cultureInfo/3.html?categoryId=2&id=1003&isList=0",
+      "sourceEvidenceStatus": "补充线索"
+    },
+    "sourceEvidenceStatus": "strong",
+    "sourceLevel": "A",
+    "sourceAvailability": "notChecked",
+    "conflictStatus": "none",
+    "conflictingValues": [],
+    "conflictingSources": [],
+    "missingFields": [
+      "confirmedImage"
+    ],
+    "imageStatus": "uncertain",
+    "recommendedDecision": "PENDING",
+    "recommendationReason": "补充线索尚未明确证明为馆藏正式记录，暂不建议批准。",
+    "reviewDecision": null,
+    "verified": false,
+    "reviewStatus": "pending",
+    "grade": null,
+    "gradeSource": null,
+    "duplicateCandidates": [],
+    "batch": "Batch 2"
+  },
+  {
+    "candidateId": "RELIC-016",
+    "module": "relic",
+    "originalRow": {
+      "序号": 16,
+      "文物名称": "刘鼎的美式测量工具",
+      "关联人物": "刘鼎",
+      "类别（补全）": "器物",
+      "年代（补全）": "待补",
+      "图片关联": "—",
+      "来源(URL)": "http://www.xabb.org.cn/cultureInfo/3.html?categoryId=2&id=875&isList=0",
+      "来源类型": "官网新闻（基本陈列展品）",
+      "核验状态": "补充线索"
+    },
+    "originalText": {
+      "name": "刘鼎的美式测量工具",
+      "sourceType": "官网新闻（基本陈列展品）",
+      "sourceUrl": "http://www.xabb.org.cn/cultureInfo/3.html?categoryId=2&id=875&isList=0",
+      "sourceEvidenceStatus": "补充线索"
+    },
+    "sourceEvidenceStatus": "strong",
+    "sourceLevel": "A",
+    "sourceAvailability": "notChecked",
+    "conflictStatus": "none",
+    "conflictingValues": [],
+    "conflictingSources": [],
+    "missingFields": [
+      "confirmedImage"
+    ],
+    "imageStatus": "uncertain",
+    "recommendedDecision": "PENDING",
+    "recommendationReason": "补充线索尚未明确证明为馆藏正式记录，暂不建议批准。",
+    "reviewDecision": null,
+    "verified": false,
+    "reviewStatus": "pending",
+    "grade": null,
+    "gradeSource": null,
+    "duplicateCandidates": [],
+    "batch": "Batch 2"
+  },
+  {
+    "candidateId": "RELIC-017",
+    "module": "relic",
+    "originalRow": {
+      "序号": 17,
+      "文物名称": "涂作潮的分线器",
+      "关联人物": "涂作潮",
+      "类别（补全）": "器物",
+      "年代（补全）": "待补",
+      "图片关联": "—",
+      "来源(URL)": "http://www.xabb.org.cn/cultureInfo/3.html?categoryId=2&id=875&isList=0",
+      "来源类型": "官网新闻（基本陈列展品）",
+      "核验状态": "补充线索"
+    },
+    "originalText": {
+      "name": "涂作潮的分线器",
+      "sourceType": "官网新闻（基本陈列展品）",
+      "sourceUrl": "http://www.xabb.org.cn/cultureInfo/3.html?categoryId=2&id=875&isList=0",
+      "sourceEvidenceStatus": "补充线索"
+    },
+    "sourceEvidenceStatus": "strong",
+    "sourceLevel": "A",
+    "sourceAvailability": "notChecked",
+    "conflictStatus": "none",
+    "conflictingValues": [],
+    "conflictingSources": [],
+    "missingFields": [
+      "confirmedImage"
+    ],
+    "imageStatus": "uncertain",
+    "recommendedDecision": "PENDING",
+    "recommendationReason": "补充线索尚未明确证明为馆藏正式记录，暂不建议批准。",
+    "reviewDecision": null,
+    "verified": false,
+    "reviewStatus": "pending",
+    "grade": null,
+    "gradeSource": null,
+    "duplicateCandidates": [],
+    "batch": "Batch 2"
+  }
+]

@@ -1,0 +1,16 @@
+[
+  {
+    "candidateId": "museum-review-official-profile",
+    "type": "review",
+    "recordCount": 1,
+    "needsSupplement": false,
+    "missingFields": ["可一一对应的官网馆情封面图片"],
+    "sourceUrl": "http://www.xabb.org.cn/exhibitionHall/2.html",
+    "sourceName": "八路军西安办事处纪念馆官网展馆介绍",
+    "sourceLevel": "A",
+    "retrievedAt": "2026-09-04T09:51:52+08:00",
+    "verified": false,
+    "reviewStatus": "pending",
+    "evidence": "reviewed/museum.json 保存1条来源可追溯的馆情记录；名称、简介和正文均来自同一官网采集记录。当前直接 HTML 可访问但未静态复现完整正文，故保留待人工复查状态。"
+  }
+]

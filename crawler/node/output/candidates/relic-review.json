@@ -1,0 +1,17 @@
+[
+  {
+    "candidateId": "relic-review-official-batch",
+    "type": "review",
+    "recordCount": 9,
+    "sourceApiIds": ["50", "51", "52", "53", "54", "55", "56", "57", "58"],
+    "needsSupplement": true,
+    "missingFields": ["逐条分类核验", "逐条年代核验", "逐条封面与具体文物的一一对应复核"],
+    "sourceUrl": "http://www.xabb.org.cn/relics/6.html",
+    "sourceName": "八路军西安办事处纪念馆官网馆藏文物栏目",
+    "sourceLevel": "A",
+    "retrievedAt": "2026-09-04T09:51:52+08:00",
+    "verified": false,
+    "reviewStatus": "pending",
+    "evidence": "reviewed/relics.json 中有9条带 sourceApiId 50—58 的官网采集记录，且前端有9张本地化封面。当前栏目可访问，但详情字段和图片对应仍需按稳定 ID 人工复查；空分类或年代不得推断。"
+  }
+]

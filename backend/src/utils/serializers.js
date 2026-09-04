@@ -43,5 +43,6 @@ function toExhibition(record) {
     updatedAt: record.updated_at,
   }
 }
+function toPerson(record) { const content=record.content||''; const field=(label)=>content.match(new RegExp(`${label}：([^\\n]+)`))?.[1]||null; return {id:record.id,name:record.name,role:field('身份/职务'),relation:field('与西安八办/七贤庄的关系'),summary:record.summary,content,image:record.image||null,sourceUrl:record.source_url,createdAt:record.created_at,updatedAt:record.updated_at} }
 
-module.exports = { toExhibition, toMuseum, toRelic }
+module.exports = { toExhibition, toMuseum, toRelic, toPerson }
