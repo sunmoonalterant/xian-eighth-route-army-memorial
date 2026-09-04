@@ -3,11 +3,9 @@ import { onMounted, ref } from 'vue'
 import { getMuseum } from '../api/museum'
 import { getRelics } from '../api/relics'
 import RelicCard from '../components/RelicCard.vue'
-import PersonCard from '../components/PersonCard.vue'
 import NewsCard from '../components/NewsCard.vue'
 import { museum, visitGuide } from '../data/museum'
 import { relics } from '../data/relics'
-import { people } from '../data/people'
 import { news } from '../data/news'
 import { digitalGuide } from '../data/digitalMuseum'
 import { images } from '../data/imageAssets'
@@ -50,9 +48,9 @@ onMounted(async () => {
     </div>
   </section>
   <section class="section"><div class="shell intro-grid"><img :src="displayMuseum.image" alt="八路军西安办事处纪念馆旧址环境" /><div><div class="framed-title"><p class="eyebrow">ABOUT THE MEMORIAL</p><h2>走进纪念馆</h2></div><p>{{ displayMuseum.intro }}</p><RouterLink class="text-link" to="/museum">了解更多 <span aria-hidden="true">→</span></RouterLink></div></div></section>
-  <section class="section section--paper"><div class="shell"><div class="center-heading"><p class="eyebrow">HISTORICAL TIMELINE</p><h2>峥嵘岁月</h2></div><ol class="home-timeline" aria-label="八路军西安办事处历史时间轴"><li v-for="(item, index) in homeNarrative.timeline" :key="item.year" class="home-timeline__item" :class="index % 2 === 0 ? 'home-timeline__item--upper' : 'home-timeline__item--lower'"><div class="home-timeline__card"><span class="home-timeline__step" aria-hidden="true">{{ String(index + 1).padStart(2, '0') }}</span><strong>{{ item.year }}</strong><span>{{ item.label }}</span></div><span class="home-timeline__node" aria-hidden="true" /></li></ol><RouterLink class="section-link" to="/history">查看完整时间轴 <span aria-hidden="true">→</span></RouterLink></div></section>
+  <section class="section section--paper"><div class="shell"><div class="center-heading"><p class="eyebrow">HISTORICAL TIMELINE</p><h2>峥嵘岁月</h2></div><div class="empty-state"><h3>历史资料正在整理中</h3><p>当前不以未核实的事件标题、年份或日期展示首页时间线。</p></div><RouterLink class="section-link" to="/history">查看资料说明 <span aria-hidden="true">→</span></RouterLink></div></section>
   <section class="section"><div class="shell"><div class="center-heading"><p class="eyebrow">COLLECTION HIGHLIGHTS</p><h2>馆藏精品</h2></div><div class="relic-grid"><RelicCard v-for="relic in relicHighlights" :key="relic.id" :relic="relic" /></div><RouterLink class="section-link" to="/relics">浏览全部文物 <span aria-hidden="true">→</span></RouterLink></div></section>
-  <section class="section section--paper"><div class="shell"><div class="center-heading"><p class="eyebrow">HISTORICAL FIGURES</p><h2>历史人物</h2></div><div class="person-grid home-people"><PersonCard v-for="person in people" :key="person.id" :person="person" /></div><RouterLink class="section-link" to="/people">人物档案 <span aria-hidden="true">→</span></RouterLink></div></section>
+  <section class="section section--paper"><div class="shell"><div class="center-heading"><p class="eyebrow">HISTORICAL FIGURES</p><h2>历史人物</h2></div><div class="empty-state"><h3>人物资料正在整理中</h3><p>当前未收录可公开展示的可靠人物资料，因此不展示演示姓名、履历或人物肖像。</p></div><RouterLink class="section-link" to="/people">查看资料说明 <span aria-hidden="true">→</span></RouterLink></div></section>
   <section class="digital-entry" :style="{ backgroundImage: `url(${digitalGuide.image})` }"><div class="shell digital-entry__content"><div><p class="eyebrow">DIGITAL MEMORIAL</p><h2>数字纪念馆</h2><p>{{ digitalGuide.description }}</p></div><RouterLink class="button button--light" :to="homeNarrative.digitalCta.to">{{ homeNarrative.digitalCta.label }} <span aria-hidden="true">→</span></RouterLink></div></section>
   <section class="section"><div class="shell home-lower"><div><div class="framed-title"><p class="eyebrow">NEWS & EVENTS</p><h2>最新动态</h2></div><div class="home-news"><NewsCard v-for="item in news.slice(0, 2)" :key="item.id" :item="item" /></div><RouterLink class="text-link" to="/news">全部动态 <span aria-hidden="true">→</span></RouterLink></div><aside class="visit-guide"><div class="framed-title"><p class="eyebrow">VISIT SERVICE</p><h2>参观指南</h2></div><p>开放时间：{{ visitGuide.openHours }}</p><p>地址：{{ visitGuide.address }}</p><RouterLink class="button" to="/reservation">在线预约</RouterLink></aside></div></section>
   <section class="service-strip"><div class="shell service-strip__grid"><RouterLink v-for="service in visitServices" :key="service.title" :to="service.to"><img :src="service.image" :alt="service.title" /><span>{{ service.title }}</span></RouterLink></div></section>

@@ -1,2 +1,2 @@
-<script setup>import PageHero from '../components/PageHero.vue'; import Timeline from '../components/Timeline.vue'; import { historyEvents } from '../data/museum'; import { images } from '../data/imageAssets'</script>
-<template><PageHero title="峥嵘岁月" description="按时间线索阅读待核实的历史资料结构。" :image="images.historyPaper" /><section class="section"><div class="shell"><div class="notice">以下事件均为课程设计的结构演示，尚未作为正式历史资料发布。</div><div style="margin-top:38px"><Timeline :events="historyEvents" /></div></div></section></template>
+<script setup>import PageHero from '../components/PageHero.vue'; import { images } from '../data/imageAssets'</script>
+<template><PageHero title="峥嵘岁月" description="历史资料正在整理中。" :image="images.historyPaper" /><section class="section"><div class="shell"><div class="empty-state"><h2>历史资料正在整理中</h2><p>当前项目未收录可公开展示的可靠历史事件，不以演示标题、年份或日期填充时间轴。</p></div></div></section></template>

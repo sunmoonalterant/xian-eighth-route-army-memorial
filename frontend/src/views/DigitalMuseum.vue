@@ -1,37 +1,29 @@
 <script setup>
-import { ref } from 'vue'
 import PageHero from '../components/PageHero.vue'
 import { digitalGuide } from '../data/digitalMuseum'
-
-const selected = ref(digitalGuide.courtyards[0])
 </script>
 
 <template>
-  <PageHero title="数字纪念馆" description="七贤庄平面数字导览功能预览。" :image="digitalGuide.image" />
+  <PageHero title="数字纪念馆" description="七贤庄平面导览资料正在整理中。" :image="digitalGuide.image" />
   <section class="section">
     <div class="shell">
-      <div class="notice">本阶段为七贤庄平面数字导览演示，不包含 360°VR；院落信息与相关内容均待史料核实。官网已采集到“{{ digitalGuide.officialProtection.title }}”资料，作为旧址保护说明，仍待审核。</div>
+      <div class="notice">当前未收录可与具体院落可靠对应的资料，因此不展示可点击院落热点。官网已采集到“{{ digitalGuide.officialProtection.title }}”资料，作为旧址保护说明，仍待人工审核。平面图仅用于页面交互布局示意，不代表真实地理测绘坐标。<a :href="digitalGuide.officialProtection.sourceUrl" target="_blank" rel="noreferrer">查看官网来源</a></div>
       <div class="guide-layout">
         <div class="guide-map" aria-label="七贤庄平面数字导览示意图">
           <div class="map-heading"><span>七贤庄平面数字导览</span><small>COURTYARD PLAN · DEMO</small></div>
-          <svg viewBox="0 0 560 370" role="img" aria-label="可选择一号院、三号院、四号院和七号院的平面示意图">
+          <svg viewBox="0 0 560 370" role="img" aria-label="当前无可核实院落热点的平面示意图">
             <path class="map-boundary" d="M28 28H532V342H28Z" />
             <path class="map-path" d="M28 171H532M280 28V342" />
-            <g v-for="courtyard in digitalGuide.courtyards" :key="courtyard.id" class="map-zone" :class="{ 'is-selected': selected.id === courtyard.id }" tabindex="0" role="button" @click="selected = courtyard" @keydown.enter="selected = courtyard" @keydown.space.prevent="selected = courtyard">
-              <rect :x="courtyard.x" :y="courtyard.y" :width="courtyard.width" :height="courtyard.height" rx="2" />
-              <text :x="courtyard.x + courtyard.width / 2" :y="courtyard.y + 42" text-anchor="middle">{{ courtyard.number }}</text>
-              <text class="map-zone__name" :x="courtyard.x + courtyard.width / 2" :y="courtyard.y + 70" text-anchor="middle">{{ courtyard.name }}</text>
-            </g>
+            <text class="map-entry" x="280" y="185" text-anchor="middle">院落资料整理中</text>
             <text class="map-entry" x="280" y="354" text-anchor="middle">入口示意</text>
           </svg>
         </div>
         <article class="guide-card">
-          <img :src="selected.image" :alt="`${selected.name}课程设计展示图片`" />
-          <p class="eyebrow">{{ selected.number }} COURTYARD GUIDE</p>
-          <h2>{{ selected.name }}</h2>
-          <p>{{ selected.description }}</p>
-          <div class="guide-related"><span>相关内容</span><p>{{ selected.related }}</p></div>
-          <RouterLink class="button button--ghost" to="/museum">查看详情 <span>→</span></RouterLink>
+          <p class="eyebrow">COURTYARD GUIDE</p>
+          <h2>院落资料正在整理中</h2>
+          <p>尚无可公开展示、且能与具体院落准确对应的名称、用途、图片或坐标资料。后续仅在资料来源明确后增加热点。</p>
+          <div class="guide-related"><span>资料来源</span><p>八路军西安办事处纪念馆官网公开资料整理，待人工审核。</p></div>
+          <RouterLink class="button button--ghost" to="/museum">了解旧址保护资料 <span>→</span></RouterLink>
         </article>
       </div>
     </div>

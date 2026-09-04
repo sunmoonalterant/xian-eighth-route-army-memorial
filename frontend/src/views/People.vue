@@ -1,2 +1,2 @@
-<script setup>import PageHero from '../components/PageHero.vue'; import PersonCard from '../components/PersonCard.vue'; import { people } from '../data/people'; import { images } from '../data/imageAssets'</script>
-<template><PageHero title="历史人物" description="以下人物档案均为课程设计演示，资料待核实。" :image="images.historyPaper" /><section class="section"><div class="shell"><div class="notice">人物肖像已统一替换为中性资料占位图，不使用生成式真实人物面孔。</div><div class="person-grid" style="margin-top:28px"><PersonCard v-for="person in people" :key="person.id" :person="person" /></div></div></section></template>
+<script setup>import PageHero from '../components/PageHero.vue'; import { images } from '../data/imageAssets'</script>
+<template><PageHero title="历史人物" description="人物资料正在整理中。" :image="images.historyPaper" /><section class="section"><div class="shell"><div class="empty-state"><h2>人物资料正在整理中</h2><p>当前项目未收录可公开展示的可靠人物资料，因此不展示演示姓名、生平或生成式人物肖像。</p></div></div></section></template>
