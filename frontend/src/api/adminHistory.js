@@ -1,0 +1,10 @@
+import client from './client.js'
+export const getList=(params)=>client.get('/admin/history-events',{params})
+export const getById=(id)=>client.get(`/admin/history-events/${id}`)
+export const create=(data)=>client.post('/admin/history-events',data)
+export const update=(id,data)=>client.put(`/admin/history-events/${id}`,data)
+export const remove=(id)=>client.delete(`/admin/history-events/${id}`)
+export const getImages=(id)=>client.get(`/admin/history-events/${id}/images`)
+export const uploadImage=(id,data)=>client.post(`/admin/history-events/${id}/images`,data)
+export const updateImage=(id,imageId,data)=>client.put(`/admin/history-events/${id}/images/${imageId}`,data)
+export const removeImage=(id,imageId)=>client.delete(`/admin/history-events/${id}/images/${imageId}`)

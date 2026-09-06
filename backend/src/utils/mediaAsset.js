@@ -3,10 +3,13 @@ const ENTITY_USAGE_TYPES = {
   relic: new Set(['cover', 'gallery']),
   article: new Set(['cover', 'content']),
   exhibition: new Set(['cover', 'gallery']),
+  history_event: new Set(['cover', 'historical', 'document']),
+  courtyard: new Set(['cover', 'historical', 'building', 'gallery']),
+  digital_museum: new Set(['map']),
 }
 
 const REVIEW_STATUSES = new Set(['pending', 'verified', 'rejected'])
-const UPLOAD_PATH_PATTERN = /^\/uploads\/(people|relics|news|exhibitions)\/[A-Za-z0-9][A-Za-z0-9._-]*\.(?:jpg|jpeg|png|webp)$/i
+const UPLOAD_PATH_PATTERN = /^\/uploads\/(people|relics|news|exhibitions|history|courtyards|digital-museum)\/[A-Za-z0-9][A-Za-z0-9._-]*\.(?:jpg|jpeg|png|webp)$/i
 
 function createMediaValidationError(message) {
   const error = new Error(message)

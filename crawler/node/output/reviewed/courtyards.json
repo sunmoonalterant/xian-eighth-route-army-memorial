@@ -1,0 +1,86 @@
+[
+  {
+    "candidateId": "courtyard-no-1",
+    "name": "七贤庄一号院",
+    "aliases": [
+      "一号院"
+    ],
+    "summary": "官网采集展览记录称七贤庄一号院是国民革命军第八路驻陕办事处主要办公地点。",
+    "content": null,
+    "historicalUse": "国民革命军第八路驻陕办事处主要办公地点。",
+    "currentUse": null,
+    "sourceUrl": "http://www.xabb.org.cn/display/4.html",
+    "sourceName": "八路军西安办事处纪念馆官网陈列展览栏目",
+    "sourceLevel": "A",
+    "evidence": "已保存官网采集记录 sourceApiId=14 的标题为“一号院”，正文明确称其为国民革命军第八路驻陕办事处主要办公地点；当前栏目静态 HTML 未展示该正文，需人工复查。",
+    "verified": true,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-09-06T07:25:01.752Z",
+    "positionX": 22,
+    "positionY": 62,
+    "sortOrder": 10
+  },
+  {
+    "candidateId": "courtyard-no-3",
+    "name": "七贤庄三号院",
+    "aliases": [
+      "三号院"
+    ],
+    "summary": "官网采集馆情文字将三号院列为统战科旧址。",
+    "content": null,
+    "historicalUse": "统战科旧址。",
+    "currentUse": null,
+    "sourceUrl": "http://www.xabb.org.cn/exhibitionHall/2.html",
+    "sourceName": "八路军西安办事处纪念馆官网展馆介绍",
+    "sourceLevel": "A",
+    "evidence": "已保存的官网采集馆情文字明确列出“开放……三号院统战科旧址”。",
+    "verified": true,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-09-06T07:25:01.753Z",
+    "positionX": 43,
+    "positionY": 36,
+    "sortOrder": 20
+  },
+  {
+    "candidateId": "courtyard-no-4",
+    "name": "七贤庄四号院",
+    "aliases": [
+      "四号院"
+    ],
+    "summary": "官网采集馆情文字将四号院列为采办委员会暨经理科旧址。",
+    "content": null,
+    "historicalUse": "采办委员会暨经理科旧址。",
+    "currentUse": null,
+    "sourceUrl": "http://www.xabb.org.cn/exhibitionHall/2.html",
+    "sourceName": "八路军西安办事处纪念馆官网展馆介绍",
+    "sourceLevel": "A",
+    "evidence": "已保存的官网采集馆情文字明确列出“开放……四号院采办委员会暨经理科旧址”。",
+    "verified": true,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-09-06T07:25:01.753Z",
+    "positionX": 58,
+    "positionY": 36,
+    "sortOrder": 30
+  },
+  {
+    "candidateId": "courtyard-no-7",
+    "name": "七贤庄七号院",
+    "aliases": [
+      "七号院"
+    ],
+    "summary": "官网采集馆情文字将七号院列为联合招生委员会旧址。",
+    "content": null,
+    "historicalUse": "联合招生委员会旧址。",
+    "currentUse": null,
+    "sourceUrl": "http://www.xabb.org.cn/exhibitionHall/2.html",
+    "sourceName": "八路军西安办事处纪念馆官网展馆介绍",
+    "sourceLevel": "A",
+    "evidence": "已保存的官网采集馆情文字明确列出“开放……七号院联合招生委员会旧址”。",
+    "verified": true,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-09-06T07:25:01.753Z",
+    "positionX": 80,
+    "positionY": 62,
+    "sortOrder": 40
+  }
+]

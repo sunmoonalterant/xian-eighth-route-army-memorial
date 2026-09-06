@@ -1,0 +1,4 @@
+const fs=require('node:fs');const path=require('node:path')
+const input=path.resolve(__dirname,'../../crawler/node/output/candidates/history-events.json');const output=path.resolve(__dirname,'../../crawler/node/output/reviewed/history-events.json')
+const rows=JSON.parse(fs.readFileSync(input,'utf8')).map((row,index)=>({candidateId:row.candidateId,title:row.title,timeText:row.originalDateText,year:row.year,month:row.month,day:row.day,precision:row.datePrecision,summary:row.summary,content:row.content||null,sourceUrl:row.sourceUrl,sourceName:row.sourceName,sourceLevel:row.sourceLevel,evidence:row.evidence,verified:true,reviewStatus:'verified',reviewedAt:new Date().toISOString(),isFeatured:index<7,sortOrder:index}))
+fs.mkdirSync(path.dirname(output),{recursive:true});fs.writeFileSync(output,`${JSON.stringify(rows,null,2)}\n`);console.log({approved:rows.length,output})

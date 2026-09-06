@@ -1,0 +1,5 @@
+const fields = 'id,title,summary,content,source_url,source_name,evidence,review_status,status,created_at,updated_at'
+async function findCurrent(db, publicOnly = false) { const [rows] = await db.query(`SELECT ${fields} FROM digital_museum${publicOnly ? " WHERE review_status='verified' AND status=1" : ''} ORDER BY id LIMIT 1`); return rows[0] || null }
+async function findById(db, id) { const [rows] = await db.query(`SELECT ${fields} FROM digital_museum WHERE id=? LIMIT 1`, [id]); return rows[0] || null }
+async function save(db, input) { const existing = await findCurrent(db); if (existing) { await db.query('UPDATE digital_museum SET title=?,summary=?,content=?,source_url=?,source_name=?,evidence=?,review_status=?,status=? WHERE id=?', [...input, existing.id]); return existing.id } const [result] = await db.query('INSERT INTO digital_museum (title,summary,content,source_url,source_name,evidence,review_status,status) VALUES (?,?,?,?,?,?,?,?)', input); return result.insertId }
+module.exports = { findById, findCurrent, save }

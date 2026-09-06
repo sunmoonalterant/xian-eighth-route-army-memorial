@@ -17,19 +17,19 @@
 | 模块 | 表 | 职责 |
 | --- | --- | --- |
 | 内容展示 | `museum`、`relic_category`、`relic`、`exhibition`、`article_category`、`article` | 展示馆情、馆藏、展览和新闻内容。 |
-| 历史文化 | `person`、`history_event`、`courtyard` | 承接人物档案、时间轴与数字导览热点。 |
+| 历史文化 | `person`、`history_event`、`digital_museum`、`courtyard` | 承接人物档案、时间轴、七贤庄整体导览与数字导览热点。 |
 | 游客服务 | `visit_schedule`、`reservation`、`feedback` | 管理可预约时段、预约记录和游客留言。 |
 | 运营统计 | `visit_log` | 按匿名访客标识计算访问量，不保存真实 IP 或个人证件信息。 |
 | 管理 | `admin` | 保存后台账号及密码哈希，角色仅限 `admin`、`editor`。 |
 
-总计 14 张表。
+初始设计为 14 张表；D11.8 最小迁移新增 `digital_museum` 后，当前实际结构为 15 张表。
 
 ## 3. 核心关系与独立内容表
 
 1. `relic_category` 1:N `relic`：一件文物只能属于一个分类，文物允许尚未分类，因此 `category_id` 可为空。
 2. `article_category` 1:N `article`：新闻资讯分类可为空，便于先导入待整理的官网资料。
 3. `visit_schedule` 1:N `reservation`：一条排期可关联多条预约；每个日期+时段仅允许一条排期。
-4. `museum`、`exhibition`、`person`、`history_event`、`courtyard`、`feedback`、`visit_log` 和 `admin` 暂不强行关联，避免在当前前台需求之外增加不确定外键。
+4. `museum`、`exhibition`、`person`、`history_event`、`digital_museum`、`courtyard`、`feedback`、`visit_log` 和 `admin` 暂不强行关联，避免在当前前台需求之外增加不确定外键。
 
 外键使用 `ON DELETE SET NULL`（内容分类）或 `ON DELETE RESTRICT`（预约排期），防止删除分类或排期时误删已展示内容和预约记录。
 

@@ -26,6 +26,8 @@ routes.unshift(
       { path: 'news', name: 'AdminNews', component: () => import('../views/AdminNews.vue'), meta: { requiresAdmin: true } },
       { path: 'exhibitions', name: 'AdminExhibitions', component: () => import('../views/AdminExhibitions.vue'), meta: { requiresAdmin: true } },
       { path: 'people', name: 'AdminPeople', component: () => import('../views/AdminPeople.vue'), meta: { requiresAdmin: true } },
+      { path: 'history', name: 'AdminHistory', component: () => import('../views/AdminHistory.vue'), meta: { requiresAdmin: true } },
+      { path: 'digital-museum', name: 'AdminDigitalMuseum', component: () => import('../views/AdminDigitalMuseum.vue'), meta: { requiresAdmin: true } },
     ],
   },
 )

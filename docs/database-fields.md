@@ -131,6 +131,11 @@
 | --- | --- | --- | --- | --- |
 | `id` | BIGINT UNSIGNED | 否 | 主键 | 系统生成 |
 | `year` | SMALLINT UNSIGNED | 是 | 用于时间轴排序的年份 | 官网采集/后台维护 |
+| `time_text` | VARCHAR(100) | 是 | 来源原始时间文本，游客端优先展示 | 官网采集/后台维护 |
+| `month` / `day` | TINYINT UNSIGNED | 是 | 仅在来源明确时保存，绝不补全 | 官网采集/后台维护 |
+| `time_precision` | VARCHAR(20) | 否 | `year`、`month`、`day`、`season`、`range`、`unknown` | 后台维护 |
+| `review_status` | VARCHAR(20) | 否 | `pending`、`verified`、`conflict`、`rejected` | 人工审核 |
+| `is_featured` / `sort_order` | TINYINT / INT | 否 | 首页峥嵘岁月开关与顺序 | 后台维护 |
 | `event_date` | DATE | 是 | 经核实的具体日期 | 官网采集/后台维护 |
 | `title` | VARCHAR(200) | 否 | 事件标题 | 官网采集/后台维护 |
 | `description` | TEXT | 是 | 时间轴短描述 | 官网采集/后台维护 |
@@ -156,6 +161,21 @@
 | `status` | TINYINT | 否 | 1 正常，0 隐藏/待审核 | 后台维护 |
 | `created_at` | DATETIME | 否 | 创建时间 | 系统生成 |
 | `updated_at` | DATETIME | 否 | 最近更新时间 | 系统生成 |
+
+### D11.8 院落扩展字段
+
+| 字段 | 类型 | 可为空 | 说明 | 来源 |
+| --- | --- | --- | --- | --- |
+| `candidate_id` | VARCHAR(100) | 是 | 审核候选的稳定身份 | 候选资料 |
+| `aliases` | VARCHAR(500) | 是 | 院落别名，以内部分隔形式保存 | 官网采集/后台维护 |
+| `historical_use` / `current_use` | TEXT | 是 | 已核验历史用途与当前用途 | 官网采集/后台维护 |
+| `source_name` / `evidence` | VARCHAR(200) / TEXT | 是 | 来源机构与可复查证据摘要 | 官网采集/人工审核 |
+| `review_status` | VARCHAR(20) | 否 | `pending`、`verified`、`conflict`、`rejected`；与上线状态独立 | 人工审核 |
+| `sort_order` | INT | 否 | 热点和院落展示顺序 | 后台维护 |
+
+## D11.8 `digital_museum` — 七贤庄整体导览
+
+保存七贤庄整体介绍、来源与审核/展示状态；不保存具体院落热点。导览底图以 `media_asset.entity_type=digital_museum`、`usage_type=map` 关联，未审核底图不会对游客公开。
 
 ## 10. `visit_schedule` — 预约时间段
 

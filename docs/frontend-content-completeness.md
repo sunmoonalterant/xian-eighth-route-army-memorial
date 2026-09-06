@@ -22,3 +22,15 @@
 - `/search`：人物已恢复；历史事件未加入。
 - `/history`：pending。
 - `/digital-museum`：pending。
+
+# D11.7 更新
+
+- `/history`：complete。仅读取 `/api/history-events` 返回的 `verified + status=1` 正式事件；请求失败时明确提示，绝不回退到演示时间线。
+- `/`：历史时间轴恢复，仅读取 `/api/history-events?featured=true` 的首页精选正式事件；数量不足时不以演示内容补齐。
+- `/search`：仅将历史 API 返回的正式事件纳入搜索结果。
+- `/digital-museum`：仍为 pending；本阶段不发布未审核院落资料或候选图片。
+
+# D11.8 更新
+
+- `/digital-museum`：partial。已恢复 4 个经人工批准的官网院落热点；底图尚未上传经审核的官方导览图，因此显示明确标注的课程设计示意图。
+- 页面只读取 `/api/digital-museum`；API 失败或无公开院落时显示安全提示，不回退旧演示热点。

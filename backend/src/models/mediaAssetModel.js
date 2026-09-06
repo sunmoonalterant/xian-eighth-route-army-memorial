@@ -6,6 +6,9 @@ async function entityExists(db, entityType, entityId) {
     relic: 'relic',
     article: 'article',
     exhibition: 'exhibition',
+    history_event: 'history_event',
+    courtyard: 'courtyard',
+    digital_museum: 'digital_museum',
   }[entityType]
   if (!table) return false
   const [rows] = await db.query(`SELECT id FROM \`${table}\` WHERE id = ? LIMIT 1`, [entityId])
@@ -38,7 +41,8 @@ async function update(db, id, input) {
 async function hideOtherCovers(db, entityType, entityId, excludedId = null) {
   const excluded = excludedId ? ' AND id <> ?' : ''
   const values = excludedId ? [entityType, entityId, excludedId] : [entityType, entityId]
-  await db.execute(`UPDATE \`media_asset\` SET status = 0 WHERE entity_type = ? AND entity_id = ? AND usage_type = 'cover' AND status = 1${excluded}`, values)
+  const usageType = entityType === 'digital_museum' ? 'map' : 'cover'
+  await db.execute(`UPDATE \`media_asset\` SET status = 0 WHERE entity_type = ? AND entity_id = ? AND usage_type = ? AND status = 1${excluded}`, [entityType, entityId, usageType, ...(excludedId ? [excludedId] : [])])
 }
 
 async function remove(db, id) { await db.execute('DELETE FROM `media_asset` WHERE id = ?', [id]) }

@@ -14,10 +14,12 @@ import { homeNarrative } from '../data/homeNarrative'
 import { qixianzhuangMedia, qixianzhuangProfile } from '../data/qixianzhuang'
 import { toMuseumView, toRelicView } from '../utils/apiAdapters'
 import { getPeople } from '../api/people'
+import { fetchFeaturedHistoryEvents } from '../api/history.js'
 
 const displayMuseum = ref(museum)
 const relicHighlights = ref(relics.slice(0, 4))
 const peopleHighlights = ref([])
+const historyHighlights = ref([])
 const visitServices = [
   { title: '交通路线', to: '/visit', image: images.serviceRoute },
   { title: '开放时间', to: '/visit', image: images.serviceTime },
@@ -39,6 +41,7 @@ onMounted(async () => {
     console.warn('首页文物 API 不可用，已使用本地资料。', error)
   }
   try { peopleHighlights.value = (await getPeople({ page: 1, pageSize: 4 })).list } catch (error) { console.warn('首页人物 API 不可用。', error) }
+  try { historyHighlights.value = (await fetchFeaturedHistoryEvents({ page: 1, pageSize: 7 })).list } catch (error) { console.warn('首页历史资料 API 不可用。', error) }
 })
 </script>
 
@@ -54,7 +57,7 @@ onMounted(async () => {
   </section>
   <section class="section"><div class="shell intro-grid"><img :src="displayMuseum.image" alt="八路军西安办事处纪念馆旧址环境" /><div><div class="framed-title"><p class="eyebrow">ABOUT THE MEMORIAL</p><h2>走进纪念馆</h2></div><p>{{ displayMuseum.intro }}</p><RouterLink class="text-link" to="/museum">了解更多 <span aria-hidden="true">→</span></RouterLink></div></div></section>
   <section class="section section--paper"><div class="shell qixianzhuang-profile"><div class="center-heading"><p class="eyebrow">QIXIANZHUANG ARCHIVE</p><h2>七贤庄旧址</h2></div><p class="qixianzhuang-profile__intro">{{ qixianzhuangProfile.intro }}</p><div class="qixianzhuang-media"><figure v-for="item in qixianzhuangMedia" :key="item.title" class="qixianzhuang-media__item"><img :src="item.image" :alt="item.title" loading="lazy" referrerpolicy="no-referrer" /><figcaption><strong>{{ item.title }}</strong><span>{{ item.caption }}</span><a :href="item.sourceUrl" target="_blank" rel="noreferrer">{{ item.sourceLabel }}</a></figcaption></figure></div></div></section>
-  <section class="section section--paper"><div class="shell"><div class="center-heading"><p class="eyebrow">HISTORICAL TIMELINE</p><h2>峥嵘岁月</h2></div><div class="notice">以下节点据七贤庄词条及纪念馆资料整理。</div><ol class="home-timeline" aria-label="八路军西安办事处历史时间轴"><li v-for="(item, index) in homeNarrative.timeline" :key="item.id" class="home-timeline__item" :class="index % 2 === 0 ? 'home-timeline__item--upper' : 'home-timeline__item--lower'"><div class="home-timeline__card"><span class="home-timeline__step" aria-hidden="true">{{ String(index + 1).padStart(2, '0') }}</span><strong>{{ item.year }}</strong><span>{{ item.label }}</span></div><span class="home-timeline__node" aria-hidden="true" /></li></ol><RouterLink class="section-link" to="/history">查看完整时间轴 <span aria-hidden="true">→</span></RouterLink></div></section>
+  <section class="section section--paper"><div class="shell"><div class="center-heading"><p class="eyebrow">HISTORICAL TIMELINE</p><h2>峥嵘岁月</h2></div><ol v-if="historyHighlights.length" class="home-timeline" aria-label="八路军西安办事处历史时间轴"><li v-for="(item, index) in historyHighlights" :key="item.id" class="home-timeline__item" :class="index % 2 === 0 ? 'home-timeline__item--upper' : 'home-timeline__item--lower'"><div class="home-timeline__card"><span class="home-timeline__step" aria-hidden="true">{{ String(index + 1).padStart(2, '0') }}</span><strong>{{ item.timeText }}</strong><span>{{ item.title }}</span></div><span class="home-timeline__node" aria-hidden="true" /></li></ol><p v-else class="empty-state">已审核历史资料暂时无法加载。</p><RouterLink class="section-link" to="/history">查看完整时间轴 <span aria-hidden="true">→</span></RouterLink></div></section>
   <section class="section"><div class="shell"><div class="center-heading"><p class="eyebrow">COLLECTION HIGHLIGHTS</p><h2>馆藏精品</h2></div><div class="relic-grid"><RelicCard v-for="relic in relicHighlights" :key="relic.id" :relic="relic" /></div><RouterLink class="section-link" to="/relics">浏览全部文物 <span aria-hidden="true">→</span></RouterLink></div></section>
   <section class="section section--paper"><div class="shell"><div class="center-heading"><p class="eyebrow">HISTORICAL FIGURES</p><h2>历史人物</h2></div><div v-if="peopleHighlights.length" class="home-people"><PersonCard v-for="person in peopleHighlights" :key="person.id" :person="person" /></div><div v-else class="empty-state"><p>人物资料暂时无法加载。</p></div><RouterLink class="section-link" to="/people">浏览人物资料 <span aria-hidden="true">→</span></RouterLink></div></section>
   <section class="digital-entry" :style="{ backgroundImage: `url(${digitalGuide.image})` }"><div class="shell digital-entry__content"><div><p class="eyebrow">DIGITAL MEMORIAL</p><h2>数字纪念馆</h2><p>{{ digitalGuide.description }}</p></div><RouterLink class="button button--light" :to="homeNarrative.digitalCta.to">{{ homeNarrative.digitalCta.label }} <span aria-hidden="true">→</span></RouterLink></div></section>

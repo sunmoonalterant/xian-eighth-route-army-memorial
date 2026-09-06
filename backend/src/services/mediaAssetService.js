@@ -23,7 +23,8 @@ async function addAsset(pool, entityType, entityId, file, metadata) {
   const upload = validateImageUpload(file)
   const localPath = await writeUpload(entityType, entityId, upload.extension, file.buffer)
   try {
-    if (['relic', 'article', 'exhibition'].includes(entityType) && input.usageType === 'cover' && input.status === 1) await mediaAssetModel.hideOtherCovers(pool, entityType, entityId)
+    if (['relic', 'article', 'exhibition', 'courtyard'].includes(entityType) && input.usageType === 'cover' && input.status === 1) await mediaAssetModel.hideOtherCovers(pool, entityType, entityId)
+    if (entityType === 'digital_museum' && input.usageType === 'map' && input.status === 1) await mediaAssetModel.hideOtherCovers(pool, entityType, entityId)
     return toAdminAsset(await mediaAssetModel.insert(pool, entityType, entityId, localPath, input))
   } catch (error) { await removeUpload(localPath); throw error }
 }
@@ -32,7 +33,8 @@ async function updateAsset(pool, entityType, entityId, imageId, metadata) {
   const record = await mediaAssetModel.findById(pool, imageId)
   if (!record || record.entity_type !== entityType || Number(record.entity_id) !== Number(entityId)) throw createHttpError(404, 'image not found')
   const input = normalizeMediaMetadata(entityType, recordToInput(record, metadata))
-  if (['relic', 'article', 'exhibition'].includes(entityType) && input.usageType === 'cover' && input.status === 1) await mediaAssetModel.hideOtherCovers(pool, entityType, entityId, imageId)
+  if (['relic', 'article', 'exhibition', 'courtyard'].includes(entityType) && input.usageType === 'cover' && input.status === 1) await mediaAssetModel.hideOtherCovers(pool, entityType, entityId, imageId)
+  if (entityType === 'digital_museum' && input.usageType === 'map' && input.status === 1) await mediaAssetModel.hideOtherCovers(pool, entityType, entityId, imageId)
   return toAdminAsset(await mediaAssetModel.update(pool, imageId, input))
 }
 
@@ -53,10 +55,10 @@ async function getPublicAssets(pool, entityType, entityId) {
 
 async function applyPublicMedia(pool, entityType, entity) {
   const assets = await getPublicAssets(pool, entityType, entity.id)
-  const cover = assets.find((asset) => asset.usageType === 'cover')
-  const relatedUsage = entityType === 'article' ? 'content' : 'gallery'
+  const cover = assets.find((asset) => asset.usageType === (entityType === 'digital_museum' ? 'map' : 'cover'))
+  const relatedUsage = entityType === 'article' ? ['content'] : entityType === 'history_event' ? ['historical', 'document'] : entityType === 'courtyard' ? ['historical', 'building', 'gallery'] : ['gallery']
   const relatedImages = assets
-    .filter((asset) => asset.usageType === relatedUsage)
+    .filter((asset) => relatedUsage.includes(asset.usageType))
     .map(({ url, caption }) => ({ url, caption }))
   const relatedField = entityType === 'article' ? 'contentImages' : 'galleryImages'
   return { ...entity, coverImage: cover?.url || entity.coverImage, [relatedField]: relatedImages }

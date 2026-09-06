@@ -10,6 +10,8 @@ const usageByEntity = {
   relic: [{ value: 'cover', label: '文物封面' }, { value: 'gallery', label: '文物图库' }],
   article: [{ value: 'cover', label: '新闻封面' }, { value: 'content', label: '新闻正文图' }],
   exhibition: [{ value: 'cover', label: '展览封面' }, { value: 'gallery', label: '展览图库' }],
+  courtyard: [{ value: 'cover', label: '院落封面' }, { value: 'historical', label: '历史图片' }, { value: 'building', label: '建筑图片' }, { value: 'gallery', label: '院落图库' }],
+  digital_museum: [{ value: 'map', label: '导览底图' }],
 }
 const emptyForm = () => ({ usageType: usageByEntity[props.entityType]?.[0]?.value || '', publisher: '', sourceImageUrl: '', sourcePageUrl: '', caption: '', identityEvidence: '', personPosition: '', sortOrder: 0, reviewStatus: 'pending', status: 1 })
 const form = reactive(emptyForm())

@@ -4,7 +4,7 @@ const path = require('node:path')
 const { assertUploadPath, createMediaValidationError } = require('./mediaAsset')
 
 const uploadsRoot = path.resolve(__dirname, '../../uploads')
-const directoryByEntity = { person: 'people', relic: 'relics', article: 'news', exhibition: 'exhibitions' }
+const directoryByEntity = { person: 'people', relic: 'relics', article: 'news', exhibition: 'exhibitions', history_event: 'history', courtyard: 'courtyards', digital_museum: 'digital-museum' }
 
 function buildUploadPath(entityType, entityId, extension) {
   const directory = directoryByEntity[entityType]

@@ -28,6 +28,8 @@ function logout() {
         <ElMenuItem index="/admin/news">新闻管理</ElMenuItem>
         <ElMenuItem index="/admin/exhibitions">展览管理</ElMenuItem>
         <ElMenuItem index="/admin/people">人物管理</ElMenuItem>
+        <ElMenuItem index="/admin/history">历史管理</ElMenuItem>
+        <ElMenuItem index="/admin/digital-museum">数字纪念馆</ElMenuItem>
       </ElMenu>
     </aside>
     <section class="admin-main">

@@ -27,6 +27,11 @@ test('admin layout exposes implemented D11.6 people management without future-on
   assert.doesNotMatch(source, /统计中心|系统设置/)
 })
 
+test('history management provides a homepage-feature filter for reviewed event operations', () => {
+  const source = fs.readFileSync(new URL('../src/views/AdminHistory.vue', import.meta.url), 'utf8')
+  assert.match(source, /<ElSelect v-model="filters\.featured"/)
+})
+
 test('people and exhibition API adapters expose protected image management endpoints', () => {
   const peopleApi = fs.readFileSync(new URL('../src/api/adminPeople.js', import.meta.url), 'utf8')
   const exhibitionApi = fs.readFileSync(new URL('../src/api/adminExhibitions.js', import.meta.url), 'utf8')

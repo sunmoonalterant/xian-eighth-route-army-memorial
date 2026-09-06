@@ -1,0 +1,8 @@
+require('dotenv').config({ quiet: true })
+const fs=require('node:fs');const path=require('node:path');const pool=require('../src/config/db')
+const source=path.resolve(__dirname,'../../crawler/node/output/reviewed/history-events.json')
+function records(){return JSON.parse(fs.readFileSync(source,'utf8'))}
+function input(row){return [row.candidateId,row.timeText,row.year,row.month,row.day,row.precision,row.title,row.summary,row.content||null,row.sourceUrl,row.sourceName,row.evidence,'verified',1,row.isFeatured?1:0,row.sortOrder||0]}
+async function seed(db=pool,{dryRun=false}={}){let inserted=0,updated=0,skipped=0;for(const row of records()){if(!row.verified||row.reviewStatus!=='verified'){skipped++;continue}const [existing]=await db.query('SELECT id FROM history_event WHERE candidate_id=? LIMIT 1',[row.candidateId]);if(existing[0]){updated++;if(!dryRun)await db.query('UPDATE history_event SET time_text=?,year=?,month=?,day=?,time_precision=?,title=?,description=?,content=?,source_url=?,source_name=?,evidence=?,review_status=?,status=?,is_featured=?,sort_order=? WHERE candidate_id=?',[...input(row).slice(1),row.candidateId])}else{inserted++;if(!dryRun)await db.query('INSERT INTO history_event (candidate_id,time_text,year,month,day,time_precision,title,description,content,source_url,source_name,evidence,review_status,status,is_featured,sort_order) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)',input(row))}}return{inserted,updated,skipped}}
+if(require.main===module)seed(pool,{dryRun:process.argv.includes('--dry-run')}).then(console.log).catch((e)=>{console.error(e.message);process.exitCode=1}).finally(()=>pool.end())
+module.exports={seed}
