@@ -1,12 +1,14 @@
 <script setup>
 import { onMounted, reactive, ref } from 'vue'
 import { ElButton, ElDatePicker, ElDialog, ElEmpty, ElInput, ElMessage, ElMessageBox, ElOption, ElPagination, ElSelect, ElTable, ElTableColumn, ElTag } from 'element-plus'
+import AdminMediaAssetManager from './AdminMediaAssetManager.vue'
 import { buildListParams, isSourceBacked, validateCoverImageUrl, validateExhibitionDates, validateHttpUrl, validateRequiredTitle } from '../utils/adminContentForm.js'
 
-const props = defineProps({ title: String, eyebrow: String, api: Object, type: String, categories: Boolean, era: Boolean, published: Boolean, dates: Boolean })
+const props = defineProps({ title: String, eyebrow: String, api: Object, type: String, categories: Boolean, era: Boolean, published: Boolean, dates: Boolean, media: Boolean })
 const filters = reactive({ page: 1, pageSize: 10, keyword: '', categoryId: '' })
 const rows = ref([]); const total = ref(0); const categoryRows = ref([]); const loading = ref(false); const errorMessage = ref('')
 const detail = ref(null); const detailVisible = ref(false); const formVisible = ref(false); const mode = ref('create'); const saving = ref(false)
+const mediaTarget = ref(null); const mediaVisible = ref(false)
 const emptyForm = () => ({ id: null, name: '', title: '', categoryId: '', category: '', era: '', summary: '', content: '', coverImage: '', sourceUrl: '', publishTime: '', startDate: '', endDate: '', status: 1 })
 const form = reactive(emptyForm())
 const fieldTitle = () => props.type === 'relic' ? '名称' : '标题'
@@ -23,6 +25,7 @@ function reset() { Object.assign(filters, { page: 1, pageSize: 10, keyword: '', 
 async function openDetail(row) { try { detail.value = await props.api.getById(row.id); detailVisible.value = true } catch { ElMessage.error('详情暂时无法加载。') } }
 async function openEdit(row) { try { Object.assign(form, emptyForm(), await props.api.getById(row.id)); mode.value = 'edit'; formVisible.value = true } catch { ElMessage.error('编辑内容暂时无法加载。') } }
 function openCreate() { Object.assign(form, emptyForm()); mode.value = 'create'; formVisible.value = true }
+function openMedia(row) { mediaTarget.value = row; mediaVisible.value = true }
 function normalizedForm() { const data = { ...form }; if (props.type === 'relic') data.categoryId = data.categoryId || null; if (props.type === 'article') data.categoryId = data.categoryId || null; return data }
 function validForm() {
   const title = props.type === 'relic' ? form.name : form.title
@@ -62,7 +65,7 @@ onMounted(async () => { await Promise.all([loadList(), loadCategories()]) })
       <ElTableColumn label="来源" min-width="100"><template #default="{ row }">{{ row.sourceUrl ? '官网/外部' : '—' }}</template></ElTableColumn>
       <ElTableColumn label="状态" min-width="90"><template #default="{ row }"><ElTag :type="row.status === 1 ? 'success' : 'info'" effect="plain">{{ row.status === 1 ? '展示中' : '已下线' }}</ElTag></template></ElTableColumn>
       <ElTableColumn label="更新时间" min-width="160"><template #default="{ row }">{{ row.updatedAt || '—' }}</template></ElTableColumn>
-      <ElTableColumn label="操作" fixed="right" min-width="160"><template #default="{ row }"><ElButton link type="primary" @click="openDetail(row)">查看</ElButton><ElButton link type="primary" @click="openEdit(row)">编辑</ElButton><ElButton link type="danger" :disabled="row.status === 0" @click="hide(row)">下线</ElButton></template></ElTableColumn>
+      <ElTableColumn label="操作" fixed="right" min-width="210"><template #default="{ row }"><ElButton link type="primary" @click="openDetail(row)">查看</ElButton><ElButton link type="primary" @click="openEdit(row)">编辑</ElButton><ElButton v-if="media" link type="primary" @click="openMedia(row)">图片管理</ElButton><ElButton link type="danger" :disabled="row.status === 0" @click="hide(row)">下线</ElButton></template></ElTableColumn>
     </ElTable><ElEmpty v-if="!loading && !rows.length && !errorMessage" description="暂无匹配内容" /></div>
     <div class="admin-pagination"><ElPagination v-model:current-page="filters.page" :page-size="filters.pageSize" layout="total, prev, pager, next" :total="total" @current-change="loadList" /></div>
     <ElDialog v-model="detailVisible" width="min(92vw,700px)" title="内容详情"><dl v-if="detail" class="admin-detail-list"><div><dt>{{ fieldTitle() }}</dt><dd>{{ rowTitle(detail) }}</dd></div><div v-if="detail.category"><dt>分类</dt><dd>{{ detail.category }}</dd></div><div v-if="detail.sourceUrl"><dt>来源 URL</dt><dd class="break-all">{{ detail.sourceUrl }}</dd></div><div v-if="detail.sourceApiId"><dt>采集标识</dt><dd>{{ detail.sourceApiId }}</dd></div><div><dt>状态</dt><dd>{{ detail.status === 1 ? '展示中' : '已下线' }}</dd></div><div><dt>摘要</dt><dd>{{ detail.summary || '—' }}</dd></div><div><dt>正文</dt><dd>{{ detail.content || '—' }}</dd></div></dl></ElDialog>
@@ -77,6 +80,7 @@ onMounted(async () => { await Promise.all([loadList(), loadCategories()]) })
         <label>展示状态<ElSelect v-model="form.status"><ElOption label="展示中" :value="1" /><ElOption label="已下线" :value="0" /></ElSelect></label>
       </form><template #footer><ElButton @click="formVisible = false">取消</ElButton><ElButton type="primary" :loading="saving" @click="save">保存并刷新</ElButton></template>
     </ElDialog>
+    <ElDialog v-model="mediaVisible" width="min(96vw,980px)" :title="`${rowTitle(mediaTarget || {})} · 图片管理`" destroy-on-close><AdminMediaAssetManager v-if="mediaTarget" :entity-type="type" :entity-id="mediaTarget.id" :api="api" /></ElDialog>
   </section>
 </template>
 

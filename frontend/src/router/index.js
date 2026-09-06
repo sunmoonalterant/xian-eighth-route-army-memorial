@@ -25,6 +25,7 @@ routes.unshift(
       { path: 'relics', name: 'AdminRelics', component: () => import('../views/AdminRelics.vue'), meta: { requiresAdmin: true } },
       { path: 'news', name: 'AdminNews', component: () => import('../views/AdminNews.vue'), meta: { requiresAdmin: true } },
       { path: 'exhibitions', name: 'AdminExhibitions', component: () => import('../views/AdminExhibitions.vue'), meta: { requiresAdmin: true } },
+      { path: 'people', name: 'AdminPeople', component: () => import('../views/AdminPeople.vue'), meta: { requiresAdmin: true } },
     ],
   },
 )

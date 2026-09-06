@@ -27,6 +27,7 @@ function logout() {
         <ElMenuItem index="/admin/relics">文物管理</ElMenuItem>
         <ElMenuItem index="/admin/news">新闻管理</ElMenuItem>
         <ElMenuItem index="/admin/exhibitions">展览管理</ElMenuItem>
+        <ElMenuItem index="/admin/people">人物管理</ElMenuItem>
       </ElMenu>
     </aside>
     <section class="admin-main">

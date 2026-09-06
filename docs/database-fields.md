@@ -86,6 +86,29 @@
 | `created_at` | DATETIME | 否 | 创建时间 | 系统生成 |
 | `updated_at` | DATETIME | 否 | 最近更新时间 | 系统生成 |
 
+## D11.6 `media_asset` — 统一内容图片资源
+
+图片文件保存在 `backend/uploads/`，本表仅保存公开路径和来源、审核元数据；不保存图片二进制。`status` 控制游客端是否可用，`review_status` 独立表示资料核验状态。
+
+| 字段 | 类型 | 可为空 | 说明 | 来源 |
+| --- | --- | --- | --- | --- |
+| `id` | BIGINT UNSIGNED | 否 | 主键 | 系统生成 |
+| `entity_type` | VARCHAR(30) | 否 | 归属实体：`person`、`relic`、`article`、`exhibition` | 后台维护 |
+| `entity_id` | BIGINT UNSIGNED | 否 | 对应人物或展览 ID | 后台维护 |
+| `usage_type` | VARCHAR(30) | 否 | 人物：`portrait`/`historical`；文物：`cover`/`gallery`；新闻：`cover`/`content`；展览：`cover`/`gallery` | 后台维护 |
+| `local_path` | VARCHAR(500) | 否 | `/uploads/people/...`、`/uploads/relics/...`、`/uploads/news/...` 或 `/uploads/exhibitions/...` | 系统生成 |
+| `source_image_url` | VARCHAR(500) | 是 | 原始图片地址（如有） | 管理员录入 |
+| `source_page_url` | VARCHAR(500) | 是 | 图片所在来源页面 URL | 管理员录入 |
+| `publisher` | VARCHAR(200) | 是 | 来源机构；可明确为“课程设计本地资料” | 管理员录入 |
+| `caption` | TEXT | 是 | 图片说明 | 管理员录入 |
+| `identity_evidence` | TEXT | 是 | 人物身份识别依据；合影必填 | 管理员录入 |
+| `person_position` | VARCHAR(100) | 是 | 合影中人物位置，如“左三” | 管理员录入 |
+| `sort_order` | INT | 否 | 文物图库、新闻正文图、展览图库展示顺序 | 管理员维护 |
+| `review_status` | ENUM | 否 | `pending`、`verified`、`rejected`；仅 `verified` 可被游客 API 使用 | 管理员审核 |
+| `status` | TINYINT | 否 | 1 可展示，0 不展示；不等同于史料核验 | 管理员维护 |
+| `created_at` | DATETIME | 否 | 创建时间 | 系统生成 |
+| `updated_at` | DATETIME | 否 | 最近更新时间 | 系统生成 |
+
 ## 7. `person` — 历史人物
 
 | 字段 | 类型 | 可为空 | 说明 | 来源 |
@@ -96,7 +119,7 @@
 | `death_year` | SMALLINT UNSIGNED | 是 | 逝世年份 | 官网采集/后台维护 |
 | `summary` | TEXT | 是 | 人物摘要 | 官网采集/后台维护 |
 | `content` | LONGTEXT | 是 | 生平与关联资料 | 官网采集/后台维护 |
-| `image` | VARCHAR(500) | 是 | 经审核的人物图片 URL | 官网采集/后台维护 |
+| `image` | VARCHAR(500) | 是 | 旧人物图片回退 URL；新上传资源优先读取 `media_asset` | 官网采集/后台维护 |
 | `source_url` | VARCHAR(500) | 是 | 人物资料来源页 | 官网采集 |
 | `status` | TINYINT | 否 | 1 正常，0 隐藏/待审核 | 后台维护 |
 | `created_at` | DATETIME | 否 | 创建时间 | 系统生成 |

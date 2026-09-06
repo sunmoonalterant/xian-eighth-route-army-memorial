@@ -13,6 +13,7 @@
     "seed:admin": "node scripts/seedAdmin.js",
     "seed:news": "node scripts/seedOfficialNews.js",
     "seed:reviewed-people": "node scripts/seedReviewedPeople.js",
+    "migrate:media-assets": "node scripts/migrateMediaAssets.js",
     "images:localize:check": "node scripts/localizeContentImages.js --dry-run",
     "images:localize": "node scripts/localizeContentImages.js",
     "test": "node --test tests/*.test.js"
@@ -23,6 +24,7 @@
     "dotenv": "^17.2.2",
     "express": "^5.1.0",
     "jsonwebtoken": "^9.0.3",
+    "multer": "^2.3.0",
     "mysql2": "^3.14.3",
     "sanitize-html": "^2.17.7"
   },

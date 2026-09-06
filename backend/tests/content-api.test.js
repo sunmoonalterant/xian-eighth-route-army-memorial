@@ -5,7 +5,21 @@ const { createApp } = require('../src/app')
 
 function createReadOnlyPool() {
   return {
-    async query(sql) {
+    async query(sql, values = []) {
+      if (sql.includes('FROM `media_asset`')) {
+        const assets = {
+          relic: [
+            { local_path: '/uploads/relics/relic-cover.jpg', caption: '已核验封面', review_status: 'verified', status: 1, usage_type: 'cover' },
+            { local_path: '/uploads/relics/relic-gallery.jpg', caption: '已核验图库', review_status: 'verified', status: 1, usage_type: 'gallery' },
+          ],
+          article: [
+            { local_path: '/uploads/news/article-cover.jpg', caption: '新闻封面', review_status: 'verified', status: 1, usage_type: 'cover' },
+            { local_path: '/uploads/news/article-content.jpg', caption: '新闻正文图', review_status: 'verified', status: 1, usage_type: 'content' },
+          ],
+        }
+        return [assets[values[0]] || []]
+      }
+
       if (sql.includes('FROM `museum`')) {
         return [[{
           id: 1,
@@ -34,6 +48,23 @@ function createReadOnlyPool() {
           cover_image: null,
           views: 0,
           source_url: 'https://example.test/relic',
+          created_at: '2026-09-02T00:00:00.000Z',
+          updated_at: '2026-09-02T00:00:00.000Z',
+        }]]
+      }
+
+      if (sql.includes('FROM `article`')) {
+        return [[{
+          id: 6,
+          title: '测试新闻',
+          category: '新闻动态',
+          summary: '新闻摘要',
+          content: '新闻正文',
+          cover_image: null,
+          views: 0,
+          published_at: null,
+          source_url: 'https://example.test/article',
+          status: 1,
           created_at: '2026-09-02T00:00:00.000Z',
           updated_at: '2026-09-02T00:00:00.000Z',
         }]]
@@ -106,7 +137,8 @@ test('GET /api/relics returns requested pagination and public field names', asyn
   assert.equal(body.data.total, 1)
   assert.equal(body.data.page, 1)
   assert.equal(body.data.pageSize, 2)
-  assert.equal(body.data.list[0].coverImage, null)
+  assert.equal(body.data.list[0].coverImage, '/uploads/relics/relic-cover.jpg')
+  assert.deepEqual(body.data.list[0].galleryImages, [{ url: '/uploads/relics/relic-gallery.jpg', caption: '已核验图库' }])
   assert.equal(body.data.list[0].sourceUrl, 'https://example.test/relic')
 })
 
@@ -130,6 +162,24 @@ test('GET /api/relics/:id rejects a non-numeric route id', async () => {
     message: 'id must be a positive integer',
     data: null,
   })
+})
+
+test('GET /api/relics/:id prefers a verified upload cover and returns its verified gallery', async () => {
+  const response = await fetch(`${baseUrl}/api/relics/8`)
+
+  assert.equal(response.status, 200)
+  const body = await response.json()
+  assert.equal(body.data.coverImage, '/uploads/relics/relic-cover.jpg')
+  assert.deepEqual(body.data.galleryImages, [{ url: '/uploads/relics/relic-gallery.jpg', caption: '已核验图库' }])
+})
+
+test('GET /api/articles/:id exposes only verified news cover and content images', async () => {
+  const response = await fetch(`${baseUrl}/api/articles/6`)
+
+  assert.equal(response.status, 200)
+  const body = await response.json()
+  assert.equal(body.data.coverImage, '/uploads/news/article-cover.jpg')
+  assert.deepEqual(body.data.contentImages, [{ url: '/uploads/news/article-content.jpg', caption: '新闻正文图' }])
 })
 
 test('GET /api/exhibitions/:id serializes unknown dates as null', async () => {
