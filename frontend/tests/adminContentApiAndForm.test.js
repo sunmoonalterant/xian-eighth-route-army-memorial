@@ -27,6 +27,14 @@ test('admin layout exposes implemented D11.6 people management without future-on
   assert.doesNotMatch(source, /统计中心|系统设置/)
 })
 
+test('admin starts at the protected data overview and keeps it first in navigation', () => {
+  const router = fs.readFileSync(new URL('../src/router/index.js', import.meta.url), 'utf8')
+  const layout = fs.readFileSync(new URL('../src/views/AdminLayout.vue', import.meta.url), 'utf8')
+  assert.match(router, /redirect: '\/admin\/dashboard'/)
+  assert.match(router, /path: 'dashboard', name: 'AdminDashboard'/)
+  assert.match(layout, /index="\/admin\/dashboard">数据总览<\/ElMenuItem>/)
+})
+
 test('history management provides a homepage-feature filter for reviewed event operations', () => {
   const source = fs.readFileSync(new URL('../src/views/AdminHistory.vue', import.meta.url), 'utf8')
   assert.match(source, /<ElSelect v-model="filters\.featured"/)
