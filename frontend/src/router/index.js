@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import { getCurrentAdmin } from '../api/adminAuth.js'
 import { adminSession, clearAdminSession, getAdminToken, setAdminProfile } from '../stores/adminSession.js'
+import { trackVisitorRoute } from '../utils/visitTracking.js'
 
 const routes = [
   ['/', 'Home', 'Home'], ['/museum', 'Museum', 'Museum'], ['/history', 'History', 'History'],
@@ -50,6 +51,10 @@ router.beforeEach(async (to) => {
   } finally {
     adminSession.loading = false
   }
+})
+
+router.afterEach((to, from, failure) => {
+  if (!failure) void trackVisitorRoute(to)
 })
 
 export default router

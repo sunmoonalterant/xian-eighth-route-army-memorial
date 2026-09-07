@@ -16,15 +16,18 @@ const { requireAdminAuth } = require('./middleware/requireAdminAuth')
 const createContentRouter = require('./routes/content')
 const createReservationRouter = require('./routes/reservation')
 const createSystemRouter = require('./routes/system')
+const createVisitLogRouter = require('./routes/visitLogs')
+const createStatisticsRouter = require('./routes/statistics')
 
 function createApp({ pool = dbPool } = {}) {
   const app = express()
 
   app.use(cors())
-  app.use(express.json())
+  app.use(express.json({ limit: '100kb' }))
   app.use(express.urlencoded({ extended: true }))
   app.use('/uploads', express.static(path.resolve(__dirname, '../uploads'), { fallthrough: false, index: false }))
   app.use('/api', createSystemRouter(pool))
+  app.use('/api', createVisitLogRouter(pool))
   app.use('/api', createContentRouter(pool))
   app.use('/api', createArticleRouter(pool))
   app.use('/api/history-events', createHistoryEventRouter(pool))
@@ -44,6 +47,7 @@ function createApp({ pool = dbPool } = {}) {
   app.use('/api/admin/digital-museum', createAdminDigitalMuseumRouter(pool, requireAdminAuth))
   app.use('/api/admin/digital-museum', createAdminMediaAssetRouter(pool, requireAdminAuth, 'digital_museum'))
   app.use('/api/admin/reservations', createAdminReservationRouter(pool, requireAdminAuth))
+  app.use('/api/admin/statistics', createStatisticsRouter(pool, requireAdminAuth))
   app.use(notFoundHandler)
   app.use(errorHandler)
 
